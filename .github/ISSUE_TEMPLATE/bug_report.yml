@@ -1,0 +1,66 @@
+name: 🐞 Bug Report / 问题反馈
+description: Report a bug or unexpected behavior in wxShot / 报告 wxShot 的缺陷或异常行为
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search [existing issues](https://github.com/ntfstool/wxShot/issues) first to avoid duplicates.
+        提交前请先搜索[已有 issue](https://github.com/ntfstool/wxShot/issues)，避免重复。
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened? / 发生了什么？
+      description: Describe the bug, and what you expected to happen instead. / 描述这个问题，以及你原本期望的行为。
+      placeholder: When I capture a scrolling area, the stitched preview is blank...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / 复现步骤
+      description: List the exact steps so we can reproduce it. / 列出能稳定复现该问题的操作步骤。
+      placeholder: |
+        1. Double-tap ⌘ to start capture
+        2. Drag a region over a window
+        3. Click the scroll-stitch button
+        4. See the error
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or screen recording / 截图或录屏
+      description: If applicable, drag images or a video here to help explain. / 如有需要，可拖入截图或录屏帮助说明。
+    validations:
+      required: false
+
+  - type: input
+    id: wxshot-version
+    attributes:
+      label: wxShot version / wxShot 版本
+      description: Find it in Settings → About. / 可在设置 → 关于中查看。
+      placeholder: "1.2.1"
+    validations:
+      required: true
+
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version / macOS 版本
+      description: Apple menu → About This Mac. / 苹果菜单 → 关于本机。
+      placeholder: "macOS 14.5 (Sonoma)"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmation / 确认
+      options:
+        - label: I have searched existing issues and this is not a duplicate. / 我已搜索过现有 issue，确认这不是重复问题。
+          required: true

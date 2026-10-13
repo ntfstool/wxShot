@@ -1,0 +1,772 @@
+/* wxShot — Русский */
+
+/* Settings */
+"settingsTitle" = "Настройки wxShot";
+"showMenuBarIcon" = "Показывать значок в строке меню";
+"permissionsHeader" = "Необходимые разрешения";
+"accessibilityPermission" = "Универсальный доступ";
+"accessibilityDescription" = "Необходимо для обнаружения двойного нажатия клавиши ⌘ Command для создания снимков экрана";
+"screenRecordingPermission" = "Запись экрана";
+"screenRecordingDescription" = "Необходимо для захвата содержимого экрана при создании снимков";
+"microphonePermission" = "Микрофон";
+"microphoneDescription" = "Опционально;нужно для записи голоса при записи экрана";
+"launchApp" = "Запустить приложение";
+"launchAtLogin" = "Запускать при входе";
+"pinAcrossSpaces" = "Показывать закрепления на всех рабочих столах";
+"pinAcrossSpacesHint" = "Новые закрепленные изображения появляются на каждом рабочем столе и полноэкранном Space";
+"historyCacheToggleLabel" = "Кэшировать снимки";
+"historyCacheToggleHint" = "Сохраняет недавние снимки, выбранные цвета и ссылки загрузок для быстрого повторного копирования из панели истории";
+"clipboardTextCacheToggleLabel" = "Кэшировать текст буфера обмена";
+"clipboardTextCacheToggleHint" = "Сохраняет скопированный текст в истории для быстрого повторного использования";
+"clipboardTextHistoryLimitLabel" = "Лимит истории текста";
+"historyCacheLabel" = "Лимит истории изображений и медиа";
+"historyPanelDisplayModeLabel" = "Отображение панели истории";
+"historyPanelDisplayModeHint" = "Выберите диалог или вырез для истории";
+"historyPanelDialogMode" = "Диалог";
+"historyPanelDialogModeHint" = "Открывает горизонтальную панель предпросмотра из меню или по сочетанию";
+"historyPanelNotchMode" = "Вырез";
+"historyPanelNotchModeHint" = "Открытие у верхнего выреза наведением или нажатием, скрытие при уходе курсора";
+"countdownLabel" = "Секунды обратного отсчёта";
+"countdownHint" = "Удерживайте ⌥ Option, затем дважды нажмите ⌘ или сочетание для снимка, чтобы запустить обратный отсчёт перед захватом, Esc — отмена";
+"countdownSecondsSuffix" = "с";
+"windowShadowToggleLabel" = "Тень при снимке окна";
+"windowShadowToggleHint" = "Скругляет углы снимков окон и добавляет тень в стиле macOS";
+"windowShadowSizeLabel" = "Размер тени";
+"windowShadowSizeHint" = "Чем больше значение, тем мягче и шире тень — окно словно приподнято выше";
+
+/* Screenshot shortcut */
+"shortcutHeader" = "Снимок экрана";
+"shortcutHint" = "По умолчанию: двойное нажатие ⌘. Назначение своего сочетания отключает двойное нажатие";
+"shortcutDefaultDisplay" = "Двойное нажатие ⌘";
+"shortcutSet" = "Задать";
+"shortcutCancel" = "Отмена";
+"shortcutWaiting" = "Нажмите клавиши";
+"shortcutNeedsModifierTitle" = "Требуется клавиша-модификатор";
+"shortcutNeedsModifier" = "Сочетание ⌘/⌥/⇧/⌃ + другая клавиша (например ⌘⇧8) или F1–F12";
+"shortcutRestore" = "Сбросить";
+"quickPinShortcutHeader" = "Быстрое закрепление";
+"quickPinShortcutDefaultDisplay" = "Не задано";
+"quickPinShortcutClear" = "Очистить сочетание быстрого закрепления";
+"selectedImagePinShortcutHeader" = "Закрепить выбранное изображение";
+"selectedImagePinShortcutDefaultDisplay" = "Не задано";
+"selectedImagePinShortcutClear" = "Очистить сочетание закрепления выбранного изображения";
+"clipboardImagePinShortcutHeader" = "Закрепить текущее изображение или изображение из буфера";
+"clipboardImagePinShortcutDefaultDisplay" = "Не задано";
+"clipboardImagePinShortcutClear" = "Очистить сочетание закрепления текущего изображения или изображения из буфера";
+"clipboardTextPinShortcutHeader" = "Закрепить текст из буфера";
+"clipboardTextPinShortcutDefaultDisplay" = "Не задано";
+"clipboardTextPinShortcutClear" = "Очистить сочетание закрепления текста из буфера";
+"selectedImagePinNoImage" = "В Finder не выбрано изображение";
+"clipboardImagePinNoImage" = "В буфере нет изображения для закрепления";
+"clipboardTextPinNoText" = "В буфере нет текста";
+"pinFromFinderHint" = "Изображение Finder закреплено, нажмите X, чтобы закрыть";
+"pinFromClipboardHint" = "Изображение из буфера закреплено, нажмите X, чтобы закрыть";
+"pinFromClipboardTextHint" = "Текст из буфера закреплен, дважды щелкните для редактирования";
+"pinToolbarClose" = "Закрыть закрепленное изображение";
+"pinToolbarCopy" = "Копировать закрепленное изображение";
+"pinToolbarDrag" = "Перетащить закрепленное изображение";
+"pinToolbarEdit" = "Редактировать закрепленное изображение";
+"pinToolbarEditText" = "Редактировать текст";
+
+/* Image-edit shortcuts */
+"selectedImageEditShortcutHeader" = "Редактировать выбранное изображение";
+"selectedImageEditShortcutHint" = "Нажмите, чтобы сразу редактировать одно изображение, выбранное в Finder. По умолчанию не задано";
+"selectedImageEditShortcutDefaultDisplay" = "Не задано";
+"clipboardImageEditShortcutHeader" = "Редактировать изображение из буфера";
+"clipboardImageEditShortcutHint" = "Нажмите, чтобы сразу редактировать текущее изображение в буфере обмена. По умолчанию не задано";
+"clipboardImageEditShortcutDefaultDisplay" = "Не задано";
+"textRecognitionShortcutHeader" = "Распознавание текста";
+"textRecognitionShortcutDefaultDisplay" = "Не задано";
+"copyImageTextShortcutHeader" = "Копировать текст с изображения";
+"copyImageTextShortcutDefaultDisplay" = "Не задано";
+"screenshotTranslationShortcutHeader" = "Перевод снимка";
+"screenshotTranslationShortcutDefaultDisplay" = "Не задано";
+"recordShortcutHeader" = "Запись";
+"recordShortcutDefaultDisplay" = "Не задано";
+"fullScreenScreenshotShortcutHeader" = "Снимок всего экрана";
+"fullScreenScreenshotShortcutDefaultDisplay" = "Не задано";
+"colorPickerShortcutHeader" = "Пипетка";
+"colorPickerShortcutDefaultDisplay" = "Не задано";
+
+/* Copy-to-clipboard shortcut (editor confirm) */
+"clipboardShortcutHeader" = "Копировать в буфер обмена";
+"clipboardShortcutHint" = "Нажмите в редакторе, чтобы подтвердить правку и скопировать снимок в буфер обмена. По умолчанию — двойное нажатие ⌘";
+"clipboardShortcutDefaultDisplay" = "Двойное нажатие ⌘";
+
+/* Save-to-file shortcut (editor save) */
+"fileSaveShortcutHeader" = "Сохранить в файл";
+"fileSaveShortcutHint" = "Нажмите в редакторе, чтобы сохранить снимок PNG в заданную папку снимков. По умолчанию — ⌘S";
+"previousHistoryImageShortcutHeader" = "Предыдущий снимок из истории";
+"nextHistoryImageShortcutHeader" = "Следующий снимок из истории";
+"historyPanelShortcutHeader" = "Панель истории";
+"historyPanelShortcutDefaultDisplay" = "Не задано";
+
+/* Shortcut conflict */
+"shortcutConflictTitle" = "Сочетание уже используется";
+"shortcutConflictScreenshot" = "Это сочетание клавиш уже назначено для снимка экрана. Выберите другое";
+"shortcutConflictCountdown" = "Это сочетание клавиш уже назначено для снимка экрана с обратным отсчётом (сочетание для снимка + ⌥). Выберите другое";
+"shortcutConflictQuickPin" = "Это сочетание клавиш уже назначено для быстрого закрепления. Выберите другое";
+"shortcutConflictSelectedImagePin" = "Это сочетание клавиш уже назначено для закрепления выбранного изображения. Выберите другое";
+"shortcutConflictClipboardImagePin" = "Это сочетание клавиш уже назначено для закрепления изображения из буфера. Выберите другое";
+"shortcutConflictClipboardTextPin" = "Это сочетание клавиш уже назначено для закрепления текста из буфера. Выберите другое";
+"shortcutConflictClipboard" = "Это сочетание клавиш уже назначено для копирования в буфер обмена. Выберите другое";
+"shortcutConflictFileSave" = "Это сочетание клавиш уже назначено для сохранения в файл. Выберите другое";
+"shortcutConflictPreviousHistoryImage" = "Это сочетание клавиш уже назначено для предыдущего снимка из истории. Выберите другое";
+"shortcutConflictNextHistoryImage" = "Это сочетание клавиш уже назначено для следующего снимка из истории. Выберите другое";
+"shortcutConflictHistoryPanel" = "Это сочетание клавиш уже назначено для панели истории. Выберите другое";
+"shortcutConflictSelectedImageEdit" = "Это сочетание клавиш уже назначено для редактирования выбранного изображения. Выберите другое";
+"shortcutConflictClipboardImageEdit" = "Это сочетание клавиш уже назначено для редактирования изображения из буфера. Выберите другое";
+"shortcutConflictTextRecognition" = "Это сочетание клавиш уже назначено для распознавания текста. Выберите другое";
+"shortcutConflictCopyImageText" = "Это сочетание клавиш уже назначено для копирования текста с изображения. Выберите другое";
+"shortcutConflictScreenshotTranslation" = "Это сочетание клавиш уже назначено для перевода снимка. Выберите другое";
+"shortcutConflictRecord" = "Это сочетание клавиш уже назначено для записи. Выберите другое";
+"shortcutConflictFullScreenScreenshot" = "Это сочетание клавиш уже назначено для снимка всего экрана. Выберите другое";
+"shortcutConflictColorPicker" = "Это сочетание клавиш уже назначено для пипетки. Выберите другое";
+
+/* Menu bar */
+"takeScreenshot" = "Сделать снимок";
+"takeFullScreenScreenshot" = "Снимок всего экрана";
+"record" = "Запись";
+"colorPicker" = "Пипетка";
+"settings" = "Настройки";
+"quitApp" = "Завершить wxShot";
+"historyMenu" = "История";
+"historyClear" = "Очистить историю";
+"historyCleared" = "История очищена";
+"historyShowInFinder" = "Показать в Finder";
+"historyPanelLock" = "Заблокировать панель истории";
+"historyPanelUnlock" = "Разблокировать панель истории";
+"historyPanelFavorite" = "Добавить в избранное";
+"historyPanelUnfavorite" = "Удалить из избранного";
+"historyPanelItemFavorited" = "Добавлено в избранное";
+"historyPanelItemUnfavorited" = "Удалено из избранного";
+"historyPanelMenu" = "Панель истории";
+"historyPanelDeleteAll" = "Удалить всю историю";
+"historyPanelDeleteSelectedOne" = "Удалить %d объект";
+"historyPanelDeleteSelected" = "Удалить объектов: %d";
+"historyPanelDeletedSelectedOne" = "Удалён %d объект";
+"historyPanelDeletedSelected" = "Удалено объектов: %d";
+"historyPanelFavoriteFailed" = "Не удалось изменить избранное";
+"historyDeletedSkippingFavorites" = "Удалено объектов: %d, избранных пропущено: %d";
+"historyPanelFilterAll" = "Все";
+"historyPanelFilterScreenshots" = "Снимки";
+"historyPanelFilterGIF" = "GIF";
+"historyPanelFilterMP4" = "MP4";
+"historyPanelFilterColors" = "Цвета";
+"historyPanelFilterText" = "Текст";
+"historyPanelSearchColorsAndText" = "Поиск по цветам и тексту";
+"historyPanelSearchColors" = "Поиск по цветам";
+"historyPanelSearchText" = "Поиск по тексту";
+"historyPanelClearSearch" = "Очистить поиск";
+"historyPanelSearchNoResults" = "Совпадений не найдено";
+"historyPreviewCopyText" = "Копировать текст";
+"historyPreviewTranslateText" = "Перевести текст";
+"historyPreviewConvertToQRCode" = "Преобразовать в QR-код";
+"historyPreviewQRCodeTooLong" = "Текст слишком длинный для преобразования в QR-код";
+"historyPreviewOriginalText" = "Исходный текст";
+"historyPreviewQRCodeTitle" = "QR-код текста";
+"historyPanelCopyHint" = "Нажмите для копирования";
+"historyPanelCopyDragHint" = "Нажмите для копирования · перетащите в приложение";
+"historyPanelCopyMarkdownLink" = "Скопировать MD-ссылку";
+"historyPanelCopyPlainLink" = "Скопировать обычную ссылку";
+"historyPanelEmpty" = "История пуста";
+"historyPanelShortcutGuide" = "Сочетания клавиш";
+"historyPanelShortcutGuideHide" = "Вернуться к истории";
+"historyPanelShortcutKeyClick" = "Щелчок";
+"historyPanelShortcutKeyDrag" = "Перетянуть";
+"historyPanelShortcutKeySpace" = "Пробел";
+"historyPanelShortcutSearch" = "Открыть или закрыть поиск";
+"historyPanelShortcutSwitchFilter" = "Переключить категорию";
+"historyPanelShortcutToggleSelection" = "Выбрать или снять выбор с объекта";
+"historyPanelShortcutRangeSelection" = "Выбрать диапазон";
+"historyPanelShortcutSelectAll" = "Выбрать все видимые объекты";
+"historyPanelShortcutCancel" = "Закрыть поиск или сбросить текущее состояние";
+"historyPanelShortcutCopyItem" = "Копировать объект";
+"historyPanelShortcutDragItem" = "Перетащить изображение или видео в другое приложение";
+"historyPanelShortcutOpenPreview" = "Открыть просмотр объекта под указателем";
+"historyPanelShortcutBrowsePreview" = "Предыдущий или следующий объект";
+"historyPanelShortcutClosePreview" = "Закрыть просмотр";
+"historyPanelShortcutCopyPreview" = "Копировать содержимое просмотра";
+"historyPanelShortcutEditImage" = "Редактировать изображение";
+"historyPanelShortcutPinImage" = "Закрепить изображение";
+"historyPanelShortcutUploadImage" = "Загрузить изображение";
+"historyPanelShortcutTranslateText" = "Перевести текст";
+"historyPanelShortcutQRCode" = "Создать QR-код";
+"historyPanelShortcutToggleGuide" = "Показать или скрыть сочетания клавиш";
+
+/* Cursor chip */
+"dragToQuickPin" = "Нажмите на окно или выделите область, чтобы сразу закрепить";
+"dragToScreenshot" = "Нажмите на окно или перетащите для снимка";
+"dragToScreenshotAspectFree" = "Нажмите на окно или перетащите для снимка · Свободное выделение (R)";
+"dragToScreenshotAspect" = "Нажмите на окно или перетащите для снимка · Выделение %@ (R)";
+"dragToTextRecognition" = "Нажмите на окно или выделите область для распознавания текста";
+"dragToCopyImageText" = "Нажмите на окно или выделите область, чтобы скопировать текст";
+"dragToScreenshotTranslation" = "Нажмите на окно или выделите область для перевода содержимого";
+"dragToRecord" = "Нажмите на окно или перетащите для записи";
+"dragToRecordAspectFree" = "Нажмите на окно или перетащите для записи · Свободное выделение (R)";
+"dragToRecordAspect" = "Нажмите на окно или перетащите для записи · Выделение %@ (R)";
+
+/* Toast */
+"copiedToClipboard" = "Скопировано в буфер обмена";
+"mergedLongScreenshot" = "Длинный снимок объединён";
+"autoScrollPermissionNeeded" = "Для захвата с прокруткой нужен Универсальный доступ — разрешите wxShot в Системных настройках → Конфиденциальность и безопасность → Универсальный доступ";
+"cropLongScreenshotHint" = "Перетащите верхний/нижний край для обрезки — нажмите Enter или ✓";
+"scrollCaptureHint" = "Нажмите любую клавишу, чтобы остановить прокрутку";
+"scrollCaptureManualHint" = "Прокрутите вручную, затем нажмите любую клавишу или зелёную кнопку для завершения";
+"finderEditExitHint" = "Редактирование из Finder. Нажмите X, чтобы выйти из редактирования";
+"clipboardEditExitHint" = "Редактирование из буфера обмена. Нажмите X, чтобы выйти из редактирования";
+"pinEditExitHint" = "Редактирование закрепленного изображения. Нажмите X, чтобы выйти";
+"fullScreenEditExitHint" = "Редактирование снимка всего экрана. Нажмите X, чтобы выйти";
+"editSuspendedToast" = "Правка отложена, запустите снимок ещё раз для продолжения";
+"editSuspendedResumeToast" = "Продолжаем отложенную правку";
+"fullScreenScreenshotFailed" = "Не удалось сделать снимок всего экрана";
+"openImageNoImage" = "Скопируйте изображение в буфер обмена или выберите файл изображения";
+"selectedImageEditNoImage" = "В Finder не выбрано одно изображение";
+"clipboardImageEditNoImage" = "В буфере обмена нет изображения для редактирования";
+"recordingSaved" = "Запись сохранена в %@";
+"recordingCancelled" = "Запись отменена";
+"recordingExportingGIF" = "Создание GIF";
+"recordingFailed" = "Не удалось записать: %@";
+"saveRecording" = "Сохранить запись";
+"saveRecordingPrompt" = "Сохранить";
+"recordingFormatLabel" = "Формат";
+"recordingFormatManual" = "Выбирать каждый раз";
+"recordingFormatMP4" = "MP4";
+"recordingFormatGIF" = "GIF";
+"recordingFormatChoiceTitle" = "Выберите формат записи";
+"recordingFormatChoiceMessage" = "Запись будет сохранена в заданную папку записей";
+"screenshotSaved" = "Снимок сохранён в %@";
+"screenshotSaveFailed" = "Не удалось сохранить снимок: %@";
+"recordingStop" = "Остановить запись";
+"recordingPause" = "Пауза";
+"recordingResume" = "Продолжить";
+"colorCopied" = "Цвет %@ скопирован";
+"qrCodeCopied" = "Содержимое QR-кода скопировано";
+"qrCodeNotFound" = "QR-код не найден";
+
+/* Toolbar tooltips */
+"tipRectangle" = "Прямоугольник";
+"tipEllipse" = "Эллипс";
+"tipArrow" = "Стрелка";
+"tipLine" = "Линия";
+"tipPen" = "Карандаш";
+"tipMarker" = "Маркер";
+"tipSpotlight" = "Прожектор";
+"tipMosaic" = "Мозаика";
+"mosaicGranularity" = "Зернистость мозаики";
+"mosaicBlur" = "Размытие";
+"mosaicBlurAmount" = "Степень размытия";
+"tipEraser" = "Ластик";
+"tipMagnifier" = "Лупа";
+"tipNumbered" = "Нумерация";
+"tipText" = "Текст";
+"tipQRCode" = "QR-код";
+"tipEmoji" = "Эмодзи";
+"tipMoreEmoji" = "Больше эмодзи";
+"tipMoreBeautifyPresets" = "Больше пресетов оформления";
+"tipInsertImage" = "Вставить изображение";
+"tipColorPicker" = "Пипетка";
+"tipPickedInkBottle" = "Взять цвет пипеткой в чернильницу";
+"tipUndo" = "Отменить";
+"tipRedo" = "Повторить";
+"tipMoveSelection" = "Переместить выделение";
+"tipScrollCapture" = "Длинный снимок";
+"tipRotate" = "Поворот";
+"tipRotateLeft" = "Повернуть на 90° влево";
+"tipRotateRight" = "Повернуть на 90° вправо";
+"tipBeautify" = "Оформление";
+"tipOCR" = "Распознавание текста";
+"tipScreenshotTranslate" = "Перевод снимка";
+"tipSave" = "Сохранить в файл";
+"tipPin" = "Закрепить на экране";
+"tipRecord" = "Запись";
+"tipCancel" = "Отмена";
+"tipConfirm" = "Копировать в буфер";
+"tipScrollCropConfirm" = "Сохранить и редактировать";
+"copyQRCodeContent" = "Скопировать содержимое QR-кода";
+
+/* Beautify */
+"beautify" = "Оформление";
+"beautifyPresetTransparent" = "Прозрачный";
+"beautifyPresetPeachBlue" = "Персиково-синий";
+"beautifyPresetMintTeal" = "Мятно-бирюзовый";
+"beautifyPresetPeachPink" = "Персиково-розовый";
+"beautifyPresetBluePurple" = "Сине-фиолетовый";
+"beautifyPresetWarmOrange" = "Тёплый оранжевый";
+"beautifyPresetTealPink" = "Бирюзово-розовый";
+"beautifyPresetDeepPurple" = "Тёмно-фиолетовый";
+"beautifyPresetNeutralGray" = "Нейтральный серый";
+"beautifyPresetWallpaper" = "Обои";
+"beautifyPresetAurora" = "Северное сияние";
+"beautifyPresetSunsetGlow" = "Закатное сияние";
+"beautifyPresetOceanBlue" = "Океанский синий";
+"beautifyPresetLavenderMist" = "Лавандовый туман";
+"beautifyPresetForestMint" = "Лесная мята";
+"beautifyPresetRoseGold" = "Розовое золото";
+"beautifyPresetMorningSky" = "Утреннее небо";
+"beautifyPresetCandyPop" = "Конфетный микс";
+"beautifyPresetCitrusGlow" = "Цитрусовое сияние";
+"beautifyPresetMidnight" = "Полночь";
+"beautifyPresetCoralBloom" = "Коралловый цвет";
+"beautifyPresetArcticIce" = "Арктический лёд";
+"beautifyPresetSageCream" = "Шалфейный крем";
+"beautifyPresetGraphite" = "Графит";
+"beautifyShadowEffect" = "Тень";
+"beautifyAutoToggleLabel" = "Открывать редактор с Beautify";
+"beautifyAutoToggleHint" = "Автоматически применять последний пресет, отступ и тень при открытии редактора";
+"beautifyDefaultPresetLabel" = "Пресет по умолчанию";
+"beautifyDefaultPaddingLabel" = "Отступ по умолчанию";
+"textStrokeEffect" = "Обводка";
+"textCalloutEffect" = "Выноска";
+"textFontLabel" = "Шрифт";
+"textFontSystemDefault" = "Системный по умолчанию";
+"textFontDefaultLabel" = "Шрифт текста по умолчанию";
+"textFontDefaultHint" = "Шрифт для новых текстовых аннотаций";
+"shapeFillEffect" = "Заливка";
+"shapeFillNone" = "Контур";
+"shapeFillOpaque" = "Заливка";
+"shapeFillTranslucent" = "Полупрозрачная заливка";
+"shapeStyleStandard" = "Обычный стиль";
+"shapeStyleRounded" = "Скруглённый прямоугольник";
+"shapeStyleHandDrawn" = "Рисованный стиль";
+"arrowStyleTapered" = "Сужающаяся стрелка";
+"arrowStyleDoubleEnded" = "Двусторонняя стрелка";
+"arrowStyleLine" = "Линейная стрелка";
+"arrowStyleDotTail" = "Стрелка с точкой у основания";
+"insertImageFromClipboard" = "Из буфера обмена";
+"insertImageFromFile" = "Из файла";
+"insertImageChooseFile" = "Выбрать изображение";
+"insertImageNoClipboardImage" = "В буфере обмена нет изображения";
+"scrollCaptureAutoScroll" = "Автопрокрутка";
+"scrollCaptureManualScroll" = "Ручная прокрутка";
+
+/* Language */
+"languageHeader" = "Язык";
+
+/* Settings sidebar tabs */
+"settingsTabGeneral" = "Основные";
+"settingsTabShortcuts" = "Сочетания";
+"settingsTabPermissions" = "Разрешения";
+"settingsTabUpload" = "Хостинг";
+"settingsTabAbout" = "О программе";
+"settingsTabTranslation" = "Перевод";
+"settingsTabToolbar" = "Панель инструментов";
+"settingsQuit" = "Завершить приложение";
+
+"toolbarSettingsPrimaryTitle" = "Основная панель";
+"toolbarSettingsPrimaryHint" = "Инструменты появляются над или под выделением, перетащите для изменения положения и нажмите для настройки сочетания клавиш";
+"toolbarSettingsSideTitle" = "Боковая панель";
+"toolbarSettingsSideHint" = "Инструменты появляются слева или справа от выделения, перетащите для изменения положения и нажмите для настройки сочетания клавиш";
+"toolbarSettingsHiddenTitle" = "Скрытые инструменты";
+"toolbarSettingsHiddenHint" = "Инструменты, перетащенные сюда, не появляются ни на одной панели";
+"toolbarSettingsFootnote" = "Панели автоматически переключаются между расположением сверху/снизу и слева/справа в зависимости от положения выделения";
+"toolbarSettingsShortcutHint" = "Нажмите инструмент для записи сочетания, перетащите его для перемещения или щёлкните правой кнопкой для дополнительных действий";
+"toolbarSettingsShortcutRecording" = "Нажмите новое сочетание для «%@» или Esc для отмены";
+"toolbarSettingsShortcutRecord" = "Записать сочетание";
+"toolbarSettingsShortcutClear" = "Очистить сочетание";
+"toolbarSettingsShortcutRestore" = "Восстановить сочетание по умолчанию";
+"toolbarSettingsShortcutResetAll" = "Сбросить сочетания редактора";
+"toolbarSettingsShortcutNone" = "Не задано";
+"toolbarSettingsShortcutUnavailable" = "N/A";
+"toolbarSettingsAdditionalShortcuts" = "Дополнительные действия редактора";
+"toolbarSettingsReset" = "Сбросить";
+"toolbarSettingsCancel" = "Отмена";
+"toolbarSettingsApply" = "Применить";
+"editorShortcutSelect" = "Инструмент выделения";
+"editorShortcutShapeFill" = "Переключить заливку фигуры";
+"editorShortcutConflict" = "Это сочетание уже назначено действию «%@»";
+"editorShortcutReserved" = "Эта клавиша зарезервирована для системного действия редактора и не может быть переназначена";
+
+/* About pane */
+"aboutTagline" = "Инструмент для снимков экрана в строке меню";
+"aboutLicense" = "Лицензия";
+"aboutSourceCode" = "Исходный код";
+"aboutStarOnGitHub" = "Поставить звезду на GitHub 🌟";
+"aboutFeatureRequest" = "Запросить функцию";
+"aboutBugReport" = "Сообщить об ошибке";
+"aboutUpdateTitle" = "Обновления";
+"aboutErrorLog" = "Журнал ошибок";
+"aboutErrorLogNoCrash" = "Журналов ошибок нет";
+"aboutErrorLogLastCrash" = "Последний журнал · %@";
+"aboutErrorLogCopy" = "Скопировать журнал";
+"aboutErrorLogCopied" = "Скопировано";
+"aboutErrorLogReveal" = "Показать в Finder";
+"aboutErrorLogRefresh" = "Обновить журнал";
+"aboutErrorLogClear" = "Очистить журнал";
+"aboutErrorLogEmptyBody" = "wxShot пока не зафиксировал журналов ошибок. Если приложение зависнет или завершится аварийно, вернитесь сюда, чтобы скопировать журнал для отчёта об ошибке";
+
+/* Updates — About pane */
+"checkForUpdates" = "Проверить обновления";
+"updateChecking" = "Проверка";
+"updateUpToDateStatus" = "Установлена последняя версия";
+"updateNewVersionStatus" = "Доступна версия Release v%@";
+"updateFailedStatus" = "Не удалось проверить";
+"updateDownloadButton" = "Загрузить";
+"updateRetryButton" = "Повторить";
+"updateInstallNowButton" = "Обновить сейчас";
+"updateDownloadingStatus" = "Загрузка %d%%";
+"updateInstallingStatus" = "Установка";
+"updateInstallFailedStatus" = "Не удалось установить";
+
+/* Updates — menu bar */
+"checkForUpdatesMenu" = "Проверить обновления";
+"checkingForUpdatesMenu" = "Проверка обновлений";
+"updateAvailableMenu" = "Доступна версия Release v%@";
+"updateDownloadingMenu" = "Загрузка обновления… %d%%";
+"updateInstallingMenu" = "Установка обновления";
+"updateInstallFailedMenu" = "Не удалось установить обновление";
+
+/* Updates — progress HUD */
+"updateCheckingHUD" = "Проверка обновлений";
+"updateDownloadingHUD" = "Загрузка обновления %d%%";
+"updateVerifyingHUD" = "Проверка обновления";
+"updateUnzippingHUD" = "Распаковка";
+"updateInstallingHUD" = "Установка";
+
+/* Updates — manual check result alert */
+"updateAvailableTitle" = "Доступна версия Release v%@";
+"updateAvailableBody" = "wxShot загрузит и установит последнюю версию, затем автоматически перезапустится";
+"updateUpToDateTitle" = "У вас последняя версия";
+"updateUpToDateBody" = "wxShot v%@ — это последняя версия";
+"updateFailedTitle" = "Не удалось проверить обновления";
+"updateFailedBody" = "Не удалось связаться с GitHub. Проверьте подключение и повторите попытку";
+"updateInstallFailedTitle" = "Не удалось обновить";
+"updateInstallFailedBody" = "При загрузке или установке обновления произошла ошибка. Вы можете загрузить его вручную со страницы релизов GitHub";
+"updateOpenPageButton" = "Открыть GitHub";
+"updateSkipButton" = "Пропустить эту версию";
+"updateLaterButton" = "Позже";
+"updateOKButton" = "ОК";
+
+/* Quit confirmation dialog */
+"quitConfirmTitle" = "Завершить wxShot";
+"quitConfirmMessage" = "После выхода значок в строке меню исчезнет, а сочетание для снимка будет отключено до следующего запуска wxShot";
+"quitConfirmAction" = "Завершить";
+"quitConfirmCancel" = "Отмена";
+
+/* Upload — toolbar / toast / progress */
+"tipUpload" = "Загрузить на хостинг изображений";
+"uploadingTitle" = "Загрузка";
+"uploadCopied" = "URL изображения скопирован";
+"uploadCopiedMarkdown" = "Ссылка Markdown скопирована";
+"uploadNoProvider" = "Сначала настройте хостинг в настройках";
+"uploadFailedPrefix" = "Не удалось загрузить";
+
+/* Upload — settings tab */
+"uploadDefaultProvider" = "Хостинг по умолчанию";
+"uploadDefaultNone" = "Отключено";
+"uploadSetDefaultButton" = "Сделать основным";
+"uploadSaveButton" = "Сохранить";
+"uploadClearButton" = "Очистить";
+"uploadSavedToast" = "Конфигурация сохранена";
+"uploadCurrentDefault" = "Текущий по умолчанию";
+"uploadMarkdownToggleTitle" = "Копировать как ссылку Markdown";
+"uploadMarkdownToggleSubtitle" = "Если включено, после загрузки копируется тег изображения Markdown (![](url)); если выключено — обычный URL. На панели истории щелчок по облачному изображению следует этой настройке, а кнопки при наведении выбирают MD или обычную ссылку";
+"filenameRuleTitle" = "Правила имени файла";
+"filenameRuleSubtitle" = "Управляет именами для загрузки изображений, сохранения изображений и сохранения записей. Расширения добавляются автоматически";
+"filenameRulePresetLabel" = "Шаблон";
+"filenameRulePresetCustom" = "Свой";
+"filenameRulePresetShort" = "Короткий";
+"filenameRulePresetCompact" = "Короткая ссылка";
+"filenameRulePresetUnique" = "Без дублей";
+"filenameRulePresetCounter" = "Счётчик дня";
+"filenameRulePresetRestore" = "Сбросить";
+"filenameRuleImageLabel" = "Изображение";
+"filenameRuleRecordingLabel" = "Запись";
+"filenameRuleVariablesLabel" = "Переменные";
+"filenameRuleVariableDate" = "Дата";
+"filenameRuleVariableTime" = "Время";
+"filenameRuleVariableDaily" = "Номер дня";
+"filenameRuleVariableRandom" = "Случайно";
+"filenameRuleVariableSize" = "Размер";
+"filenameRulePreview" = "%@";
+
+/* Upload — provider field labels */
+"uploadFieldBucket" = "Бакет";
+"uploadFieldBucketSpace" = "Бакет";
+"uploadFieldRegion" = "Регион";
+"uploadFieldRegionOptional" = "Необязательный регион";
+"uploadFieldPathOptional" = "Необязательный путь";
+"uploadFieldCustomUrlOptional" = "Необязательный домен";
+"uploadFieldPublicDomain" = "Публичный домен";
+"uploadFieldEndpointArea" = "Эндпоинт";
+"uploadFieldEndpointOptional" = "Необязательный эндпоинт";
+"uploadFieldAccountId" = "ID аккаунта";
+"uploadTestImageFailed" = "Не удалось создать тестовое изображение";
+
+/* Upload — provider names */
+"providerTencentCOS" = "Tencent COS";
+"providerQiniuKodo" = "Qiniu Kodo";
+"providerAliyunOSS" = "Aliyun OSS";
+
+/* Upload — errors */
+"uploadErrMissingConfig" = "Хостинг не настроен";
+"uploadErrInvalidConfigPrefix" = "Неверная конфигурация";
+"uploadErrNetworkPrefix" = "Ошибка сети";
+"uploadErrServerPrefix" = "Не удалось загрузить код %d";
+"uploadErrUnexpectedResponsePrefix" = "Неожиданный ответ";
+"missingField" = "Отсутствует %@";
+
+/* Upload — test/validation pill */
+"uploadStatusUntested" = "Не проверено";
+"uploadStatusTesting" = "Проверка";
+"uploadStatusValid" = "Активно";
+"uploadStatusInvalid" = "Неверная конфигурация";
+
+/* Upload — log lines */
+"uploadLogStartingTest" = "Запуск тестовой загрузки";
+"uploadLogConfigSaved" = "Конфигурация сохранена";
+"uploadLogMissingFields" = "Отсутствуют обязательные поля: %@";
+"uploadLogTestSucceeded" = "Тестовая загрузка успешна: %@";
+"uploadLogTestFailed" = "Тестовая загрузка не удалась: %@";
+"uploadLogProviderDisabled" = "Хостинг отключён";
+"uploadLogConfigCleared" = "Конфигурация очищена";
+
+/* Permissions — status label */
+"permissionGranted" = "Предоставлено";
+"permissionNotGranted" = "Не предоставлено";
+
+/* OCR & Translation — result panel */
+"ocrTextHeader" = "Распознанный текст";
+"ocrRecognizing" = "Распознавание";
+"ocrNoText" = "Текст не найден";
+"ocrCopy" = "Копировать";
+"ocrCopied" = "Скопировано";
+"ocrRetry" = "Повторить";
+"ocrTranslating" = "Перевод";
+"ocrTranslateFailedPrefix" = "Ошибка";
+"ocrNoProviderTitle" = "Служба перевода не настроена";
+"ocrNoProviderHint" = "Включите службу в Настройки → Перевод";
+"ocrOpenSettings" = "Открыть настройки";
+"ocrLineCopied" = "Строка скопирована";
+"copyImageTextCopying" = "Копирование";
+"copyImageTextCopied" = "Текст с изображения скопирован";
+"copyImageTextNoText" = "Текст не найден";
+"screenshotTranslationHeader" = "Перевод";
+"screenshotTranslationLanguageButton" = "На %@";
+"dictionaryEntryLabel" = "Слово";
+"dictionaryPhoneticLabel" = "Транскрипция";
+"dictionaryPartOfSpeechLabel" = "Часть речи";
+"dictionaryDefinitionLabel" = "Значение";
+"dictionaryExampleLabel" = "Пример";
+"dictionaryDifficultyLabel" = "Сложность";
+"dictionaryNoProviderTitle" = "Не настроена ИИ-служба для режима словаря";
+"dictionaryNoProviderHint" = "Включите OpenAI, DeepSeek, Claude или свой OpenAI-совместимый сервис в Настройки → Перевод";
+
+/* Translation — settings tab */
+"translationDictionaryModeTitle" = "Режим словаря";
+"translationDictionaryModeSubtitle" = "Если перевод снимка распознал одно английское слово, показывает произношение, значение, пример, перевод и уровень CEFR";
+"translationTargetLanguage" = "Язык перевода";
+"translationTargetHint" = "Распознанный текст переводится на этот язык; если он уже на этом языке, он переводится на английский";
+"translationApiKey" = "Ключ API";
+"translationApiKeyOptional" = "Необязательный ключ API";
+"translationModel" = "Модель";
+"translationEndpoint" = "Эндпоинт";
+"translationEndpointOptional" = "Необязательный эндпоинт";
+"translationSave" = "Сохранить";
+"translationClear" = "Очистить";
+"translationConfigSaved" = "Конфигурация сохранена";
+"translationTesting" = "Проверка";
+"translationTestPassed" = "Проверка пройдена";
+"translationTestFailed" = "Проверка не пройдена";
+"translationTestFailedTitle" = "Сохранено, но проверка соединения не удалась";
+"translationProviderCustom" = "Свой совместимый с OpenAI";
+"translationAppleSubtitle" = "Использует модели Apple на устройстве и может загружать языковые данные";
+"translationErrAppleUnavailable" = "Для Apple Translation требуется macOS 15 или новее";
+"translationMoveUp" = "Переместить вверх";
+"translationMoveDown" = "Переместить вниз";
+
+/* Translation — target language names */
+"transLangChinese" = "Китайский";
+"transLangEnglish" = "Английский";
+"transLangJapanese" = "Японский";
+"transLangKorean" = "Корейский";
+
+/* Translation — errors */
+"translationErrMissingAPIKey" = "Ключ API не настроен";
+"translationErrBadEndpoint" = "Неверный эндпоинт";
+"translationErrBadResponse" = "Неожиданный ответ";
+
+/* Image Merge */
+"imageMergeShortcutHeader" = "Объединить изображения";
+"imageMergeShortcutDefaultDisplay" = "Не задано";
+"shortcutConflictImageMerge" = "Это сочетание уже используется для объединения изображений. Выберите другое";
+"mergeImages" = "Объединить изображения";
+"mergeEditExitHint" = "Редактируется объединенное изображение. Нажмите X, чтобы выйти";
+"imageMergeNeedTwoImages" = "Выберите в Finder не менее двух изображений для объединения";
+"imageMergeSomeImagesSkipped" = "Некоторые изображения не удалось загрузить";
+"imageMergeNoClipboardImage" = "В буфере обмена нет изображения";
+"imageMergeFailed" = "Не удалось объединить изображения";
+"imageMergeSaved" = "Объединенное изображение сохранено";
+"imageMergeWindowTitle" = "Объединить изображения";
+"imageMergeSources" = "Источники";
+"imageMergeAddFiles" = "Добавить файлы";
+"imageMergeAddFromClipboard" = "Добавить из буфера";
+"imageMergeImageList" = "Изображения";
+"imageMergeTemplate" = "Расположение";
+"imageMergeTemplateHorizontal" = "Горизонтально";
+"imageMergeTemplateVertical" = "Вертикально";
+"imageMergeTemplateGrid" = "Сетка";
+"imageMergeTemplateLongStitch" = "Длинная склейка";
+"imageMergeLayout" = "Макет";
+"imageMergeSpacing" = "Интервал";
+"imageMergeMargin" = "Внешний отступ";
+"imageMergeCornerRadius" = "Скругление";
+"imageMergeBackground" = "Фон";
+"imageMergeTransparent" = "Прозрачный";
+"imageMergeSolid" = "Сплошной";
+"imageMergeOutput" = "Вывод";
+"imageMergeCopy" = "Копировать";
+"imageMergeSave" = "Сохранить";
+"imageMergeContinueEditing" = "Редактировать";
+"imageMergeClose" = "Закрыть";
+"imageMergeEmptyTitle" = "Перетащите изображения для объединения";
+"imageMergeEmptyBody" = "Добавьте файлы, вставьте из буфера или перетащите изображения сюда";
+"imageMergeClipboardSourceName" = "Изображение из буфера";
+
+/* Screenshot quality */
+"screenshotQualityTitle" = "Качество снимков";
+"screenshotQualitySubtitle" = "Снимки обрабатываются перед загрузкой, сохранением или копированием, по умолчанию оригинал";
+"screenshotQualityUploadLabel" = "Загрузка";
+"screenshotQualitySaveLabel" = "Сохранить в файл";
+"screenshotQualityClipboardLabel" = "Копировать в буфер";
+"screenshotQualityOriginal" = "Оригинал";
+"screenshotQualityOriginalHint" = "PNG в полном размере и без потерь, самый большой файл";
+"screenshotQualityCompressed" = "Сжатый";
+"screenshotQualityCompressedHint" = "Сохраняет исходные размеры и применяет локальное PNG сжатие";
+"screenshotQualityCompressingUpload" = "Сжатие перед загрузкой";
+"screenshotQualityCompressingSave" = "Сжатие перед сохранением";
+"screenshotQualityCompressingClipboard" = "Сжатие перед копированием";
+"screenshotCompressionFailed" = "Не удалось сжать изображение";
+
+/* Save paths */
+"savePathTitle" = "Пути сохранения";
+"savePathSubtitle" = "Пути по умолчанию для снимков и записей";
+"askSaveLocationLabel" = "Спрашивать путь сохранения";
+"askSaveLocationHint" = "Показывать диалог при сохранении снимка; выключите, чтобы сохранять сразу в путь снимков";
+"autoRevealSavedFilesLabel" = "Показать в Finder";
+"autoRevealSavedFilesHint" = "Выбирать сохранённый снимок или запись в Finder после успешного сохранения";
+"recordingSavePathLabel" = "Путь для записей";
+"recordingSaveFormatSettingLabel" = "Формат записи";
+"recordingSystemAudioLabel" = "Запись системного звука";
+"recordingSystemAudioHint" = "Захватывать звук приложений и системы при записи видео. Применится при следующей записи";
+"recordingMicrophoneLabel" = "Запись микрофона";
+"recordingMicrophoneHint" = "Захватывать ваш голос при записи видео. Применится при следующей записи";
+"recordingMicrophoneDeniedTitle" = "Доступ к микрофону отключён";
+"recordingMicrophoneDeniedMessage" = "wxShot нужен доступ к микрофону для записи голоса. Включите его в Системных настройках";
+"recordingMicrophoneOpenSettings" = "Открыть Системные настройки";
+"recordingMicrophoneTooltipOn" = "Микрофон включён";
+"recordingMicrophoneTooltipOff" = "Микрофон выключен";
+"recordingSystemAudioTooltipOn" = "Системный звук включён";
+"recordingSystemAudioTooltipOff" = "Системный звук выключен";
+"recordingMicrophoneDeviceLabel" = "Устройство ввода микрофона";
+"recordingMicrophoneDeviceDefault" = "По умолчанию";
+"recordingMicrophoneDeviceMenuHint" = "Правый клик — выбор устройства ввода";
+"recordingSystemAudioChangeFailed" = "Не удалось изменить захват системного звука";
+"recordingMicrophoneStartFailed" = "Не удалось начать захват микрофона";
+"screenshotSavePathLabel" = "Путь для снимков";
+"savePathChoose" = "Выбрать";
+"savePathReveal" = "Показать";
+"chooseRecordingSavePathTitle" = "Выберите путь для записей";
+"chooseScreenshotSavePathTitle" = "Выберите путь для снимков";
+
+/* Magnifier lens panel */
+"magnifierLensPanelCoordinatesLabel" = "Координаты";
+"magnifierLensPanelColorValueLabel" = "Цвет";
+"magnifierLensPanelCoordinates" = "Координаты: %@, %@";
+"magnifierLensPanelHex" = "HEX: %@";
+"magnifierLensPanelRgb" = "RGB: %@";
+"magnifierLensPanelRgbString" = "rgb(%d, %d, %d)";
+"magnifierLensPanelCopyHint" = "Копировать цвет(C)";
+"magnifierLensPanelFormatHint" = "Формат(F)";
+"magnifierLensPanelAspectFree" = "Свободно";
+"magnifierLensPanelAspectHint" = "Пропорц.(R)";
+/* Загрузка файлов */
+"fileUploadShortcutHeader" = "Загрузить файлы";
+"finderUploadShortcutDefaultDisplay" = "Не задано";
+"shortcutConflictFileUpload" = "Это сочетание уже используется для загрузки файлов. Выберите другое";
+"uploadFilesMenu" = "Загрузить файлы";
+"finderUploadDialogTitle" = "Загрузка на фотохостинг";
+"finderUploadDialogHeading" = "Файлы для загрузки";
+"finderUploadSummary" = "Выбрано файлов: %d · %@";
+"finderUploadSelectAll" = "Выбрать все";
+"finderUploadAction" = "Загрузить файлов: %d";
+"finderUploadRetryAction" = "Повторить для файлов: %d";
+"finderUploadingProgress" = "Загрузка %d/%d";
+"finderUploadSucceeded" = "Загружено";
+"finderUploadFailed" = "Ошибка";
+"finderUploadErrorLogTitle" = "Журнал ошибок";
+"finderUploadUnknownSize" = "Размер неизвестен";
+"finderUploadReadFailed" = "Не удалось прочитать файл %@";
+"finderUploadCompleted" = "Загружено файлов: %d, ссылки скопированы";
+
+"historyNotchTriggerLabel" = "Активация выреза";
+"historyNotchTriggerHover" = "Открывать при наведении";
+"historyNotchTriggerClick" = "Открывать по нажатию";
+
+/* General settings categories */
+"settingsGeneralBasic" = "Основные";
+"settingsGeneralCapture" = "Снимки и закрепление";
+"settingsGeneralRecording" = "Запись";
+"settingsGeneralHistory" = "История";
+"settingsGeneralFiles" = "Файлы и вывод";
+
+"historyPreviewTextSaveFailed" = "Не удалось сохранить текст, попробуйте ещё раз";
+
+"windowCapturePreparing" = "Подготовка снимка экрана";
+
+/* wxShot */
+"wxSettingsWindowTitle" = "Настройки wxShot";
+"wxSectionShortcut" = "Сочетание клавиш";
+"wxShortcutDefaultNote" = "По умолчанию ⌥A, как в скриншоте WeChat — привычки сохраняются";
+"wxSectionWeChat" = "Когда открыт WeChat";
+"wxPolicyAuto" = "Авто: после входа в WeChat снимает он";
+"wxPolicyAlways" = "Всегда использовать wxShot";
+"wxPolicyYield" = "Пока запущен WeChat, снимает он";
+"wxPolicyHint" = "Если выбрано «всегда wxShot», измените сочетание в одном из приложений, чтобы не открывались два скриншота";
+"wxWeChatStatusNotRunning" = "WeChat не запущен";
+"wxWeChatStatusLoginScreen" = "WeChat открыт, но вход не выполнен";
+"wxWeChatStatusLoggedIn" = "В WeChat выполнен вход";
+"wxShortcutOwner" = "Сейчас сочетание обрабатывает %@";
+"wxOwnerWeChat" = "WeChat";
+"wxSectionGeneral" = "Основные";
+"wxTelemetryToggle" = "Отправлять анонимную статистику использования";
+"wxTelemetryHint" = "Только случайный ID установки, версия, система и язык — несколько раз за первый месяц. Никаких скриншотов, текста и файлов";
+"wxPermissionStatusGranted" = "Запись экрана разрешена";
+"wxPermissionStatusMissing" = "Запись экрана ещё не разрешена";
+"wxOpenSystemSettings" = "Открыть Системные настройки";
+"wxWelcomeTitle" = "Добро пожаловать в wxShot";
+"wxWelcomeBody" = "Скриншоты как в WeChat — с входом в WeChat и без него. Тихо работает в фоне и отвечает на одно сочетание клавиш";
+"wxStepPermission" = "1  Разрешить запись экрана";
+"wxStepPermissionNote" = "Этого требует macOS от любых приложений для скриншотов. wxShot обрабатывает только выбранную область и никуда её не отправляет";
+"wxStepShortcut" = "2  Нажмите %@ где угодно, чтобы сделать снимок";
+"wxStepShortcutNote" = "Выделите область, двойной щелчок или Return копирует, Esc отменяет. Откройте wxShot снова, чтобы изменить настройки";
+"wxStartButton" = "Начать";
+"wxLaterButton" = "Позже";
+"wxAboutWebsite" = "Сайт";
+"wxAboutSource" = "Исходный код (MIT)";
+"wxStarOnGitHub" = "Поставить звезду wxShot на GitHub";
+
+/* wxShot */
+"wxConfirmDiscard" = "Нажмите ещё раз, чтобы выйти — правки будут потеряны";
+"wxTipSettings" = "Настройки";
+"wxSectionFeedback" = "Обратная связь";
+"wxFeedbackHint" = "Нужна функция, нашли ошибку или есть идея? Напишите нам — wxShot развивается благодаря вашим отзывам.";
+"wxFeedbackButton" = "Отправить отзыв…";
+"wxFeedbackTitle" = "Отправить отзыв";
+"wxFeedbackInfo" = "Опишите нужную функцию или проблему. Откроется почтовое приложение с этим текстом и версиями приложения и macOS.";
+"wxFeedbackSend" = "Отправить";
+"wxFeedbackGitHub" = "GitHub Issues";
+
+/* wxShot */
+"wxTipShare" = "Поделиться";
+"wxTipMore" = "Ещё";
+"wxTranslateHeader" = "Перевод";
+"wxTranslating" = "Перевод…";
+"wxTranslateUnsupported" = "Для перевода нужна macOS 15 или новее";
+"wxTranslateFailed" = "Не удалось перевести. Загрузите язык в Системные настройки › Основные › Язык и регион › Языки перевода";
+
+/* wxShot */
+"wxLensCopyHint" = "⌘+C — копировать цвет";
+
+/* wxShot */
+"wxUpdateRequiredBody" = "Эта версия больше не поддерживается. Скачайте последнюю версию, чтобы продолжить пользоваться wxShot.";

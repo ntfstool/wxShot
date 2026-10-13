@@ -1,0 +1,6 @@
+docs-private/
+.build/
+build/
+*.dmg
+.DS_Store
+dist/

@@ -1,0 +1,53 @@
+name: ✨ Feature Request / 功能请求
+description: Suggest a new feature or improvement for wxShot / 为 wxShot 提出新功能或改进建议
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping make wxShot better! / 感谢你帮助 wxShot 变得更好！
+
+        Please search [existing issues](https://github.com/ntfstool/wxShot/issues) first to avoid duplicates.
+        提交前请先搜索[已有 issue](https://github.com/ntfstool/wxShot/issues)，避免重复。
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve? / 想解决什么问题？
+      description: Describe the pain point or limitation you are running into. / 描述你遇到的痛点或限制。
+      placeholder: When I capture multiple monitors, I can't choose which display...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution / 期望的方案
+      description: Describe the feature or change you'd like to see. / 描述你希望看到的功能或改动。
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered / 考虑过的替代方案
+      description: Any other approaches or workarounds you've thought about or currently use. / 你想到过或正在使用的其他做法或变通方案。
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context / 补充信息
+      description: Mockups, references to other tools, or anything else that helps. / 草图、其他工具的参考，或任何有帮助的信息。
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmation / 确认
+      options:
+        - label: I have searched existing issues and this is not a duplicate. / 我已搜索过现有 issue，确认这不是重复请求。
+          required: true
