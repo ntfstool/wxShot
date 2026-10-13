@@ -39,7 +39,7 @@ enum DebugSnapshots {
         scene.wantsLayer = true
         scene.layer?.backgroundColor = (dark ? NSColor(white: 0.12, alpha: 1) : NSColor(white: 0.93, alpha: 1)).cgColor
 
-        let selection = NSView(frame: NSRect(x: 170, y: 120, width: 660, height: 250))
+        let selection = NSView(frame: NSRect(x: 50, y: 120, width: 900, height: 250))
         selection.wantsLayer = true
         selection.layer?.backgroundColor = (dark ? NSColor(white: 0.2, alpha: 1) : NSColor.white).cgColor
         selection.layer?.borderColor = NSColor.systemGreen.cgColor
