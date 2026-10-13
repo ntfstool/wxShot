@@ -75,7 +75,12 @@ final class MagnifierLensPanelWindow: NSPanel {
         stopTracking()
     }
 
+    /// Only one lens may exist at a time; a leftover one would stay on screen as a blank panel.
+    private static weak var current: MagnifierLensPanelWindow?
+
     func show() {
+        if let old = Self.current, old !== self { old.dismiss() }
+        Self.current = self
         orderFrontRegardless()
         updatePosition()
         startTracking()
@@ -93,9 +98,12 @@ final class MagnifierLensPanelWindow: NSPanel {
         format: Format
     ) {
         guard let snapshot else {
+            // No frozen screen yet (or no Screen Recording permission): show nothing rather than an empty panel.
             lensView.clear()
+            orderOut(nil)
             return
         }
+        if !isVisible { orderFrontRegardless() }
         let pixelPoint = MagnifierLensPanelSampler.pixelCoordinate(
             globalPoint: mouseLocation,
             screenFrame: screenFrame,

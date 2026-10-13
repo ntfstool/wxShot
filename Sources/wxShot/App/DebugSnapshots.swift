@@ -27,6 +27,14 @@ enum DebugSnapshots {
                             mouseLocation: NSPoint(x: 200, y: 150), format: .hex)
             }
             if let view = lens.contentView { write(view, to: out.appendingPathComponent("lens.png")) }
+            if let sample = NSImage(contentsOfFile: out.appendingPathComponent("../ocr-sample.png").path) {
+                TextRecognitionPanel.present(image: sample, anchorRect: NSRect(x: 200, y: 300, width: 400, height: 200), screen: NSScreen.main!)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+                    if let v = TextRecognitionPanel.debugContent { write(v, to: out.appendingPathComponent("ocr.png")) }
+                    NSApp.terminate(nil)
+                }
+                return
+            }
             NSApp.terminate(nil)
         }
         return true

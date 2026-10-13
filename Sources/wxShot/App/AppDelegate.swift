@@ -13,6 +13,12 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationDidFinishLaunching(_ notification: Notification) {
+        // A second copy would register the same shortcut and open a second, empty lens next to the first.
+        if let bundleID = Bundle.main.bundleIdentifier,
+           NSRunningApplication.runningApplications(withBundleIdentifier: bundleID).contains(where: { $0 != .current }) {
+            NSApp.terminate(nil)
+            return
+        }
         ImageEditLauncher.clearTempDir()
         #if !MAS
         UpdateChecker.shared.checkAtLaunchIfDue()

@@ -1515,6 +1515,10 @@ class EditWindowController {
         capturer.onPreviewUpdated = { [weak self] image in
             self?.updateScrollPreview(image)
         }
+        capturer.onScrollingTooFast = { [weak self] in
+            guard let self, self.isScrollCapturing else { return }
+            ToastWindow.show(message: L10n.wxScrollTooFast, on: self.screen, duration: 2.0)
+        }
         scrollCapturer = capturer
         installScrollCaptureKeyMonitor()
         showScrollCaptureControl()
@@ -1648,6 +1652,8 @@ class EditWindowController {
             return
         }
 
+        // Put the result on the clipboard straight away so a stray Esc can never lose it.
+        ClipboardManager.copyToClipboard(image: stitchedImage)
         // Auto-scroll often over-shoots the end of a page, so route the
         // stitched result through crop mode before handing it to the editor.
         enterCropMode(with: stitchedImage)
@@ -1698,7 +1704,8 @@ class EditWindowController {
         let cropped = cropView.croppedImage()
         exitCropMode()
         loadScrollCaptureImageIntoEditor(cropped)
-        ToastWindow.show(message: L10n.mergedLongScreenshot, on: screen)
+        ClipboardManager.copyToClipboard(image: cropped)
+        ToastWindow.show(message: L10n.wxLongShotCopied, on: screen)
     }
 
     private func loadScrollCaptureImageIntoEditor(_ image: NSImage) {

@@ -27,6 +27,10 @@ final class ScrollCapturer {
     }
 
     var onPreviewUpdated: ((NSImage) -> Void)?
+    /// Manual mode: several frames in a row could not be matched to the stitched image, i.e. the user scrolls too fast.
+    var onScrollingTooFast: (() -> Void)?
+    private var unmatchedFrames = 0
+    private var lastTooFastNotice = Date.distantPast
 
     private let captureRect: CGRect
     private let screen: NSScreen
@@ -173,6 +177,7 @@ final class ScrollCapturer {
         if let overlap = verifiedOverlap(previous: base.bitmap, current: candidate.bitmap) {
             let newRows = height - overlap
             guard newRows >= max(8, height / 200) else { return }
+            unmatchedFrames = 0
             if newRows * 100 >= height * 35 {
                 commit(candidate, overlap: overlap)
                 pendingFrame = nil
@@ -181,10 +186,19 @@ final class ScrollCapturer {
             }
             return
         }
+        noteUnmatchedFrame()
         // Too far from the last committed frame (fast scroll) or unreliable: bank the best earlier frame and retry.
         guard allowRetry, pendingFrame != nil else { return }
         flushPendingFrame()
         placeManualFrame(candidate, allowRetry: false)
+    }
+
+    private func noteUnmatchedFrame() {
+        unmatchedFrames += 1
+        guard unmatchedFrames >= 4, Date().timeIntervalSince(lastTooFastNotice) > 4 else { return }
+        lastTooFastNotice = Date()
+        unmatchedFrames = 0
+        DispatchQueue.main.async { [weak self] in self?.onScrollingTooFast?() }
     }
 
     private func flushPendingFrame() {

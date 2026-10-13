@@ -212,7 +212,7 @@
 "autoScrollPermissionNeeded" = "スクロールキャプチャにはアクセシビリティ権限が必要です。システム設定 → プライバシーとセキュリティ → アクセシビリティ で wxShot を許可してください";
 "cropLongScreenshotHint" = "上下の端をドラッグしてトリミング — Enter キーまたは ✓ をタップ";
 "scrollCaptureHint" = "任意のキーでスクロールを終了";
-"scrollCaptureManualHint" = "手動でスクロールし、任意のキーまたは緑のボタンで終了";
+"scrollCaptureManualHint" = "ゆっくり一定の速さでスクロールし、終わったら任意のキーか緑のボタンを押す";
 "finderEditExitHint" = "Finder から編集中。X キーで編集を終了";
 "clipboardEditExitHint" = "クリップボードから編集中。X キーで編集を終了";
 "pinEditExitHint" = "ピン留め画像を編集中。X キーで編集を終了";
@@ -770,3 +770,7 @@
 
 /* wxShot */
 "wxUpdateRequiredBody" = "このバージョンはサポート終了です。wxShot を使い続けるには最新版をダウンロードしてください。";
+
+/* wxShot */
+"wxScrollTooFast" = "スクロールが速すぎます。ゆっくりスクロールしてください";
+"wxLongShotCopied" = "長いスクリーンショットをクリップボードにコピーしました";
