@@ -212,7 +212,7 @@
 "autoScrollPermissionNeeded" = "스크롤 캡처에는 손쉬운 사용 권한이 필요합니다. 시스템 설정 → 개인정보 보호 및 보안 → 손쉬운 사용 에서 wxShot 을 허용하세요";
 "cropLongScreenshotHint" = "위/아래 가장자리를 드래그해 자르기 — Enter 키 또는 ✓ 탭";
 "scrollCaptureHint" = "아무 키나 눌러 스크롤 종료";
-"scrollCaptureManualHint" = "직접 스크롤한 뒤 아무 키나 누르거나 초록색 버튼을 클릭해 종료";
+"scrollCaptureManualHint" = "천천히 일정한 속도로 스크롤한 뒤 아무 키나 누르거나 초록색 버튼을 클릭해 종료";
 "finderEditExitHint" = "Finder에서 편집 중. X 키로 편집 종료";
 "clipboardEditExitHint" = "클립보드에서 편집 중. X 키로 편집 종료";
 "pinEditExitHint" = "고정 이미지를 편집 중입니다. X 키로 편집 종료";
@@ -770,3 +770,7 @@
 
 /* wxShot */
 "wxUpdateRequiredBody" = "이 버전은 더 이상 지원되지 않습니다. wxShot 을 계속 쓰려면 최신 버전을 내려받으세요.";
+
+/* wxShot */
+"wxScrollTooFast" = "스크롤이 너무 빠릅니다. 천천히 스크롤하세요";
+"wxLongShotCopied" = "긴 스크린샷을 클립보드에 복사했습니다";

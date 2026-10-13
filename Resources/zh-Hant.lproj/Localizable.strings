@@ -212,7 +212,7 @@
 "autoScrollPermissionNeeded" = "長截圖需要「輔助使用」權限，請在「系統設定 → 隱私權與安全性 → 輔助使用」中允許 wxShot";
 "cropLongScreenshotHint" = "拖曳上下邊緣裁切長截圖，按 Enter 或點一下 ✓ 確認";
 "scrollCaptureHint" = "按任意鍵結束捲動";
-"scrollCaptureManualHint" = "手動捲動頁面，按任意鍵或點一下綠色按鈕結束";
+"scrollCaptureManualHint" = "請勻速、緩慢捲動頁面，結束後按任意鍵或點一下綠色按鈕";
 "finderEditExitHint" = "正在編輯 Finder 圖片。按 X 結束編輯";
 "clipboardEditExitHint" = "正在編輯剪貼簿圖片。按 X 結束編輯";
 "pinEditExitHint" = "正在編輯釘圖。按 X 結束編輯";
@@ -770,3 +770,7 @@
 
 /* wxShot */
 "wxUpdateRequiredBody" = "此版本已不再支援，請下載最新版本後繼續使用 wxShot。";
+
+/* wxShot */
+"wxScrollTooFast" = "捲動太快了，請放慢速度，才能完整拼接";
+"wxLongShotCopied" = "長截圖已複製到剪貼簿";

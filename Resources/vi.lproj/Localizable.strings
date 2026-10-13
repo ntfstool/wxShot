@@ -212,7 +212,7 @@
 "autoScrollPermissionNeeded" = "Chụp cuộn cần quyền Trợ năng — hãy cấp quyền cho wxShot trong Cài đặt hệ thống → Quyền riêng tư & Bảo mật → Trợ năng";
 "cropLongScreenshotHint" = "Kéo cạnh trên/dưới để cắt — nhấn Enter hoặc bấm ✓";
 "scrollCaptureHint" = "Nhấn phím bất kỳ để kết thúc cuộn";
-"scrollCaptureManualHint" = "Cuộn thủ công, rồi nhấn phím bất kỳ hoặc bấm nút xanh để kết thúc";
+"scrollCaptureManualHint" = "Cuộn chậm và đều, rồi nhấn phím bất kỳ hoặc bấm nút xanh để kết thúc";
 "finderEditExitHint" = "Đang chỉnh sửa từ Finder. Nhấn X để thoát chỉnh sửa";
 "clipboardEditExitHint" = "Đang chỉnh sửa từ clipboard. Nhấn X để thoát chỉnh sửa";
 "pinEditExitHint" = "Đang sửa ảnh đã ghim. Nhấn X để thoát chỉnh sửa";
@@ -770,3 +770,7 @@
 
 /* wxShot */
 "wxUpdateRequiredBody" = "Phiên bản này không còn được hỗ trợ. Vui lòng tải phiên bản mới nhất để tiếp tục dùng wxShot.";
+
+/* wxShot */
+"wxScrollTooFast" = "Cuộn quá nhanh — hãy chậm lại để chụp đầy đủ";
+"wxLongShotCopied" = "Đã sao chép ảnh chụp dài vào bộ nhớ tạm";

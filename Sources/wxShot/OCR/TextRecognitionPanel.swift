@@ -30,6 +30,10 @@ final class TextRecognitionPanel: NSPanel {
     private var translationProvider: TranslationSessionProviding?
 
     /// `translate: true` runs the recognized text through on-device translation into the system language.
+    #if DEBUG
+    static var debugContent: NSView? { current?.contentView }
+    #endif
+
     static func present(image: NSImage, anchorRect: NSRect, screen: NSScreen, translate: Bool = false) {
         current?.close()
         if translate, TranslationBridge.makeProvider() == nil {
@@ -46,7 +50,7 @@ final class TextRecognitionPanel: NSPanel {
     private init(image: NSImage, anchorRect: NSRect, screen: NSScreen, translate: Bool) {
         screenshot = image
         translates = translate
-        let size = NSSize(width: 400, height: 300)
+        let size = NSSize(width: 780, height: 440)
         super.init(
             contentRect: NSRect(origin: .zero, size: size),
             styleMask: [.titled, .closable, .fullSizeContentView, .utilityWindow],
@@ -112,7 +116,7 @@ final class TextRecognitionPanel: NSPanel {
         textView.isSelectable = true
         textView.isRichText = false
         textView.drawsBackground = false
-        textView.font = .systemFont(ofSize: 14)
+        textView.font = .systemFont(ofSize: 15)
         textView.textContainerInset = NSSize(width: 4, height: 6)
         textView.isVerticallyResizable = true
         textView.isHorizontallyResizable = false
@@ -128,17 +132,43 @@ final class TextRecognitionPanel: NSPanel {
         copyButton.isEnabled = false
         copyButton.translatesAutoresizingMaskIntoConstraints = false
 
+        // Left: the screenshot, so the text can be compared against it; right: the recognized text.
+        let preview = NSImageView()
+        preview.image = screenshot
+        preview.imageScaling = .scaleProportionallyUpOrDown
+        preview.imageAlignment = .alignCenter
+        preview.wantsLayer = true
+        preview.layer?.cornerRadius = 8
+        preview.layer?.borderWidth = 1
+        preview.layer?.borderColor = NSColor.separatorColor.cgColor
+        preview.layer?.backgroundColor = NSColor.black.withAlphaComponent(0.04).cgColor
+        preview.translatesAutoresizingMaskIntoConstraints = false
+
+        let divider = NSBox()
+        divider.boxType = .separator
+        divider.translatesAutoresizingMaskIntoConstraints = false
+
+        effect.addSubview(preview)
+        effect.addSubview(divider)
         effect.addSubview(scroll)
         effect.addSubview(statusLabel)
         effect.addSubview(copyButton)
         NSLayoutConstraint.activate([
-            scroll.leadingAnchor.constraint(equalTo: effect.leadingAnchor, constant: 12),
-            scroll.trailingAnchor.constraint(equalTo: effect.trailingAnchor, constant: -12),
-            scroll.topAnchor.constraint(equalTo: effect.topAnchor, constant: 36),
+            preview.leadingAnchor.constraint(equalTo: effect.leadingAnchor, constant: 14),
+            preview.topAnchor.constraint(equalTo: effect.topAnchor, constant: 40),
+            preview.bottomAnchor.constraint(equalTo: effect.bottomAnchor, constant: -14),
+            preview.widthAnchor.constraint(equalTo: effect.widthAnchor, multiplier: 0.42),
+            divider.leadingAnchor.constraint(equalTo: preview.trailingAnchor, constant: 12),
+            divider.topAnchor.constraint(equalTo: effect.topAnchor, constant: 40),
+            divider.bottomAnchor.constraint(equalTo: effect.bottomAnchor, constant: -14),
+            divider.widthAnchor.constraint(equalToConstant: 1),
+            scroll.leadingAnchor.constraint(equalTo: divider.trailingAnchor, constant: 10),
+            scroll.trailingAnchor.constraint(equalTo: effect.trailingAnchor, constant: -14),
+            scroll.topAnchor.constraint(equalTo: effect.topAnchor, constant: 40),
             scroll.bottomAnchor.constraint(equalTo: copyButton.topAnchor, constant: -10),
-            copyButton.trailingAnchor.constraint(equalTo: effect.trailingAnchor, constant: -12),
-            copyButton.bottomAnchor.constraint(equalTo: effect.bottomAnchor, constant: -12),
-            statusLabel.leadingAnchor.constraint(equalTo: effect.leadingAnchor, constant: 14),
+            copyButton.trailingAnchor.constraint(equalTo: effect.trailingAnchor, constant: -14),
+            copyButton.bottomAnchor.constraint(equalTo: effect.bottomAnchor, constant: -14),
+            statusLabel.leadingAnchor.constraint(equalTo: divider.trailingAnchor, constant: 14),
             statusLabel.centerYAnchor.constraint(equalTo: copyButton.centerYAnchor),
         ])
     }

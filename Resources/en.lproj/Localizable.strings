@@ -212,7 +212,7 @@
 "autoScrollPermissionNeeded" = "Scroll capture needs Accessibility access — grant wxShot in System Settings → Privacy & Security → Accessibility";
 "cropLongScreenshotHint" = "Drag the top/bottom edges to crop — press Enter or tap ✓";
 "scrollCaptureHint" = "Press any key to finish scrolling";
-"scrollCaptureManualHint" = "Scroll manually, then press any key or click the green button to finish";
+"scrollCaptureManualHint" = "Scroll slowly and steadily, then press any key or click the green button to finish";
 "finderEditExitHint" = "Editing from Finder. Press X to exit editing";
 "clipboardEditExitHint" = "Editing from clipboard. Press X to exit editing";
 "pinEditExitHint" = "Editing pinned image. Press X to exit editing";
@@ -770,3 +770,7 @@
 
 /* wxShot */
 "wxUpdateRequiredBody" = "This version is no longer supported. Please download the latest version to keep using wxShot.";
+
+/* wxShot */
+"wxScrollTooFast" = "Scrolling too fast — slow down so every part is captured";
+"wxLongShotCopied" = "Long screenshot copied to the clipboard";

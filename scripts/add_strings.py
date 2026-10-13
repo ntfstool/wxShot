@@ -100,6 +100,10 @@ S = {
   "en": "Press ⌘+C to copy the color", "zh-Hans": "按 ⌘+C 复制色值", "zh-Hant": "按 ⌘+C 複製色值", "ja": "⌘+C で色をコピー", "ko": "⌘+C 로 색상 복사", "fr": "⌘+C pour copier la couleur", "ru": "⌘+C — копировать цвет", "vi": "Nhấn ⌘+C để sao chép màu"},
  "wxUpdateRequiredBody": {
   "en": "This version is no longer supported. Please download the latest version to keep using wxShot.", "zh-Hans": "此版本已不再支持，请下载最新版本后继续使用 wxShot。", "zh-Hant": "此版本已不再支援，請下載最新版本後繼續使用 wxShot。", "ja": "このバージョンはサポート終了です。wxShot を使い続けるには最新版をダウンロードしてください。", "ko": "이 버전은 더 이상 지원되지 않습니다. wxShot 을 계속 쓰려면 최신 버전을 내려받으세요.", "fr": "Cette version n'est plus prise en charge. Téléchargez la dernière version pour continuer à utiliser wxShot.", "ru": "Эта версия больше не поддерживается. Скачайте последнюю версию, чтобы продолжить пользоваться wxShot.", "vi": "Phiên bản này không còn được hỗ trợ. Vui lòng tải phiên bản mới nhất để tiếp tục dùng wxShot."},
+ "wxScrollTooFast": {
+  "en": "Scrolling too fast — slow down so every part is captured", "zh-Hans": "滚动太快了，请放慢速度，才能完整拼接", "zh-Hant": "捲動太快了，請放慢速度，才能完整拼接", "ja": "スクロールが速すぎます。ゆっくりスクロールしてください", "ko": "스크롤이 너무 빠릅니다. 천천히 스크롤하세요", "fr": "Défilement trop rapide — ralentissez pour tout capturer", "ru": "Слишком быстрая прокрутка — замедлитесь, чтобы захватить всё", "vi": "Cuộn quá nhanh — hãy chậm lại để chụp đầy đủ"},
+ "wxLongShotCopied": {
+  "en": "Long screenshot copied to the clipboard", "zh-Hans": "长截图已复制到剪贴板", "zh-Hant": "長截圖已複製到剪貼簿", "ja": "長いスクリーンショットをクリップボードにコピーしました", "ko": "긴 스크린샷을 클립보드에 복사했습니다", "fr": "Capture longue copiée dans le presse-papiers", "ru": "Длинный скриншот скопирован в буфер обмена", "vi": "Đã sao chép ảnh chụp dài vào bộ nhớ tạm"},
 }
 
 root = pathlib.Path(__file__).resolve().parent.parent

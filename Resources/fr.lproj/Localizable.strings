@@ -212,7 +212,7 @@
 "autoScrollPermissionNeeded" = "La capture défilante nécessite l'autorisation Accessibilité — autorisez wxShot dans Réglages Système → Confidentialité et sécurité → Accessibilité";
 "cropLongScreenshotHint" = "Faites glisser les bords haut/bas pour rogner — appuyez sur Entrée ou touchez ✓";
 "scrollCaptureHint" = "Appuyez sur n'importe quelle touche pour arrêter le défilement";
-"scrollCaptureManualHint" = "Faites défiler manuellement, puis appuyez sur une touche ou cliquez sur le bouton vert pour terminer";
+"scrollCaptureManualHint" = "Faites défiler lentement et régulièrement, puis appuyez sur une touche ou cliquez sur le bouton vert";
 "finderEditExitHint" = "Édition depuis le Finder. Appuyez sur X pour quitter l'édition";
 "clipboardEditExitHint" = "Édition depuis le presse-papiers. Appuyez sur X pour quitter l'édition";
 "pinEditExitHint" = "Édition de l'image épinglée. Appuyez sur X pour quitter";
@@ -770,3 +770,7 @@
 
 /* wxShot */
 "wxUpdateRequiredBody" = "Cette version n'est plus prise en charge. Téléchargez la dernière version pour continuer à utiliser wxShot.";
+
+/* wxShot */
+"wxScrollTooFast" = "Défilement trop rapide — ralentissez pour tout capturer";
+"wxLongShotCopied" = "Capture longue copiée dans le presse-papiers";
