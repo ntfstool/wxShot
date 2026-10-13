@@ -1,0 +1,772 @@
+/* wxShot — Français */
+
+/* Settings */
+"settingsTitle" = "Réglages wxShot";
+"showMenuBarIcon" = "Afficher l'icône dans la barre des menus";
+"permissionsHeader" = "Autorisations requises";
+"accessibilityPermission" = "Accessibilité";
+"accessibilityDescription" = "Nécessaire pour détecter le double appui sur la touche ⌘ Command et déclencher les captures d'écran";
+"screenRecordingPermission" = "Enregistrement de l'écran";
+"screenRecordingDescription" = "Nécessaire pour capturer le contenu de l'écran lors des captures";
+"microphonePermission" = "Microphone";
+"microphoneDescription" = "Optionnel;nécessaire pour enregistrer votre voix pendant les captures vidéo";
+"launchApp" = "Lancer l'application";
+"launchAtLogin" = "Lancer à la connexion";
+"pinAcrossSpaces" = "Afficher les épingles sur tous les bureaux";
+"pinAcrossSpacesHint" = "Les nouvelles images épinglées apparaissent sur chaque bureau et espace plein écran";
+"historyCacheToggleLabel" = "Mettre les captures en cache";
+"historyCacheToggleHint" = "Enregistre les captures récentes, les couleurs prélevées et les liens téléversés pour les recopier depuis le panneau d'historique";
+"clipboardTextCacheToggleLabel" = "Mettre le texte du presse-papiers en cache";
+"clipboardTextCacheToggleHint" = "Enregistre le texte copié dans l’historique pour le réutiliser rapidement";
+"clipboardTextHistoryLimitLabel" = "Limite de l’historique du texte";
+"historyCacheLabel" = "Limite de l’historique des images et médias";
+"historyPanelDisplayModeLabel" = "Affichage du panneau d'historique";
+"historyPanelDisplayModeHint" = "Choisir Dialogue ou Encoche pour l'historique";
+"historyPanelDialogMode" = "Dialogue";
+"historyPanelDialogModeHint" = "Ouvre un panneau d'aperçus horizontaux depuis le menu ou le raccourci";
+"historyPanelNotchMode" = "Encoche";
+"historyPanelNotchModeHint" = "Ouvrez l’encoche en haut au survol ou au clic, quittez pour masquer";
+"countdownLabel" = "Secondes du compte à rebours";
+"countdownHint" = "Maintenez ⌥ Option puis double-appuyez sur ⌘ ou utilisez le raccourci de capture pour lancer un compte à rebours avant la capture, Échap pour annuler";
+"countdownSecondsSuffix" = "s";
+"windowShadowToggleLabel" = "Ombre des captures de fenêtre";
+"windowShadowToggleHint" = "Arrondit les coins des captures de fenêtre et ajoute une ombre portée façon macOS";
+"windowShadowSizeLabel" = "Taille de l'ombre";
+"windowShadowSizeHint" = "Des valeurs élevées adoucissent et élargissent l'ombre : la fenêtre semble flotter plus haut";
+
+/* Screenshot shortcut */
+"shortcutHeader" = "Capture d'écran";
+"shortcutHint" = "Par défaut : double appui sur ⌘. Définir un raccourci personnalisé désactive le double appui";
+"shortcutDefaultDisplay" = "Double appui sur ⌘";
+"shortcutSet" = "Définir";
+"shortcutCancel" = "Annuler";
+"shortcutWaiting" = "Appuyez sur des touches";
+"shortcutNeedsModifierTitle" = "Un modificateur est requis";
+"shortcutNeedsModifier" = "Combinez ⌘/⌥/⇧/⌃ et une autre touche (ex. ⌘⇧8), ou F1–F12 seule";
+"shortcutRestore" = "Réinitialiser";
+"quickPinShortcutHeader" = "Épinglage rapide";
+"quickPinShortcutDefaultDisplay" = "Non défini";
+"quickPinShortcutClear" = "Effacer le raccourci d'épinglage rapide";
+"selectedImagePinShortcutHeader" = "Épingler l'image sélectionnée";
+"selectedImagePinShortcutDefaultDisplay" = "Non défini";
+"selectedImagePinShortcutClear" = "Effacer le raccourci d'épinglage de l'image sélectionnée";
+"clipboardImagePinShortcutHeader" = "Épingler l’image actuelle ou celle du presse-papiers";
+"clipboardImagePinShortcutDefaultDisplay" = "Non défini";
+"clipboardImagePinShortcutClear" = "Effacer le raccourci d’épinglage de l’image actuelle ou du presse-papiers";
+"clipboardTextPinShortcutHeader" = "Épingler le texte du presse-papiers";
+"clipboardTextPinShortcutDefaultDisplay" = "Non défini";
+"clipboardTextPinShortcutClear" = "Effacer le raccourci d'épinglage du texte du presse-papiers";
+"selectedImagePinNoImage" = "Aucune image Finder sélectionnée";
+"clipboardImagePinNoImage" = "Aucune image à épingler dans le presse-papiers";
+"clipboardTextPinNoText" = "Aucun texte dans le presse-papiers";
+"pinFromFinderHint" = "Image Finder épinglée, appuyez sur X pour fermer";
+"pinFromClipboardHint" = "Image du presse-papiers épinglée, appuyez sur X pour fermer";
+"pinFromClipboardTextHint" = "Texte du presse-papiers épinglé, double-cliquez pour modifier";
+"pinToolbarClose" = "Fermer l'image épinglée";
+"pinToolbarCopy" = "Copier l'image épinglée";
+"pinToolbarDrag" = "Faire glisser l'image épinglée";
+"pinToolbarEdit" = "Modifier l'image épinglée";
+"pinToolbarEditText" = "Modifier le texte";
+
+/* Image-edit shortcuts */
+"selectedImageEditShortcutHeader" = "Modifier l'image sélectionnée";
+"selectedImageEditShortcutHint" = "Appuyez dessus pour modifier l'unique image sélectionnée dans le Finder. Non défini par défaut";
+"selectedImageEditShortcutDefaultDisplay" = "Non défini";
+"clipboardImageEditShortcutHeader" = "Modifier l'image du presse-papiers";
+"clipboardImageEditShortcutHint" = "Appuyez dessus pour modifier l'image actuellement dans le presse-papiers. Non défini par défaut";
+"clipboardImageEditShortcutDefaultDisplay" = "Non défini";
+"textRecognitionShortcutHeader" = "Reconnaissance de texte";
+"textRecognitionShortcutDefaultDisplay" = "Non défini";
+"copyImageTextShortcutHeader" = "Copier le texte de l'image";
+"copyImageTextShortcutDefaultDisplay" = "Non défini";
+"screenshotTranslationShortcutHeader" = "Traduction de capture";
+"screenshotTranslationShortcutDefaultDisplay" = "Non défini";
+"recordShortcutHeader" = "Enregistrer";
+"recordShortcutDefaultDisplay" = "Non défini";
+"fullScreenScreenshotShortcutHeader" = "Capture plein écran";
+"fullScreenScreenshotShortcutDefaultDisplay" = "Non défini";
+"colorPickerShortcutHeader" = "Pipette";
+"colorPickerShortcutDefaultDisplay" = "Non défini";
+
+/* Copy-to-clipboard shortcut (editor confirm) */
+"clipboardShortcutHeader" = "Copier dans le presse-papiers";
+"clipboardShortcutHint" = "Appuyez dessus dans l'éditeur pour valider l'édition et copier la capture dans le presse-papiers. Double-appui sur ⌘ par défaut si non défini";
+"clipboardShortcutDefaultDisplay" = "Double-appui ⌘";
+
+/* Save-to-file shortcut (editor save) */
+"fileSaveShortcutHeader" = "Enregistrer dans un fichier";
+"fileSaveShortcutHint" = "Appuyez dessus dans l'éditeur pour enregistrer la capture en PNG dans le dossier de captures configuré. ⌘S par défaut";
+"previousHistoryImageShortcutHeader" = "Capture précédente de l'historique";
+"nextHistoryImageShortcutHeader" = "Capture suivante de l'historique";
+"historyPanelShortcutHeader" = "Panneau d'historique";
+"historyPanelShortcutDefaultDisplay" = "Non défini";
+
+/* Shortcut conflict */
+"shortcutConflictTitle" = "Raccourci déjà utilisé";
+"shortcutConflictScreenshot" = "Cette combinaison de touches est déjà utilisée par le raccourci de capture d'écran. Veuillez en choisir une autre";
+"shortcutConflictCountdown" = "Cette combinaison de touches est déjà utilisée par le raccourci de capture avec compte à rebours (raccourci de capture + ⌥). Veuillez en choisir une autre";
+"shortcutConflictQuickPin" = "Cette combinaison de touches est déjà utilisée par le raccourci d'épinglage rapide. Veuillez en choisir une autre";
+"shortcutConflictSelectedImagePin" = "Cette combinaison de touches est déjà utilisée par le raccourci d'épinglage de l'image sélectionnée. Veuillez en choisir une autre";
+"shortcutConflictClipboardImagePin" = "Cette combinaison de touches est déjà utilisée par le raccourci d'épinglage de l'image du presse-papiers. Veuillez en choisir une autre";
+"shortcutConflictClipboardTextPin" = "Cette combinaison de touches est déjà utilisée par le raccourci d'épinglage du texte du presse-papiers. Veuillez en choisir une autre";
+"shortcutConflictClipboard" = "Cette combinaison de touches est déjà utilisée par le raccourci de copie dans le presse-papiers. Veuillez en choisir une autre";
+"shortcutConflictFileSave" = "Cette combinaison de touches est déjà utilisée par le raccourci d'enregistrement dans un fichier. Veuillez en choisir une autre";
+"shortcutConflictPreviousHistoryImage" = "Cette combinaison de touches est déjà utilisée par le raccourci Capture précédente de l'historique. Veuillez en choisir une autre";
+"shortcutConflictNextHistoryImage" = "Cette combinaison de touches est déjà utilisée par le raccourci Capture suivante de l'historique. Veuillez en choisir une autre";
+"shortcutConflictHistoryPanel" = "Cette combinaison de touches est déjà utilisée par le raccourci Panneau d'historique. Veuillez en choisir une autre";
+"shortcutConflictSelectedImageEdit" = "Cette combinaison de touches est déjà utilisée par le raccourci Modifier l'image sélectionnée. Veuillez en choisir une autre";
+"shortcutConflictClipboardImageEdit" = "Cette combinaison de touches est déjà utilisée par le raccourci Modifier l'image du presse-papiers. Veuillez en choisir une autre";
+"shortcutConflictTextRecognition" = "Cette combinaison de touches est déjà utilisée par le raccourci Reconnaissance de texte. Veuillez en choisir une autre";
+"shortcutConflictCopyImageText" = "Cette combinaison de touches est déjà utilisée par le raccourci Copier le texte de l'image. Veuillez en choisir une autre";
+"shortcutConflictScreenshotTranslation" = "Cette combinaison de touches est déjà utilisée par le raccourci Traduction de capture. Veuillez en choisir une autre";
+"shortcutConflictRecord" = "Cette combinaison de touches est déjà utilisée par le raccourci Enregistrer. Veuillez en choisir une autre";
+"shortcutConflictFullScreenScreenshot" = "Cette combinaison de touches est déjà utilisée par le raccourci Capture plein écran. Veuillez en choisir une autre";
+"shortcutConflictColorPicker" = "Cette combinaison de touches est déjà utilisée par le raccourci Pipette. Veuillez en choisir une autre";
+
+/* Menu bar */
+"takeScreenshot" = "Capturer l'écran";
+"takeFullScreenScreenshot" = "Capturer le plein écran";
+"record" = "Enregistrer";
+"colorPicker" = "Pipette";
+"settings" = "Réglages";
+"quitApp" = "Quitter wxShot";
+"historyMenu" = "Historique";
+"historyClear" = "Effacer l'historique";
+"historyCleared" = "Historique effacé";
+"historyShowInFinder" = "Afficher dans le Finder";
+"historyPanelLock" = "Verrouiller le panneau d’historique";
+"historyPanelUnlock" = "Déverrouiller le panneau d’historique";
+"historyPanelFavorite" = "Ajouter aux favoris";
+"historyPanelUnfavorite" = "Retirer des favoris";
+"historyPanelItemFavorited" = "Ajouté aux favoris";
+"historyPanelItemUnfavorited" = "Retiré des favoris";
+"historyPanelMenu" = "Panneau d'historique";
+"historyPanelDeleteAll" = "Supprimer tout l'historique";
+"historyPanelDeleteSelectedOne" = "Supprimer %d élément";
+"historyPanelDeleteSelected" = "Supprimer %d éléments";
+"historyPanelDeletedSelectedOne" = "%d élément supprimé";
+"historyPanelDeletedSelected" = "%d éléments supprimés";
+"historyPanelFavoriteFailed" = "Impossible de modifier les favoris";
+"historyDeletedSkippingFavorites" = "Éléments supprimés : %d, favoris ignorés : %d";
+"historyPanelFilterAll" = "Tout";
+"historyPanelFilterScreenshots" = "Captures";
+"historyPanelFilterGIF" = "GIF";
+"historyPanelFilterMP4" = "MP4";
+"historyPanelFilterColors" = "Couleurs";
+"historyPanelFilterText" = "Texte";
+"historyPanelSearchColorsAndText" = "Rechercher couleurs et texte";
+"historyPanelSearchColors" = "Rechercher des couleurs";
+"historyPanelSearchText" = "Rechercher du texte";
+"historyPanelClearSearch" = "Effacer la recherche";
+"historyPanelSearchNoResults" = "Aucun historique correspondant";
+"historyPreviewCopyText" = "Copier le texte";
+"historyPreviewTranslateText" = "Traduire le texte";
+"historyPreviewConvertToQRCode" = "Convertir en code QR";
+"historyPreviewQRCodeTooLong" = "Texte trop long pour être converti en code QR";
+"historyPreviewOriginalText" = "Texte original";
+"historyPreviewQRCodeTitle" = "Code QR du texte";
+"historyPanelCopyHint" = "Cliquez pour copier";
+"historyPanelCopyDragHint" = "Cliquez pour copier · faites glisser vers une app";
+"historyPanelCopyMarkdownLink" = "Copier le lien MD";
+"historyPanelCopyPlainLink" = "Copier l'URL simple";
+"historyPanelEmpty" = "Aucun historique";
+"historyPanelShortcutGuide" = "Raccourcis clavier";
+"historyPanelShortcutGuideHide" = "Retour à l’historique";
+"historyPanelShortcutKeyClick" = "Cliquer";
+"historyPanelShortcutKeyDrag" = "Glisser";
+"historyPanelShortcutKeySpace" = "Espace";
+"historyPanelShortcutSearch" = "Rechercher ou fermer la recherche";
+"historyPanelShortcutSwitchFilter" = "Changer de catégorie";
+"historyPanelShortcutToggleSelection" = "Sélectionner ou désélectionner un élément";
+"historyPanelShortcutRangeSelection" = "Sélectionner une plage";
+"historyPanelShortcutSelectAll" = "Sélectionner tous les éléments visibles";
+"historyPanelShortcutCancel" = "Quitter la recherche ou effacer l’état actuel";
+"historyPanelShortcutCopyItem" = "Copier l’élément";
+"historyPanelShortcutDragItem" = "Glisser l’image ou la vidéo vers une autre app";
+"historyPanelShortcutOpenPreview" = "Prévisualiser l’image ou le texte survolé";
+"historyPanelShortcutBrowsePreview" = "Parcourir l’aperçu précédent ou suivant";
+"historyPanelShortcutClosePreview" = "Fermer l’aperçu";
+"historyPanelShortcutCopyPreview" = "Copier le contenu de l’aperçu";
+"historyPanelShortcutEditImage" = "Modifier l’image";
+"historyPanelShortcutPinImage" = "Épingler l’image";
+"historyPanelShortcutUploadImage" = "Téléverser l’image";
+"historyPanelShortcutTranslateText" = "Traduire le texte";
+"historyPanelShortcutQRCode" = "Créer un code QR";
+"historyPanelShortcutToggleGuide" = "Afficher ou masquer les raccourcis clavier";
+
+/* Cursor chip */
+"dragToQuickPin" = "Cliquez sur une fenêtre ou sélectionnez une zone pour l’épingler directement";
+"dragToScreenshot" = "Cliquez sur une fenêtre ou faites glisser pour capturer";
+"dragToScreenshotAspectFree" = "Cliquez sur une fenêtre ou faites glisser pour capturer · Sélection libre (R)";
+"dragToScreenshotAspect" = "Cliquez sur une fenêtre ou faites glisser pour capturer · Sélection %@ (R)";
+"dragToTextRecognition" = "Cliquez sur une fenêtre ou sélectionnez une zone pour reconnaître le texte";
+"dragToCopyImageText" = "Cliquez sur une fenêtre ou sélectionnez une zone pour copier le texte";
+"dragToScreenshotTranslation" = "Cliquez sur une fenêtre ou sélectionnez une zone pour traduire le contenu";
+"dragToRecord" = "Cliquez sur une fenêtre ou faites glisser pour enregistrer";
+"dragToRecordAspectFree" = "Cliquez sur une fenêtre ou faites glisser pour enregistrer · Sélection libre (R)";
+"dragToRecordAspect" = "Cliquez sur une fenêtre ou faites glisser pour enregistrer · Sélection %@ (R)";
+
+/* Toast */
+"copiedToClipboard" = "Copié dans le presse-papiers";
+"mergedLongScreenshot" = "Capture longue fusionnée";
+"autoScrollPermissionNeeded" = "La capture défilante nécessite l'autorisation Accessibilité — autorisez wxShot dans Réglages Système → Confidentialité et sécurité → Accessibilité";
+"cropLongScreenshotHint" = "Faites glisser les bords haut/bas pour rogner — appuyez sur Entrée ou touchez ✓";
+"scrollCaptureHint" = "Appuyez sur n'importe quelle touche pour arrêter le défilement";
+"scrollCaptureManualHint" = "Faites défiler manuellement, puis appuyez sur une touche ou cliquez sur le bouton vert pour terminer";
+"finderEditExitHint" = "Édition depuis le Finder. Appuyez sur X pour quitter l'édition";
+"clipboardEditExitHint" = "Édition depuis le presse-papiers. Appuyez sur X pour quitter l'édition";
+"pinEditExitHint" = "Édition de l'image épinglée. Appuyez sur X pour quitter";
+"fullScreenEditExitHint" = "Édition de la capture plein écran. Appuyez sur X pour quitter l'édition";
+"editSuspendedToast" = "Édition suspendue, relancez une capture pour continuer";
+"editSuspendedResumeToast" = "Reprise de l'édition suspendue";
+"fullScreenScreenshotFailed" = "Échec de la capture plein écran";
+"openImageNoImage" = "Copiez une image dans le presse-papiers ou choisissez un fichier image";
+"selectedImageEditNoImage" = "Aucune image unique sélectionnée dans le Finder";
+"clipboardImageEditNoImage" = "Aucune image modifiable dans le presse-papiers";
+"recordingSaved" = "Enregistrement sauvegardé dans %@";
+"recordingCancelled" = "Enregistrement annulé";
+"recordingExportingGIF" = "Création du GIF";
+"recordingFailed" = "Échec de l'enregistrement : %@";
+"saveRecording" = "Sauvegarder l'enregistrement";
+"saveRecordingPrompt" = "Sauvegarder";
+"recordingFormatLabel" = "Format";
+"recordingFormatManual" = "Choisir à chaque fois";
+"recordingFormatMP4" = "MP4";
+"recordingFormatGIF" = "GIF";
+"recordingFormatChoiceTitle" = "Choisir le format d'enregistrement";
+"recordingFormatChoiceMessage" = "L'enregistrement sera sauvegardé dans le dossier d'enregistrement configuré";
+"screenshotSaved" = "Capture enregistrée dans %@";
+"screenshotSaveFailed" = "Échec de l'enregistrement de la capture : %@";
+"recordingStop" = "Arrêter l'enregistrement";
+"recordingPause" = "Pause";
+"recordingResume" = "Reprendre";
+"colorCopied" = "Couleur %@ copiée";
+"qrCodeCopied" = "Contenu du QR code copié";
+"qrCodeNotFound" = "Aucun QR code détecté";
+
+/* Toolbar tooltips */
+"tipRectangle" = "Rectangle";
+"tipEllipse" = "Ellipse";
+"tipArrow" = "Flèche";
+"tipLine" = "Ligne";
+"tipPen" = "Stylo";
+"tipMarker" = "Surligneur";
+"tipSpotlight" = "Projecteur";
+"tipMosaic" = "Mosaïque";
+"mosaicGranularity" = "Granularité de la mosaïque";
+"mosaicBlur" = "Flou";
+"mosaicBlurAmount" = "Intensité du flou";
+"tipEraser" = "Gomme";
+"tipMagnifier" = "Loupe";
+"tipNumbered" = "Numéro";
+"tipText" = "Texte";
+"tipQRCode" = "QR code";
+"tipEmoji" = "Emoji";
+"tipMoreEmoji" = "Plus d’emojis";
+"tipMoreBeautifyPresets" = "Plus de styles d’embellissement";
+"tipInsertImage" = "Insérer une image";
+"tipColorPicker" = "Pipette";
+"tipPickedInkBottle" = "Utiliser la pipette pour remplir l’encrier";
+"tipUndo" = "Annuler";
+"tipRedo" = "Rétablir";
+"tipMoveSelection" = "Déplacer la sélection";
+"tipScrollCapture" = "Capture longue";
+"tipRotate" = "Rotation";
+"tipRotateLeft" = "Tourner de 90° à gauche";
+"tipRotateRight" = "Tourner de 90° à droite";
+"tipBeautify" = "Embellir";
+"tipOCR" = "Reconnaissance de texte";
+"tipScreenshotTranslate" = "Traduction de capture";
+"tipSave" = "Enregistrer dans un fichier";
+"tipPin" = "Épingler à l'écran";
+"tipRecord" = "Enregistrer";
+"tipCancel" = "Annuler";
+"tipConfirm" = "Copier dans le presse-papiers";
+"tipScrollCropConfirm" = "Enregistrer et modifier";
+"copyQRCodeContent" = "Copier le contenu du QR code";
+
+/* Beautify */
+"beautify" = "Embellir";
+"beautifyPresetTransparent" = "Transparent";
+"beautifyPresetPeachBlue" = "Pêche bleu";
+"beautifyPresetMintTeal" = "Menthe sarcelle";
+"beautifyPresetPeachPink" = "Pêche rose";
+"beautifyPresetBluePurple" = "Bleu violet";
+"beautifyPresetWarmOrange" = "Orange chaud";
+"beautifyPresetTealPink" = "Sarcelle rose";
+"beautifyPresetDeepPurple" = "Violet profond";
+"beautifyPresetNeutralGray" = "Gris neutre";
+"beautifyPresetWallpaper" = "Fond d'écran";
+"beautifyPresetAurora" = "Aurore";
+"beautifyPresetSunsetGlow" = "Lueur du couchant";
+"beautifyPresetOceanBlue" = "Bleu océan";
+"beautifyPresetLavenderMist" = "Brume lavande";
+"beautifyPresetForestMint" = "Menthe forêt";
+"beautifyPresetRoseGold" = "Or rose";
+"beautifyPresetMorningSky" = "Ciel du matin";
+"beautifyPresetCandyPop" = "Bonbon pop";
+"beautifyPresetCitrusGlow" = "Lueur d’agrumes";
+"beautifyPresetMidnight" = "Minuit";
+"beautifyPresetCoralBloom" = "Corail fleuri";
+"beautifyPresetArcticIce" = "Glace arctique";
+"beautifyPresetSageCream" = "Sauge crème";
+"beautifyPresetGraphite" = "Graphite";
+"beautifyShadowEffect" = "Ombre";
+"beautifyAutoToggleLabel" = "Ouvrir l'éditeur avec Beautify";
+"beautifyAutoToggleHint" = "Applique automatiquement le dernier préréglage, le padding et l'ombre à l'ouverture de l'éditeur";
+"beautifyDefaultPresetLabel" = "Préréglage par défaut";
+"beautifyDefaultPaddingLabel" = "Marge par défaut";
+"textStrokeEffect" = "Contour";
+"textCalloutEffect" = "Annotation";
+"textFontLabel" = "Police";
+"textFontSystemDefault" = "Police système";
+"textFontDefaultLabel" = "Police de texte par défaut";
+"textFontDefaultHint" = "Police utilisée par les nouvelles annotations de texte";
+"shapeFillEffect" = "Remplir";
+"shapeFillNone" = "Contour";
+"shapeFillOpaque" = "Remplissage";
+"shapeFillTranslucent" = "Remplissage translucide";
+"shapeStyleStandard" = "Style par défaut";
+"shapeStyleRounded" = "Rectangle arrondi";
+"shapeStyleHandDrawn" = "Style dessiné à main levée";
+"arrowStyleTapered" = "Flèche effilée";
+"arrowStyleDoubleEnded" = "Flèche à deux pointes";
+"arrowStyleLine" = "Flèche linéaire";
+"arrowStyleDotTail" = "Flèche à base ronde";
+"insertImageFromClipboard" = "Depuis le presse-papiers";
+"insertImageFromFile" = "Depuis un fichier";
+"insertImageChooseFile" = "Choisir une image";
+"insertImageNoClipboardImage" = "Aucune image dans le presse-papiers";
+"scrollCaptureAutoScroll" = "Défilement automatique";
+"scrollCaptureManualScroll" = "Défilement manuel";
+
+/* Language */
+"languageHeader" = "Langue";
+
+/* Settings sidebar tabs */
+"settingsTabGeneral" = "Général";
+"settingsTabShortcuts" = "Raccourcis";
+"settingsTabPermissions" = "Autorisations";
+"settingsTabUpload" = "Hébergement";
+"settingsTabAbout" = "À propos";
+"settingsTabTranslation" = "Traduction";
+"settingsTabToolbar" = "Barre d'outils";
+"settingsQuit" = "Quitter l'application";
+
+"toolbarSettingsPrimaryTitle" = "Barre principale";
+"toolbarSettingsPrimaryHint" = "Les outils apparaissent au-dessus ou en dessous de la sélection, faites glisser pour ajuster la position et cliquez pour définir un raccourci";
+"toolbarSettingsSideTitle" = "Barre latérale";
+"toolbarSettingsSideHint" = "Les outils apparaissent à gauche ou à droite de la sélection, faites glisser pour ajuster la position et cliquez pour définir un raccourci";
+"toolbarSettingsHiddenTitle" = "Outils masqués";
+"toolbarSettingsHiddenHint" = "Les outils déposés ici n'apparaissent dans aucune barre d'outils";
+"toolbarSettingsFootnote" = "Les barres d'outils basculent automatiquement entre haut/bas et gauche/droite selon la position de la sélection";
+"toolbarSettingsShortcutHint" = "Cliquez sur un outil pour enregistrer son raccourci, faites-le glisser pour le déplacer ou faites un clic droit pour plus d’options";
+"toolbarSettingsShortcutRecording" = "Appuyez sur un nouveau raccourci pour « %@ » ou sur Échap pour annuler";
+"toolbarSettingsShortcutRecord" = "Enregistrer le raccourci";
+"toolbarSettingsShortcutClear" = "Effacer le raccourci";
+"toolbarSettingsShortcutRestore" = "Rétablir le raccourci par défaut";
+"toolbarSettingsShortcutResetAll" = "Réinitialiser les raccourcis de l’éditeur";
+"toolbarSettingsShortcutNone" = "Non défini";
+"toolbarSettingsShortcutUnavailable" = "N/A";
+"toolbarSettingsAdditionalShortcuts" = "Actions d’édition supplémentaires";
+"toolbarSettingsReset" = "Réinitialiser";
+"toolbarSettingsCancel" = "Annuler";
+"toolbarSettingsApply" = "Appliquer";
+"editorShortcutSelect" = "Outil de sélection";
+"editorShortcutShapeFill" = "Changer le remplissage des formes";
+"editorShortcutConflict" = "Ce raccourci est déjà attribué à « %@ »";
+"editorShortcutReserved" = "Cette touche est réservée à une action système de l’éditeur et ne peut pas être réattribuée";
+
+/* About pane */
+"aboutTagline" = "Outil de capture d'écran dans la barre des menus";
+"aboutLicense" = "Licence";
+"aboutSourceCode" = "Code source";
+"aboutStarOnGitHub" = "Mettre une étoile sur GitHub 🌟";
+"aboutFeatureRequest" = "Demander une fonctionnalité";
+"aboutBugReport" = "Signaler un bug";
+"aboutUpdateTitle" = "Mises à jour";
+"aboutErrorLog" = "Journal d'erreurs";
+"aboutErrorLogNoCrash" = "Aucun journal d'erreur";
+"aboutErrorLogLastCrash" = "Dernier journal · %@";
+"aboutErrorLogCopy" = "Copier le journal";
+"aboutErrorLogCopied" = "Copié";
+"aboutErrorLogReveal" = "Afficher dans le Finder";
+"aboutErrorLogRefresh" = "Actualiser le journal";
+"aboutErrorLogClear" = "Effacer le journal";
+"aboutErrorLogEmptyBody" = "wxShot n'a enregistré aucun journal d'erreur. Si l'app se fige ou plante, revenez ici pour copier le journal et le joindre à un rapport de bug";
+
+/* Updates — About pane */
+"checkForUpdates" = "Rechercher des mises à jour";
+"updateChecking" = "Vérification";
+"updateUpToDateStatus" = "À jour";
+"updateNewVersionStatus" = "Version Release v%@ disponible";
+"updateFailedStatus" = "Échec de la vérification";
+"updateDownloadButton" = "Télécharger";
+"updateRetryButton" = "Réessayer";
+"updateInstallNowButton" = "Mettre à jour";
+"updateDownloadingStatus" = "Téléchargement %d%%";
+"updateInstallingStatus" = "Installation";
+"updateInstallFailedStatus" = "Échec de l'installation";
+
+/* Updates — menu bar */
+"checkForUpdatesMenu" = "Rechercher des mises à jour";
+"checkingForUpdatesMenu" = "Recherche de mises à jour";
+"updateAvailableMenu" = "Version Release v%@ disponible";
+"updateDownloadingMenu" = "Téléchargement de la mise à jour… %d%%";
+"updateInstallingMenu" = "Installation de la mise à jour";
+"updateInstallFailedMenu" = "Échec de l'installation de la mise à jour";
+
+/* Updates — progress HUD */
+"updateCheckingHUD" = "Recherche de mises à jour";
+"updateDownloadingHUD" = "Téléchargement de la mise à jour %d%%";
+"updateVerifyingHUD" = "Vérification de la mise à jour";
+"updateUnzippingHUD" = "Extraction";
+"updateInstallingHUD" = "Installation";
+
+/* Updates — manual check result alert */
+"updateAvailableTitle" = "La version Release v%@ est disponible";
+"updateAvailableBody" = "wxShot va télécharger et installer la dernière version, puis redémarrer automatiquement";
+"updateUpToDateTitle" = "Vous êtes à jour";
+"updateUpToDateBody" = "wxShot v%@ est la dernière version";
+"updateFailedTitle" = "Échec de la recherche de mise à jour";
+"updateFailedBody" = "Impossible de joindre GitHub. Vérifiez votre connexion et réessayez";
+"updateInstallFailedTitle" = "Échec de la mise à jour";
+"updateInstallFailedBody" = "Un problème est survenu lors du téléchargement ou de l'installation de la mise à jour. Vous pouvez la télécharger manuellement depuis la page des versions GitHub";
+"updateOpenPageButton" = "Ouvrir GitHub";
+"updateSkipButton" = "Ignorer cette version";
+"updateLaterButton" = "Plus tard";
+"updateOKButton" = "OK";
+
+/* Quit confirmation dialog */
+"quitConfirmTitle" = "Quitter wxShot";
+"quitConfirmMessage" = "Quitter supprime l'icône de la barre des menus et désactive le raccourci de capture jusqu'au prochain lancement de wxShot";
+"quitConfirmAction" = "Quitter";
+"quitConfirmCancel" = "Annuler";
+
+/* Upload — toolbar / toast / progress */
+"tipUpload" = "Envoyer vers l'hébergeur d'images";
+"uploadingTitle" = "Envoi en cours";
+"uploadCopied" = "URL de l'image copiée";
+"uploadCopiedMarkdown" = "Lien Markdown copié";
+"uploadNoProvider" = "Configurez d'abord un hébergeur dans les réglages";
+"uploadFailedPrefix" = "Échec de l'envoi";
+
+/* Upload — settings tab */
+"uploadDefaultProvider" = "Hébergeur par défaut";
+"uploadDefaultNone" = "Désactivé";
+"uploadSetDefaultButton" = "Définir par défaut";
+"uploadSaveButton" = "Enregistrer";
+"uploadClearButton" = "Effacer";
+"uploadSavedToast" = "Configuration enregistrée";
+"uploadCurrentDefault" = "Défaut actuel";
+"uploadMarkdownToggleTitle" = "Copier en lien Markdown";
+"uploadMarkdownToggleSubtitle" = "Si activé, copie une balise d'image Markdown (![](url)) après l'envoi ; sinon, copie une URL simple. Dans le panneau Historique, le clic sur une image cloud suit ce réglage, avec des boutons au survol pour MD ou URL simple";
+"filenameRuleTitle" = "Règles de nom de fichier";
+"filenameRuleSubtitle" = "Contrôle les téléversements d'image, les noms par défaut des images enregistrées et ceux des enregistrements. Les extensions sont ajoutées automatiquement";
+"filenameRulePresetLabel" = "Préréglage";
+"filenameRulePresetCustom" = "Personnalisé";
+"filenameRulePresetShort" = "Court";
+"filenameRulePresetCompact" = "Lien très court";
+"filenameRulePresetUnique" = "Éviter les doublons";
+"filenameRulePresetCounter" = "Compteur quotidien";
+"filenameRulePresetRestore" = "Restaurer";
+"filenameRuleImageLabel" = "Image";
+"filenameRuleRecordingLabel" = "Enregistrement";
+"filenameRuleVariablesLabel" = "Variables";
+"filenameRuleVariableDate" = "Date";
+"filenameRuleVariableTime" = "Heure";
+"filenameRuleVariableDaily" = "No quotidien";
+"filenameRuleVariableRandom" = "Aléatoire";
+"filenameRuleVariableSize" = "Taille";
+"filenameRulePreview" = "%@";
+
+/* Upload — provider field labels */
+"uploadFieldBucket" = "Bucket";
+"uploadFieldBucketSpace" = "Bucket";
+"uploadFieldRegion" = "Région";
+"uploadFieldRegionOptional" = "Région facultative";
+"uploadFieldPathOptional" = "Chemin facultatif";
+"uploadFieldCustomUrlOptional" = "Domaine personnalisé facultatif";
+"uploadFieldPublicDomain" = "Domaine public";
+"uploadFieldEndpointArea" = "Point de terminaison";
+"uploadFieldEndpointOptional" = "Point de terminaison facultatif";
+"uploadFieldAccountId" = "ID de compte";
+"uploadTestImageFailed" = "Impossible de générer l'image de test";
+
+/* Upload — provider names */
+"providerTencentCOS" = "Tencent COS";
+"providerQiniuKodo" = "Qiniu Kodo";
+"providerAliyunOSS" = "Aliyun OSS";
+
+/* Upload — errors */
+"uploadErrMissingConfig" = "Aucun hébergeur configuré";
+"uploadErrInvalidConfigPrefix" = "Configuration invalide";
+"uploadErrNetworkPrefix" = "Erreur réseau";
+"uploadErrServerPrefix" = "Échec de l'envoi code %d";
+"uploadErrUnexpectedResponsePrefix" = "Réponse inattendue";
+"missingField" = "%@ manquant";
+
+/* Upload — test/validation pill */
+"uploadStatusUntested" = "Non testé";
+"uploadStatusTesting" = "Test";
+"uploadStatusValid" = "Actif";
+"uploadStatusInvalid" = "Configuration invalide";
+
+/* Upload — log lines */
+"uploadLogStartingTest" = "Démarrage de l'envoi de test";
+"uploadLogConfigSaved" = "Configuration enregistrée";
+"uploadLogMissingFields" = "Champs obligatoires manquants : %@";
+"uploadLogTestSucceeded" = "Envoi de test réussi : %@";
+"uploadLogTestFailed" = "Échec de l'envoi de test : %@";
+"uploadLogProviderDisabled" = "Hébergeur désactivé";
+"uploadLogConfigCleared" = "Configuration effacée";
+
+/* Permissions — status label */
+"permissionGranted" = "Accordée";
+"permissionNotGranted" = "Non accordée";
+
+/* OCR & Translation — result panel */
+"ocrTextHeader" = "Texte reconnu";
+"ocrRecognizing" = "Reconnaissance";
+"ocrNoText" = "Aucun texte trouvé";
+"ocrCopy" = "Copier";
+"ocrCopied" = "Copié";
+"ocrRetry" = "Réessayer";
+"ocrTranslating" = "Traduction";
+"ocrTranslateFailedPrefix" = "Échec";
+"ocrNoProviderTitle" = "Aucun service de traduction configuré";
+"ocrNoProviderHint" = "Activez un fournisseur dans Réglages → Traduction";
+"ocrOpenSettings" = "Ouvrir les réglages";
+"ocrLineCopied" = "Ligne copiée";
+"copyImageTextCopying" = "Copie";
+"copyImageTextCopied" = "Texte de l'image copié";
+"copyImageTextNoText" = "Aucun texte trouvé";
+"screenshotTranslationHeader" = "Traduction";
+"screenshotTranslationLanguageButton" = "Vers %@";
+"dictionaryEntryLabel" = "Entrée";
+"dictionaryPhoneticLabel" = "Prononciation";
+"dictionaryPartOfSpeechLabel" = "Nature";
+"dictionaryDefinitionLabel" = "Sens";
+"dictionaryExampleLabel" = "Exemple";
+"dictionaryDifficultyLabel" = "Difficulté";
+"dictionaryNoProviderTitle" = "Aucun service IA compatible avec le mode dictionnaire";
+"dictionaryNoProviderHint" = "Activez OpenAI, DeepSeek, Claude ou un service personnalisé compatible OpenAI dans Réglages → Traduction";
+
+/* Translation — settings tab */
+"translationDictionaryModeTitle" = "Mode dictionnaire";
+"translationDictionaryModeSubtitle" = "Quand la traduction de capture reconnaît un seul mot anglais, affiche la prononciation, le sens, un exemple, sa traduction et le niveau CECR";
+"translationTargetLanguage" = "Langue cible";
+"translationTargetHint" = "Le texte reconnu est traduit dans cette langue ; s'il est déjà dans cette langue, il est traduit en anglais";
+"translationApiKey" = "Clé API";
+"translationApiKeyOptional" = "Clé API facultative";
+"translationModel" = "Modèle";
+"translationEndpoint" = "Point de terminaison";
+"translationEndpointOptional" = "Point de terminaison facultatif";
+"translationSave" = "Enregistrer";
+"translationClear" = "Effacer";
+"translationConfigSaved" = "Configuration enregistrée";
+"translationTesting" = "Test";
+"translationTestPassed" = "Test réussi";
+"translationTestFailed" = "Échec du test";
+"translationTestFailedTitle" = "Enregistré, mais le test de connexion a échoué";
+"translationProviderCustom" = "Personnalisé compatible OpenAI";
+"translationAppleSubtitle" = "Utilise les modèles Apple sur l’appareil et peut télécharger des données linguistiques";
+"translationErrAppleUnavailable" = "Apple Translation nécessite macOS 15 ou version ultérieure";
+"translationMoveUp" = "Déplacer vers le haut";
+"translationMoveDown" = "Déplacer vers le bas";
+
+/* Translation — target language names */
+"transLangChinese" = "Chinois";
+"transLangEnglish" = "Anglais";
+"transLangJapanese" = "Japonais";
+"transLangKorean" = "Coréen";
+
+/* Translation — errors */
+"translationErrMissingAPIKey" = "Clé API non configurée";
+"translationErrBadEndpoint" = "Point de terminaison invalide";
+"translationErrBadResponse" = "Réponse inattendue";
+
+/* Image Merge */
+"imageMergeShortcutHeader" = "Fusionner des images";
+"imageMergeShortcutDefaultDisplay" = "Non défini";
+"shortcutConflictImageMerge" = "Cette combinaison est déjà utilisée par le raccourci Fusionner des images. Choisissez-en une autre";
+"mergeImages" = "Fusionner des images";
+"mergeEditExitHint" = "Modification de l’image fusionnée. Appuyez sur X pour quitter";
+"imageMergeNeedTwoImages" = "Sélectionnez au moins deux images dans Finder à fusionner";
+"imageMergeSomeImagesSkipped" = "Certaines images n’ont pas pu être chargées";
+"imageMergeNoClipboardImage" = "Aucune image dans le presse-papiers";
+"imageMergeFailed" = "Échec de la fusion d’images";
+"imageMergeSaved" = "Image fusionnée enregistrée";
+"imageMergeWindowTitle" = "Fusionner des images";
+"imageMergeSources" = "Sources";
+"imageMergeAddFiles" = "Ajouter des fichiers";
+"imageMergeAddFromClipboard" = "Ajouter depuis le presse-papiers";
+"imageMergeImageList" = "Images";
+"imageMergeTemplate" = "Disposition";
+"imageMergeTemplateHorizontal" = "Horizontal";
+"imageMergeTemplateVertical" = "Vertical";
+"imageMergeTemplateGrid" = "Grille";
+"imageMergeTemplateLongStitch" = "Longue image";
+"imageMergeLayout" = "Mise en page";
+"imageMergeSpacing" = "Espacement";
+"imageMergeMargin" = "Marge externe";
+"imageMergeCornerRadius" = "Rayon des coins";
+"imageMergeBackground" = "Arrière-plan";
+"imageMergeTransparent" = "Transparent";
+"imageMergeSolid" = "Uni";
+"imageMergeOutput" = "Sortie";
+"imageMergeCopy" = "Copier";
+"imageMergeSave" = "Enregistrer";
+"imageMergeContinueEditing" = "Modifier";
+"imageMergeClose" = "Fermer";
+"imageMergeEmptyTitle" = "Déposez des images à fusionner";
+"imageMergeEmptyBody" = "Ajoutez des fichiers, collez depuis le presse-papiers ou glissez des images ici";
+"imageMergeClipboardSourceName" = "Image du presse-papiers";
+
+/* Screenshot quality */
+"screenshotQualityTitle" = "Qualité des captures";
+"screenshotQualitySubtitle" = "Les captures sont traitées avant l'envoi, l'enregistrement ou la copie, original par défaut";
+"screenshotQualityUploadLabel" = "Envoi";
+"screenshotQualitySaveLabel" = "Enregistrer dans un fichier";
+"screenshotQualityClipboardLabel" = "Copier dans le presse-papiers";
+"screenshotQualityOriginal" = "Original";
+"screenshotQualityOriginalHint" = "PNG taille complète et qualité sans perte, fichier le plus grand";
+"screenshotQualityCompressed" = "Compressé";
+"screenshotQualityCompressedHint" = "Conserve les dimensions et applique une compression PNG locale";
+"screenshotQualityCompressingUpload" = "Compression avant l'envoi";
+"screenshotQualityCompressingSave" = "Compression avant l'enregistrement";
+"screenshotQualityCompressingClipboard" = "Compression avant la copie";
+"screenshotCompressionFailed" = "Échec de la compression de l'image";
+
+/* Save paths */
+"savePathTitle" = "Emplacements d'enregistrement";
+"savePathSubtitle" = "Emplacements par défaut des captures et enregistrements";
+"askSaveLocationLabel" = "Demander l'emplacement";
+"askSaveLocationHint" = "Afficher une boîte de dialogue pour les captures ; désactiver pour enregistrer directement";
+"autoRevealSavedFilesLabel" = "Afficher dans le Finder";
+"autoRevealSavedFilesHint" = "Sélectionner la capture ou l'enregistrement sauvegardé dans Finder après un enregistrement réussi";
+"recordingSavePathLabel" = "Chemin d'enregistrement";
+"recordingSaveFormatSettingLabel" = "Format d'enregistrement";
+"recordingSystemAudioLabel" = "Enregistrer l'audio système";
+"recordingSystemAudioHint" = "Capturer le son des applications et du système pendant l'enregistrement. Pris en compte au prochain enregistrement";
+"recordingMicrophoneLabel" = "Enregistrer le microphone";
+"recordingMicrophoneHint" = "Capturer votre voix pendant l'enregistrement. Pris en compte au prochain enregistrement";
+"recordingMicrophoneDeniedTitle" = "L'accès au microphone est désactivé";
+"recordingMicrophoneDeniedMessage" = "wxShot a besoin du microphone pour enregistrer votre voix. Activez-le dans les Réglages Système";
+"recordingMicrophoneOpenSettings" = "Ouvrir les Réglages Système";
+"recordingMicrophoneTooltipOn" = "Microphone activé";
+"recordingMicrophoneTooltipOff" = "Microphone désactivé";
+"recordingSystemAudioTooltipOn" = "Audio système activé";
+"recordingSystemAudioTooltipOff" = "Audio système désactivé";
+"recordingMicrophoneDeviceLabel" = "Périphérique d'entrée micro";
+"recordingMicrophoneDeviceDefault" = "Périphérique par défaut";
+"recordingMicrophoneDeviceMenuHint" = "Clic droit pour choisir le périphérique d'entrée";
+"recordingSystemAudioChangeFailed" = "Impossible de modifier la capture audio système";
+"recordingMicrophoneStartFailed" = "Impossible de démarrer la capture du microphone";
+"screenshotSavePathLabel" = "Chemin des captures";
+"savePathChoose" = "Choisir";
+"savePathReveal" = "Afficher";
+"chooseRecordingSavePathTitle" = "Choisir le chemin d'enregistrement";
+"chooseScreenshotSavePathTitle" = "Choisir le chemin des captures";
+
+/* Magnifier lens panel */
+"magnifierLensPanelCoordinatesLabel" = "Coordonnées";
+"magnifierLensPanelColorValueLabel" = "Couleur";
+"magnifierLensPanelCoordinates" = "Coordonnées : %@, %@";
+"magnifierLensPanelHex" = "HEX : %@";
+"magnifierLensPanelRgb" = "RGB : %@";
+"magnifierLensPanelRgbString" = "rgb(%d, %d, %d)";
+"magnifierLensPanelCopyHint" = "Copier couleur(C)";
+"magnifierLensPanelFormatHint" = "Format(F)";
+"magnifierLensPanelAspectFree" = "Libre";
+"magnifierLensPanelAspectHint" = "Ratio(R)";
+/* Téléversement de fichiers */
+"fileUploadShortcutHeader" = "Téléverser des fichiers";
+"finderUploadShortcutDefaultDisplay" = "Non défini";
+"shortcutConflictFileUpload" = "Cette combinaison est déjà utilisée par le raccourci de téléversement de fichiers. Choisissez-en une autre";
+"uploadFilesMenu" = "Téléverser des fichiers";
+"finderUploadDialogTitle" = "Téléverser vers l’hébergeur";
+"finderUploadDialogHeading" = "Fichiers à téléverser";
+"finderUploadSummary" = "%d fichiers sélectionnés · %@";
+"finderUploadSelectAll" = "Tout sélectionner";
+"finderUploadAction" = "Téléverser %d fichiers";
+"finderUploadRetryAction" = "Réessayer %d fichiers";
+"finderUploadingProgress" = "Téléversement %d/%d";
+"finderUploadSucceeded" = "Téléversé";
+"finderUploadFailed" = "Échec";
+"finderUploadErrorLogTitle" = "Journal des erreurs";
+"finderUploadUnknownSize" = "Taille inconnue";
+"finderUploadReadFailed" = "Impossible de lire le fichier %@";
+"finderUploadCompleted" = "%d fichiers téléversés et liens copiés";
+
+"historyNotchTriggerLabel" = "Activation de l’encoche";
+"historyNotchTriggerHover" = "Ouvrir au survol";
+"historyNotchTriggerClick" = "Ouvrir au clic";
+
+/* General settings categories */
+"settingsGeneralBasic" = "Général";
+"settingsGeneralCapture" = "Capture et épingles";
+"settingsGeneralRecording" = "Enregistrement";
+"settingsGeneralHistory" = "Historique";
+"settingsGeneralFiles" = "Fichiers et sortie";
+
+"historyPreviewTextSaveFailed" = "Impossible d’enregistrer le texte, veuillez réessayer";
+
+"windowCapturePreparing" = "Préparation de la capture";
+
+/* wxShot */
+"wxSettingsWindowTitle" = "Réglages de wxShot";
+"wxSectionShortcut" = "Raccourci de capture";
+"wxShortcutDefaultNote" = "⌥A par défaut, comme la capture de WeChat : vos habitudes restent les mêmes";
+"wxSectionWeChat" = "Quand WeChat est ouvert";
+"wxPolicyAuto" = "Automatique : WeChat prend le relais une fois connecté";
+"wxPolicyAlways" = "Toujours utiliser wxShot";
+"wxPolicyYield" = "Laisser WeChat gérer dès qu'il est lancé";
+"wxPolicyHint" = "Si wxShot capture toujours, changez l'un des raccourcis pour éviter deux captures en même temps";
+"wxWeChatStatusNotRunning" = "WeChat n'est pas lancé";
+"wxWeChatStatusLoginScreen" = "WeChat est ouvert mais non connecté";
+"wxWeChatStatusLoggedIn" = "WeChat est connecté";
+"wxShortcutOwner" = "Pour l'instant, le raccourci est géré par %@";
+"wxOwnerWeChat" = "WeChat";
+"wxSectionGeneral" = "Général";
+"wxTelemetryToggle" = "Envoyer des statistiques anonymes d'utilisation";
+"wxTelemetryHint" = "Seulement un identifiant d'installation, la version, le système et la langue, quelques fois le premier mois. Jamais de captures, de texte ni de fichiers";
+"wxPermissionStatusGranted" = "L'enregistrement d'écran est autorisé";
+"wxPermissionStatusMissing" = "L'enregistrement d'écran n'est pas encore autorisé";
+"wxOpenSystemSettings" = "Ouvrir Réglages Système";
+"wxWelcomeTitle" = "Bienvenue dans wxShot";
+"wxWelcomeBody" = "La capture façon WeChat, qui marche connecté ou non. Elle reste discrète en arrière-plan et répond à un seul raccourci";
+"wxStepPermission" = "1  Autoriser l'enregistrement d'écran";
+"wxStepPermissionNote" = "macOS l'exige pour toute application de capture. wxShot ne traite que la zone choisie et ne l'envoie nulle part";
+"wxStepShortcut" = "2  Appuyez sur %@ n'importe où pour capturer";
+"wxStepShortcutNote" = "Glissez pour sélectionner, double-clic ou Retour pour copier, Échap pour annuler. Rouvrez wxShot pour modifier les réglages";
+"wxStartButton" = "Commencer";
+"wxLaterButton" = "Plus tard";
+"wxAboutWebsite" = "Site web";
+"wxAboutSource" = "Code source (MIT)";
+"wxStarOnGitHub" = "Mettre une étoile à wxShot sur GitHub";
+
+/* wxShot */
+"wxConfirmDiscard" = "Appuyez à nouveau pour quitter — vos modifications seront perdues";
+"wxTipSettings" = "Réglages";
+"wxSectionFeedback" = "Commentaires";
+"wxFeedbackHint" = "Une fonction manquante, un bug, une idée ? Dites-le-nous : wxShot s'améliore grâce à vos retours.";
+"wxFeedbackButton" = "Envoyer un commentaire…";
+"wxFeedbackTitle" = "Envoyer un commentaire";
+"wxFeedbackInfo" = "Décrivez la fonction souhaitée ou le problème rencontré. Votre application Mail s'ouvre avec le texte, plus les versions de l'app et de macOS.";
+"wxFeedbackSend" = "Envoyer";
+"wxFeedbackGitHub" = "GitHub Issues";
+
+/* wxShot */
+"wxTipShare" = "Partager";
+"wxTipMore" = "Plus";
+"wxTranslateHeader" = "Traduction";
+"wxTranslating" = "Traduction…";
+"wxTranslateUnsupported" = "La traduction nécessite macOS 15 ou ultérieur";
+"wxTranslateFailed" = "Échec de la traduction. Téléchargez la langue dans Réglages Système › Général › Langue et région › Langues de traduction";
+
+/* wxShot */
+"wxLensCopyHint" = "⌘+C pour copier la couleur";
+
+/* wxShot */
+"wxUpdateRequiredBody" = "Cette version n'est plus prise en charge. Téléchargez la dernière version pour continuer à utiliser wxShot.";

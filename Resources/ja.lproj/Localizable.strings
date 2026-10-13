@@ -1,0 +1,772 @@
+/* wxShot — 日本語 */
+
+/* Settings */
+"settingsTitle" = "wxShot 設定";
+"showMenuBarIcon" = "メニューバーアイコンを表示";
+"permissionsHeader" = "必要な権限";
+"accessibilityPermission" = "アクセシビリティ";
+"accessibilityDescription" = "⌘ Command キーのダブルタップを検出してスクリーンショットを起動するために必要です";
+"screenRecordingPermission" = "画面収録";
+"screenRecordingDescription" = "スクリーンショットのために画面の内容をキャプチャするのに必要です";
+"microphonePermission" = "マイク";
+"microphoneDescription" = "任意;画面収録時に音声を録音するために必要です";
+"launchApp" = "アプリを起動";
+"launchAtLogin" = "ログイン時に起動";
+"pinAcrossSpaces" = "ピン画像をすべてのデスクトップに表示";
+"pinAcrossSpacesHint" = "オンにすると新しいピン画像がすべてのデスクトップとフルスクリーン操作スペースに表示されます";
+"historyCacheToggleLabel" = "スクリーンショットをキャッシュ";
+"historyCacheToggleHint" = "最近のスクリーンショット、取得した色、アップロード結果を保存し、履歴パネルからすばやく再コピーできます";
+"clipboardTextCacheToggleLabel" = "クリップボードのテキストをキャッシュ";
+"clipboardTextCacheToggleHint" = "コピーしたテキストを履歴に保存してすばやく再利用できます";
+"clipboardTextHistoryLimitLabel" = "テキスト履歴の上限";
+"historyCacheLabel" = "画像とメディアの履歴上限";
+"historyPanelDisplayModeLabel" = "履歴パネルの表示方式";
+"historyPanelDisplayModeHint" = "ダイアログまたはノッチで履歴を表示";
+"historyPanelDialogMode" = "ダイアログ";
+"historyPanelDialogModeHint" = "メニューまたはショートカットから横スクロールのプレビューパネルを開きます";
+"historyPanelNotchMode" = "ノッチ";
+"historyPanelNotchModeHint" = "上部ノッチでホバーまたはクリックして開き、離れると自動で隠れます";
+"countdownLabel" = "カウントダウン秒数";
+"countdownHint" = "⌥ Option を押しながら ⌘ をダブルタップするか、スクリーンショットのショートカットを押すと、撮影前にカウントダウンが始まります。Esc でキャンセル";
+"countdownSecondsSuffix" = "秒";
+"windowShadowToggleLabel" = "ウインドウ撮影の影";
+"windowShadowToggleHint" = "ウインドウを選んで撮影すると角を丸め、macOS 風のドロップシャドウを追加します";
+"windowShadowSizeLabel" = "影のサイズ";
+"windowShadowSizeHint" = "値を大きくするほど影が柔らかく広がり、ウインドウが高く浮いて見えます";
+
+/* Screenshot shortcut */
+"shortcutHeader" = "スクリーンショット";
+"shortcutHint" = "デフォルトは ⌘ のダブルタップ。カスタムショートカットを設定するとダブルタップは無効になります";
+"shortcutDefaultDisplay" = "⌘ をダブルタップ";
+"shortcutSet" = "記録";
+"shortcutCancel" = "キャンセル";
+"shortcutWaiting" = "キー入力待ち";
+"shortcutNeedsModifierTitle" = "修飾キーが必要です";
+"shortcutNeedsModifier" = "⌘・⌥・⇧・⌃ と他のキーの組み合わせ（例：⌘⇧8）、または F1–F12 単独";
+"shortcutRestore" = "デフォルトに戻す";
+"quickPinShortcutHeader" = "クイックピン留め";
+"quickPinShortcutDefaultDisplay" = "未設定";
+"quickPinShortcutClear" = "クイックピン留めのショートカットを消去";
+"selectedImagePinShortcutHeader" = "選択画像をピン留め";
+"selectedImagePinShortcutDefaultDisplay" = "未設定";
+"selectedImagePinShortcutClear" = "選択画像ピン留めショートカットを消去";
+"clipboardImagePinShortcutHeader" = "現在またはクリップボードの画像をピン留め";
+"clipboardImagePinShortcutDefaultDisplay" = "未設定";
+"clipboardImagePinShortcutClear" = "現在またはクリップボード画像のピン留めショートカットを消去";
+"clipboardTextPinShortcutHeader" = "クリップボードテキストをピン留め";
+"clipboardTextPinShortcutDefaultDisplay" = "未設定";
+"clipboardTextPinShortcutClear" = "クリップボードテキストピン留めショートカットを消去";
+"selectedImagePinNoImage" = "Finder で選択中の画像がありません";
+"clipboardImagePinNoImage" = "クリップボードにピン留めできる画像がありません";
+"clipboardTextPinNoText" = "クリップボードにテキストがありません";
+"pinFromFinderHint" = "Finder の画像をピン留めしました。X キーで閉じる";
+"pinFromClipboardHint" = "クリップボードの画像をピン留めしました。X キーで閉じる";
+"pinFromClipboardTextHint" = "クリップボードのテキストをピン留めしました。ダブルクリックで編集";
+"pinToolbarClose" = "ピン留め画像を閉じる";
+"pinToolbarCopy" = "ピン留め画像をコピー";
+"pinToolbarDrag" = "ピン留め画像をドラッグ";
+"pinToolbarEdit" = "ピン留め画像を編集";
+"pinToolbarEditText" = "テキストを編集";
+
+/* Image-edit shortcuts */
+"selectedImageEditShortcutHeader" = "選択画像を編集";
+"selectedImageEditShortcutHint" = "Finder で選択中の 1 枚の画像を直接編集します。デフォルトでは未設定です";
+"selectedImageEditShortcutDefaultDisplay" = "未設定";
+"clipboardImageEditShortcutHeader" = "クリップボード画像を編集";
+"clipboardImageEditShortcutHint" = "現在クリップボードにある画像を直接編集します。デフォルトでは未設定です";
+"clipboardImageEditShortcutDefaultDisplay" = "未設定";
+"textRecognitionShortcutHeader" = "文字認識";
+"textRecognitionShortcutDefaultDisplay" = "未設定";
+"copyImageTextShortcutHeader" = "画像内テキストをコピー";
+"copyImageTextShortcutDefaultDisplay" = "未設定";
+"screenshotTranslationShortcutHeader" = "スクリーンショット翻訳";
+"screenshotTranslationShortcutDefaultDisplay" = "未設定";
+"recordShortcutHeader" = "録画";
+"recordShortcutDefaultDisplay" = "未設定";
+"fullScreenScreenshotShortcutHeader" = "フルスクリーンショット";
+"fullScreenScreenshotShortcutDefaultDisplay" = "未設定";
+"colorPickerShortcutHeader" = "カラーピッカー";
+"colorPickerShortcutDefaultDisplay" = "未設定";
+
+/* Copy-to-clipboard shortcut (editor confirm) */
+"clipboardShortcutHeader" = "クリップボードへコピー";
+"clipboardShortcutHint" = "エディター内で押すと編集を確定し、スクリーンショットをクリップボードへコピーします。未設定の場合は ⌘ をダブルタップします";
+"clipboardShortcutDefaultDisplay" = "⌘ をダブルタップ";
+
+/* Save-to-file shortcut (editor save) */
+"fileSaveShortcutHeader" = "ファイルへ保存";
+"fileSaveShortcutHint" = "エディター内で押すと、設定したスクリーンショット保存先へ PNG として保存します。既定は ⌘S";
+"previousHistoryImageShortcutHeader" = "前の履歴スクリーンショット";
+"nextHistoryImageShortcutHeader" = "次の履歴スクリーンショット";
+"historyPanelShortcutHeader" = "履歴パネル";
+"historyPanelShortcutDefaultDisplay" = "未設定";
+
+/* Shortcut conflict */
+"shortcutConflictTitle" = "ショートカットは既に使用中です";
+"shortcutConflictScreenshot" = "このキーの組み合わせはスクリーンショットのショートカットで既に使用されています。別の組み合わせを選んでください";
+"shortcutConflictCountdown" = "このキーの組み合わせはカウントダウン撮影のショートカット（スクリーンショットのショートカット + ⌥）で既に使用されています。別の組み合わせを選んでください";
+"shortcutConflictQuickPin" = "このキーの組み合わせはクイックピン留めに使用されています。別の組み合わせを選んでください";
+"shortcutConflictSelectedImagePin" = "このキーの組み合わせは選択画像をピン留めのショートカットで既に使用されています。別の組み合わせを選んでください";
+"shortcutConflictClipboardImagePin" = "このキーの組み合わせはクリップボード画像をピン留めのショートカットで既に使用されています。別の組み合わせを選んでください";
+"shortcutConflictClipboardTextPin" = "このキーの組み合わせはクリップボードテキストをピン留めのショートカットで既に使用されています。別の組み合わせを選んでください";
+"shortcutConflictClipboard" = "このキーの組み合わせはクリップボードへコピーのショートカットで既に使用されています。別の組み合わせを選んでください";
+"shortcutConflictFileSave" = "このキーの組み合わせはファイルへ保存のショートカットで既に使用されています。別の組み合わせを選んでください";
+"shortcutConflictPreviousHistoryImage" = "このキーの組み合わせは前の履歴スクリーンショットのショートカットで既に使用されています。別の組み合わせを選んでください";
+"shortcutConflictNextHistoryImage" = "このキーの組み合わせは次の履歴スクリーンショットのショートカットで既に使用されています。別の組み合わせを選んでください";
+"shortcutConflictHistoryPanel" = "このキーの組み合わせは履歴パネルのショートカットで既に使用されています。別の組み合わせを選んでください";
+"shortcutConflictSelectedImageEdit" = "このキーの組み合わせは選択画像を編集のショートカットで既に使用されています。別の組み合わせを選んでください";
+"shortcutConflictClipboardImageEdit" = "このキーの組み合わせはクリップボード画像を編集のショートカットで既に使用されています。別の組み合わせを選んでください";
+"shortcutConflictTextRecognition" = "このキーの組み合わせは文字認識ショートカットで既に使用されています。別の組み合わせを選んでください";
+"shortcutConflictCopyImageText" = "このキーの組み合わせは画像内テキストをコピーのショートカットで既に使用されています。別の組み合わせを選んでください";
+"shortcutConflictScreenshotTranslation" = "このキーの組み合わせはスクリーンショット翻訳ショートカットで既に使用されています。別の組み合わせを選んでください";
+"shortcutConflictRecord" = "このキーの組み合わせは録画ショートカットで既に使用されています。別の組み合わせを選んでください";
+"shortcutConflictFullScreenScreenshot" = "このキーの組み合わせはフルスクリーンショットのショートカットで既に使用されています。別の組み合わせを選んでください";
+"shortcutConflictColorPicker" = "このキーの組み合わせはカラーピッカーのショートカットで既に使用されています。別の組み合わせを選んでください";
+
+/* Menu bar */
+"takeScreenshot" = "スクリーンショット";
+"takeFullScreenScreenshot" = "フルスクリーンショット";
+"record" = "録画";
+"colorPicker" = "カラーピッカー";
+"settings" = "設定";
+"quitApp" = "wxShot を終了";
+"historyMenu" = "履歴";
+"historyClear" = "履歴を消去";
+"historyCleared" = "履歴を消去しました";
+"historyShowInFinder" = "Finder に表示";
+"historyPanelLock" = "履歴パネルをロック";
+"historyPanelUnlock" = "履歴パネルのロックを解除";
+"historyPanelFavorite" = "お気に入り";
+"historyPanelUnfavorite" = "お気に入りから削除";
+"historyPanelItemFavorited" = "お気に入りに追加しました";
+"historyPanelItemUnfavorited" = "お気に入りから削除しました";
+"historyPanelMenu" = "履歴パネル";
+"historyPanelDeleteAll" = "すべての履歴を削除";
+"historyPanelDeleteSelectedOne" = "%d件の項目を削除";
+"historyPanelDeleteSelected" = "%d件の項目を削除";
+"historyPanelDeletedSelectedOne" = "%d件の項目を削除しました";
+"historyPanelDeletedSelected" = "%d件の項目を削除しました";
+"historyPanelFavoriteFailed" = "お気に入りを変更できません";
+"historyDeletedSkippingFavorites" = "項目を%d件削除、お気に入りを%d件スキップ";
+"historyPanelFilterAll" = "すべて";
+"historyPanelFilterScreenshots" = "スクリーンショット";
+"historyPanelFilterGIF" = "GIF";
+"historyPanelFilterMP4" = "MP4";
+"historyPanelFilterColors" = "カラー";
+"historyPanelFilterText" = "テキスト";
+"historyPanelSearchColorsAndText" = "色とテキストを検索";
+"historyPanelSearchColors" = "色を検索";
+"historyPanelSearchText" = "テキストを検索";
+"historyPanelClearSearch" = "検索をクリア";
+"historyPanelSearchNoResults" = "一致する履歴はありません";
+"historyPreviewCopyText" = "テキストをコピー";
+"historyPreviewTranslateText" = "テキストを翻訳";
+"historyPreviewConvertToQRCode" = "QRコードに変換";
+"historyPreviewQRCodeTooLong" = "テキストが長すぎるためQRコードに変換できません";
+"historyPreviewOriginalText" = "原文";
+"historyPreviewQRCodeTitle" = "テキストのQRコード";
+"historyPanelCopyHint" = "クリックでコピー";
+"historyPanelCopyDragHint" = "クリックでコピー · アプリへドラッグ";
+"historyPanelCopyMarkdownLink" = "MD リンクをコピー";
+"historyPanelCopyPlainLink" = "通常リンクをコピー";
+"historyPanelEmpty" = "履歴がありません";
+"historyPanelShortcutGuide" = "キーボードショートカット";
+"historyPanelShortcutGuideHide" = "履歴に戻る";
+"historyPanelShortcutKeyClick" = "クリック";
+"historyPanelShortcutKeyDrag" = "ドラッグ";
+"historyPanelShortcutKeySpace" = "スペース";
+"historyPanelShortcutSearch" = "検索を開始または終了";
+"historyPanelShortcutSwitchFilter" = "カテゴリを切り替える";
+"historyPanelShortcutToggleSelection" = "1項目を選択または解除";
+"historyPanelShortcutRangeSelection" = "範囲選択";
+"historyPanelShortcutSelectAll" = "表示中の項目をすべて選択";
+"historyPanelShortcutCancel" = "検索を終了または現在の状態を解除";
+"historyPanelShortcutCopyItem" = "項目をコピー";
+"historyPanelShortcutDragItem" = "画像または動画を別のアプリへドラッグ";
+"historyPanelShortcutOpenPreview" = "ホバー中の画像またはテキストをプレビュー";
+"historyPanelShortcutBrowsePreview" = "前後のプレビューを表示";
+"historyPanelShortcutClosePreview" = "プレビューを閉じる";
+"historyPanelShortcutCopyPreview" = "プレビュー内容をコピー";
+"historyPanelShortcutEditImage" = "画像を編集";
+"historyPanelShortcutPinImage" = "画像をピン留め";
+"historyPanelShortcutUploadImage" = "画像をアップロード";
+"historyPanelShortcutTranslateText" = "テキストを翻訳";
+"historyPanelShortcutQRCode" = "QRコードを作成";
+"historyPanelShortcutToggleGuide" = "ショートカット一覧を表示または非表示";
+
+/* Cursor chip */
+"dragToQuickPin" = "ウィンドウをクリックするか範囲をドラッグしてすぐにピン留め";
+"dragToScreenshot" = "ウィンドウをクリックまたはドラッグして撮影";
+"dragToScreenshotAspectFree" = "ウィンドウをクリックまたはドラッグして撮影 · ドラッグ自由比率（R）";
+"dragToScreenshotAspect" = "ウィンドウをクリックまたはドラッグして撮影 · ドラッグ %@（R）";
+"dragToTextRecognition" = "ウィンドウをクリックまたは範囲選択して文字認識";
+"dragToCopyImageText" = "ウィンドウをクリックまたは範囲選択してテキストをコピー";
+"dragToScreenshotTranslation" = "ウィンドウをクリックまたは範囲選択して内容を翻訳";
+"dragToRecord" = "ウィンドウをクリックまたはドラッグして録画";
+"dragToRecordAspectFree" = "ウィンドウをクリックまたはドラッグして録画 · ドラッグ自由比率（R）";
+"dragToRecordAspect" = "ウィンドウをクリックまたはドラッグして録画 · ドラッグ %@（R）";
+
+/* Toast */
+"copiedToClipboard" = "クリップボードにコピーしました";
+"mergedLongScreenshot" = "長いスクリーンショットを結合しました";
+"autoScrollPermissionNeeded" = "スクロールキャプチャにはアクセシビリティ権限が必要です。システム設定 → プライバシーとセキュリティ → アクセシビリティ で wxShot を許可してください";
+"cropLongScreenshotHint" = "上下の端をドラッグしてトリミング — Enter キーまたは ✓ をタップ";
+"scrollCaptureHint" = "任意のキーでスクロールを終了";
+"scrollCaptureManualHint" = "手動でスクロールし、任意のキーまたは緑のボタンで終了";
+"finderEditExitHint" = "Finder から編集中。X キーで編集を終了";
+"clipboardEditExitHint" = "クリップボードから編集中。X キーで編集を終了";
+"pinEditExitHint" = "ピン留め画像を編集中。X キーで編集を終了";
+"fullScreenEditExitHint" = "フルスクリーンショットを編集中です。X キーで編集を終了";
+"editSuspendedToast" = "編集を一時保存しました。次のスクリーンショット起動で続きから再開";
+"editSuspendedResumeToast" = "一時保存した編集を再開しました";
+"fullScreenScreenshotFailed" = "フルスクリーンショットに失敗しました";
+"openImageNoImage" = "画像をクリップボードにコピーするか画像ファイルを選択してください";
+"selectedImageEditNoImage" = "Finder で画像が 1 枚選択されていません";
+"clipboardImageEditNoImage" = "クリップボードに編集できる画像がありません";
+"recordingSaved" = "録画を %@ に保存しました";
+"recordingCancelled" = "録画をキャンセルしました";
+"recordingExportingGIF" = "GIF を作成中";
+"recordingFailed" = "録画に失敗しました: %@";
+"saveRecording" = "録画を保存";
+"saveRecordingPrompt" = "保存";
+"recordingFormatLabel" = "形式";
+"recordingFormatManual" = "毎回選択";
+"recordingFormatMP4" = "MP4";
+"recordingFormatGIF" = "GIF";
+"recordingFormatChoiceTitle" = "録画形式を選択";
+"recordingFormatChoiceMessage" = "録画は設定した録画保存先に保存されます";
+"screenshotSaved" = "スクリーンショットを %@ に保存しました";
+"screenshotSaveFailed" = "スクリーンショットの保存に失敗しました: %@";
+"recordingStop" = "録画を停止";
+"recordingPause" = "一時停止";
+"recordingResume" = "再開";
+"colorCopied" = "カラー %@ をコピーしました";
+"qrCodeCopied" = "QRコードの内容をコピーしました";
+"qrCodeNotFound" = "QRコードが見つかりません";
+
+/* Toolbar tooltips */
+"tipRectangle" = "長方形";
+"tipEllipse" = "楕円";
+"tipArrow" = "矢印";
+"tipLine" = "直線";
+"tipPen" = "ペン";
+"tipMarker" = "マーカー";
+"tipSpotlight" = "スポットライト";
+"tipMosaic" = "モザイク";
+"mosaicGranularity" = "モザイク粒度";
+"mosaicBlur" = "ぼかし";
+"mosaicBlurAmount" = "ぼかしの強さ";
+"tipEraser" = "消しゴム";
+"tipMagnifier" = "拡大鏡";
+"tipNumbered" = "番号";
+"tipText" = "テキスト";
+"tipQRCode" = "QRコード";
+"tipEmoji" = "絵文字";
+"tipMoreEmoji" = "その他の絵文字";
+"tipMoreBeautifyPresets" = "美化プリセットを追加";
+"tipInsertImage" = "画像を挿入";
+"tipColorPicker" = "カラーピッカー";
+"tipPickedInkBottle" = "カラーピッカーでインク瓶に色を抽出";
+"tipUndo" = "取り消す";
+"tipRedo" = "やり直す";
+"tipMoveSelection" = "選択範囲を移動";
+"tipScrollCapture" = "長いスクリーンショット";
+"tipRotate" = "回転";
+"tipRotateLeft" = "左に90°回転";
+"tipRotateRight" = "右に90°回転";
+"tipBeautify" = "装飾";
+"tipOCR" = "文字認識";
+"tipScreenshotTranslate" = "スクリーンショット翻訳";
+"tipSave" = "ファイルへ保存";
+"tipPin" = "画面に固定";
+"tipRecord" = "録画";
+"tipCancel" = "キャンセル";
+"tipConfirm" = "クリップボードへコピー";
+"tipScrollCropConfirm" = "保存して編集";
+"copyQRCodeContent" = "QRコードの内容をコピー";
+
+/* Beautify */
+"beautify" = "装飾";
+"beautifyPresetTransparent" = "透明";
+"beautifyPresetPeachBlue" = "ピーチブルー";
+"beautifyPresetMintTeal" = "ミントティール";
+"beautifyPresetPeachPink" = "ピーチピンク";
+"beautifyPresetBluePurple" = "ブルーパープル";
+"beautifyPresetWarmOrange" = "ウォームオレンジ";
+"beautifyPresetTealPink" = "ティールピンク";
+"beautifyPresetDeepPurple" = "ディープパープル";
+"beautifyPresetNeutralGray" = "ニュートラルグレー";
+"beautifyPresetWallpaper" = "壁紙";
+"beautifyPresetAurora" = "オーロラ";
+"beautifyPresetSunsetGlow" = "夕焼け";
+"beautifyPresetOceanBlue" = "オーシャンブルー";
+"beautifyPresetLavenderMist" = "ラベンダーミスト";
+"beautifyPresetForestMint" = "フォレストミント";
+"beautifyPresetRoseGold" = "ローズゴールド";
+"beautifyPresetMorningSky" = "朝空";
+"beautifyPresetCandyPop" = "キャンディポップ";
+"beautifyPresetCitrusGlow" = "シトラスグロー";
+"beautifyPresetMidnight" = "ミッドナイト";
+"beautifyPresetCoralBloom" = "コーラルブルーム";
+"beautifyPresetArcticIce" = "アークティックアイス";
+"beautifyPresetSageCream" = "セージクリーム";
+"beautifyPresetGraphite" = "グラファイト";
+"beautifyShadowEffect" = "影効果";
+"beautifyAutoToggleLabel" = "エディタ起動時に美化を有効化";
+"beautifyAutoToggleHint" = "エディタを開くと前回の美化プリセット・余白・影を自動適用します";
+"beautifyDefaultPresetLabel" = "デフォルトのプリセット";
+"beautifyDefaultPaddingLabel" = "デフォルトの余白";
+"textStrokeEffect" = "縁取り";
+"textCalloutEffect" = "吹き出し";
+"textFontLabel" = "フォント";
+"textFontSystemDefault" = "システム標準";
+"textFontDefaultLabel" = "デフォルトのテキストフォント";
+"textFontDefaultHint" = "新しく作成するテキスト注釈に使うフォント";
+"shapeFillEffect" = "塗りつぶし";
+"shapeFillNone" = "枠線";
+"shapeFillOpaque" = "塗りつぶし";
+"shapeFillTranslucent" = "半透明の塗り";
+"shapeStyleStandard" = "標準スタイル";
+"shapeStyleRounded" = "角丸四角形スタイル";
+"shapeStyleHandDrawn" = "手描きスタイル";
+"arrowStyleTapered" = "先細り矢印";
+"arrowStyleDoubleEnded" = "両矢印";
+"arrowStyleLine" = "線の矢印";
+"arrowStyleDotTail" = "丸付き矢印";
+"insertImageFromClipboard" = "クリップボードから";
+"insertImageFromFile" = "ファイルから";
+"insertImageChooseFile" = "画像を選択";
+"insertImageNoClipboardImage" = "クリップボードに画像がありません";
+"scrollCaptureAutoScroll" = "自動スクロール";
+"scrollCaptureManualScroll" = "手動スクロール";
+
+/* Language */
+"languageHeader" = "言語";
+
+/* Settings sidebar tabs */
+"settingsTabGeneral" = "一般";
+"settingsTabShortcuts" = "ショートカット";
+"settingsTabPermissions" = "権限";
+"settingsTabUpload" = "画像ホスト";
+"settingsTabAbout" = "情報";
+"settingsTabTranslation" = "翻訳";
+"settingsTabToolbar" = "ツールバー";
+"settingsQuit" = "アプリを終了";
+
+"toolbarSettingsPrimaryTitle" = "メインツールバー";
+"toolbarSettingsPrimaryHint" = "ツールは選択範囲の上または下に表示されます。ドラッグで位置を調整し、クリックでショートカットを設定します";
+"toolbarSettingsSideTitle" = "サイドツールバー";
+"toolbarSettingsSideHint" = "ツールは選択範囲の左または右に表示されます。ドラッグで位置を調整し、クリックでショートカットを設定します";
+"toolbarSettingsHiddenTitle" = "非表示のツール";
+"toolbarSettingsHiddenHint" = "ここにドラッグしたツールはどのツールバーにも表示されません";
+"toolbarSettingsFootnote" = "ツールバーは選択範囲の位置に応じて上下／左右のレイアウトに自動で切り替わります";
+"toolbarSettingsShortcutHint" = "ツールをクリックしてショートカットを記録し、ドラッグで移動、右クリックでその他の操作を表示";
+"toolbarSettingsShortcutRecording" = "「%@」の新しいショートカットを押すか Esc でキャンセル";
+"toolbarSettingsShortcutRecord" = "ショートカットを記録";
+"toolbarSettingsShortcutClear" = "ショートカットを消去";
+"toolbarSettingsShortcutRestore" = "デフォルトのショートカットに戻す";
+"toolbarSettingsShortcutResetAll" = "エディタのショートカットをリセット";
+"toolbarSettingsShortcutNone" = "未設定";
+"toolbarSettingsShortcutUnavailable" = "N/A";
+"toolbarSettingsAdditionalShortcuts" = "その他の編集操作";
+"toolbarSettingsReset" = "デフォルトに戻す";
+"toolbarSettingsCancel" = "キャンセル";
+"toolbarSettingsApply" = "適用";
+"editorShortcutSelect" = "選択ツール";
+"editorShortcutShapeFill" = "図形の塗りつぶしを切り替え";
+"editorShortcutConflict" = "このショートカットはすでに「%@」に割り当てられています";
+"editorShortcutReserved" = "このキーはエディタのシステム操作用に予約されているため再割り当てできません";
+
+/* About pane */
+"aboutTagline" = "メニューバー スクリーンショットツール";
+"aboutLicense" = "ライセンス";
+"aboutSourceCode" = "ソースコード";
+"aboutStarOnGitHub" = "GitHub でスターを付ける 🌟";
+"aboutFeatureRequest" = "機能をリクエスト";
+"aboutBugReport" = "バグを報告";
+"aboutUpdateTitle" = "アップデート";
+"aboutErrorLog" = "エラーログ";
+"aboutErrorLogNoCrash" = "エラーログなし";
+"aboutErrorLogLastCrash" = "最新ログ · %@";
+"aboutErrorLogCopy" = "ログをコピー";
+"aboutErrorLogCopied" = "コピーしました";
+"aboutErrorLogReveal" = "Finder に表示";
+"aboutErrorLogRefresh" = "ログを更新";
+"aboutErrorLogClear" = "ログを消去";
+"aboutErrorLogEmptyBody" = "wxShot はまだエラーログを記録していません。フリーズやクラッシュが発生した場合は、ここに戻ってログをコピーし、バグ報告にご利用ください";
+
+/* Updates — About pane */
+"checkForUpdates" = "アップデートを確認";
+"updateChecking" = "確認中";
+"updateUpToDateStatus" = "最新です";
+"updateNewVersionStatus" = "Release v%@ が利用可能";
+"updateFailedStatus" = "確認に失敗";
+"updateDownloadButton" = "ダウンロード";
+"updateRetryButton" = "再試行";
+"updateInstallNowButton" = "今すぐ更新";
+"updateDownloadingStatus" = "ダウンロード中 %d%%";
+"updateInstallingStatus" = "インストール中";
+"updateInstallFailedStatus" = "インストールに失敗";
+
+/* Updates — menu bar */
+"checkForUpdatesMenu" = "アップデートを確認";
+"checkingForUpdatesMenu" = "アップデートを確認中";
+"updateAvailableMenu" = "Release v%@ が利用可能";
+"updateDownloadingMenu" = "アップデートをダウンロード中… %d%%";
+"updateInstallingMenu" = "アップデートをインストール中";
+"updateInstallFailedMenu" = "アップデートのインストールに失敗";
+
+/* Updates — progress HUD */
+"updateCheckingHUD" = "アップデートを確認中";
+"updateDownloadingHUD" = "アップデートをダウンロード中 %d%%";
+"updateVerifyingHUD" = "アップデートを検証中";
+"updateUnzippingHUD" = "展開中";
+"updateInstallingHUD" = "インストール中";
+
+/* Updates — manual check result alert */
+"updateAvailableTitle" = "Release v%@ が利用可能です";
+"updateAvailableBody" = "wxShot は最新バージョンをダウンロードしてインストールし、自動的に再起動します";
+"updateUpToDateTitle" = "最新の状態です";
+"updateUpToDateBody" = "wxShot v%@ が最新バージョンです";
+"updateFailedTitle" = "アップデートの確認に失敗";
+"updateFailedBody" = "GitHub に接続できませんでした。ネットワークを確認して再試行してください";
+"updateInstallFailedTitle" = "アップデートに失敗";
+"updateInstallFailedBody" = "アップデートのダウンロードまたはインストール中に問題が発生しました。GitHub のリリースページから手動でダウンロードできます";
+"updateOpenPageButton" = "GitHub を開く";
+"updateSkipButton" = "このバージョンをスキップ";
+"updateLaterButton" = "後で";
+"updateOKButton" = "OK";
+
+/* Quit confirmation dialog */
+"quitConfirmTitle" = "wxShot を終了しますか";
+"quitConfirmMessage" = "終了するとメニューバーアイコンが消え、wxShot を再起動するまでスクリーンショットのショートカットが無効になります";
+"quitConfirmAction" = "終了";
+"quitConfirmCancel" = "キャンセル";
+
+/* Upload — toolbar / toast / progress */
+"tipUpload" = "画像ホストにアップロード";
+"uploadingTitle" = "アップロード中";
+"uploadCopied" = "画像 URL をコピーしました";
+"uploadCopiedMarkdown" = "Markdown リンクをコピーしました";
+"uploadNoProvider" = "先に設定で画像ホストを構成してください";
+"uploadFailedPrefix" = "アップロードに失敗";
+
+/* Upload — settings tab */
+"uploadDefaultProvider" = "デフォルトの画像ホスト";
+"uploadDefaultNone" = "無効";
+"uploadSetDefaultButton" = "デフォルトに設定";
+"uploadSaveButton" = "保存";
+"uploadClearButton" = "クリア";
+"uploadSavedToast" = "設定を保存しました";
+"uploadCurrentDefault" = "現在のデフォルト";
+"uploadMarkdownToggleTitle" = "Markdown リンクとしてコピー";
+"uploadMarkdownToggleSubtitle" = "オンにすると、アップロード後に Markdown 画像タグ（![](url)）をコピーします。オフの場合は通常の URL をコピーします。履歴パネルでは、クラウド画像のクリックはこの設定に従い、ホバーボタンで MD または通常リンクを選べます";
+"filenameRuleTitle" = "ファイル名ルール";
+"filenameRuleSubtitle" = "画像アップロード、画像保存の既定名、録画保存の既定名を制御します。拡張子は自動で追加されます";
+"filenameRulePresetLabel" = "プリセット";
+"filenameRulePresetCustom" = "カスタム";
+"filenameRulePresetShort" = "短め";
+"filenameRulePresetCompact" = "短いリンク";
+"filenameRulePresetUnique" = "重複を避ける";
+"filenameRulePresetCounter" = "日次カウンター";
+"filenameRulePresetRestore" = "既定に戻す";
+"filenameRuleImageLabel" = "画像";
+"filenameRuleRecordingLabel" = "録画";
+"filenameRuleVariablesLabel" = "変数";
+"filenameRuleVariableDate" = "日付";
+"filenameRuleVariableTime" = "時刻";
+"filenameRuleVariableDaily" = "日次番号";
+"filenameRuleVariableRandom" = "ランダム";
+"filenameRuleVariableSize" = "サイズ";
+"filenameRulePreview" = "%@";
+
+/* Upload — provider field labels */
+"uploadFieldBucket" = "バケット";
+"uploadFieldBucketSpace" = "バケット";
+"uploadFieldRegion" = "リージョン";
+"uploadFieldRegionOptional" = "任意のリージョン";
+"uploadFieldPathOptional" = "任意のパス";
+"uploadFieldCustomUrlOptional" = "任意のカスタムドメイン";
+"uploadFieldPublicDomain" = "公開ドメイン";
+"uploadFieldEndpointArea" = "エンドポイント";
+"uploadFieldEndpointOptional" = "任意のエンドポイント";
+"uploadFieldAccountId" = "アカウント ID";
+"uploadTestImageFailed" = "テスト画像を生成できませんでした";
+
+/* Upload — provider names */
+"providerTencentCOS" = "Tencent COS";
+"providerQiniuKodo" = "Qiniu Kodo";
+"providerAliyunOSS" = "Aliyun OSS";
+
+/* Upload — errors */
+"uploadErrMissingConfig" = "アップロード先が設定されていません";
+"uploadErrInvalidConfigPrefix" = "設定が無効です";
+"uploadErrNetworkPrefix" = "ネットワークエラー";
+"uploadErrServerPrefix" = "アップロードに失敗 コード %d";
+"uploadErrUnexpectedResponsePrefix" = "予期しない応答";
+"missingField" = "%@ がありません";
+
+/* Upload — test/validation pill */
+"uploadStatusUntested" = "未テスト";
+"uploadStatusTesting" = "テスト中";
+"uploadStatusValid" = "有効";
+"uploadStatusInvalid" = "無効な設定";
+
+/* Upload — log lines */
+"uploadLogStartingTest" = "テストアップロードを開始";
+"uploadLogConfigSaved" = "設定を保存しました";
+"uploadLogMissingFields" = "必須項目が不足しています: %@";
+"uploadLogTestSucceeded" = "テストアップロード成功: %@";
+"uploadLogTestFailed" = "テストアップロード失敗: %@";
+"uploadLogProviderDisabled" = "この画像ホストを無効にしました";
+"uploadLogConfigCleared" = "設定をクリアしました";
+
+/* Permissions — status label */
+"permissionGranted" = "許可済み";
+"permissionNotGranted" = "未許可";
+
+/* OCR & Translation — result panel */
+"ocrTextHeader" = "認識されたテキスト";
+"ocrRecognizing" = "認識中";
+"ocrNoText" = "テキストが見つかりません";
+"ocrCopy" = "コピー";
+"ocrCopied" = "コピーしました";
+"ocrRetry" = "再試行";
+"ocrTranslating" = "翻訳中";
+"ocrTranslateFailedPrefix" = "失敗";
+"ocrNoProviderTitle" = "翻訳サービスが設定されていません";
+"ocrNoProviderHint" = "設定 → 翻訳 で翻訳サービスを有効にしてください";
+"ocrOpenSettings" = "設定を開く";
+"ocrLineCopied" = "行をコピーしました";
+"copyImageTextCopying" = "コピー中";
+"copyImageTextCopied" = "画像内テキストをコピーしました";
+"copyImageTextNoText" = "テキストが見つかりません";
+"screenshotTranslationHeader" = "翻訳";
+"screenshotTranslationLanguageButton" = "%@へ";
+"dictionaryEntryLabel" = "見出し語";
+"dictionaryPhoneticLabel" = "発音記号";
+"dictionaryPartOfSpeechLabel" = "品詞";
+"dictionaryDefinitionLabel" = "意味";
+"dictionaryExampleLabel" = "例文";
+"dictionaryDifficultyLabel" = "難易度";
+"dictionaryNoProviderTitle" = "辞書モード対応の AI サービスが設定されていません";
+"dictionaryNoProviderHint" = "設定 → 翻訳で OpenAI、DeepSeek、Claude、または OpenAI 互換のカスタムサービスを有効にしてください";
+
+/* Translation — settings tab */
+"translationDictionaryModeTitle" = "辞書モード";
+"translationDictionaryModeSubtitle" = "スクリーンショット翻訳で英単語を 1 つだけ認識した場合、発音、意味、例文、翻訳、CEFR レベルを表示します";
+"translationTargetLanguage" = "翻訳先の言語";
+"translationTargetHint" = "認識されたテキストはこの言語に翻訳されます。すでにこの言語の場合は英語に翻訳されます";
+"translationApiKey" = "API キー";
+"translationApiKeyOptional" = "任意の API キー";
+"translationModel" = "モデル";
+"translationEndpoint" = "エンドポイント";
+"translationEndpointOptional" = "任意のエンドポイント";
+"translationSave" = "保存";
+"translationClear" = "クリア";
+"translationConfigSaved" = "設定を保存しました";
+"translationTesting" = "テスト中";
+"translationTestPassed" = "テスト成功";
+"translationTestFailed" = "テスト失敗";
+"translationTestFailedTitle" = "保存しましたが、接続テストに失敗しました";
+"translationProviderCustom" = "カスタム OpenAI 互換";
+"translationAppleSubtitle" = "Apple のオンデバイスモデルを使用し、言語データのダウンロードが必要な場合があります";
+"translationErrAppleUnavailable" = "Apple Translation には macOS 15 以降が必要です";
+"translationMoveUp" = "上へ移動";
+"translationMoveDown" = "下へ移動";
+
+/* Translation — target language names */
+"transLangChinese" = "中国語";
+"transLangEnglish" = "英語";
+"transLangJapanese" = "日本語";
+"transLangKorean" = "韓国語";
+
+/* Translation — errors */
+"translationErrMissingAPIKey" = "API キーが設定されていません";
+"translationErrBadEndpoint" = "エンドポイントが無効です";
+"translationErrBadResponse" = "予期しない応答";
+
+/* Image Merge */
+"imageMergeShortcutHeader" = "画像を結合";
+"imageMergeShortcutDefaultDisplay" = "未設定";
+"shortcutConflictImageMerge" = "このキーの組み合わせは画像結合ショートカットで使用されています。別の組み合わせを選んでください";
+"mergeImages" = "画像を結合";
+"mergeEditExitHint" = "結合画像を編集中です。X で編集を終了";
+"imageMergeNeedTwoImages" = "結合するには Finder で画像を 2 枚以上選択してください";
+"imageMergeSomeImagesSkipped" = "一部の画像を読み込めなかったためスキップしました";
+"imageMergeNoClipboardImage" = "クリップボードに画像がありません";
+"imageMergeFailed" = "画像の結合に失敗しました";
+"imageMergeSaved" = "結合画像を保存しました";
+"imageMergeWindowTitle" = "画像を結合";
+"imageMergeSources" = "画像ソース";
+"imageMergeAddFiles" = "ファイルを追加";
+"imageMergeAddFromClipboard" = "クリップボードから追加";
+"imageMergeImageList" = "画像";
+"imageMergeTemplate" = "配置";
+"imageMergeTemplateHorizontal" = "横方向";
+"imageMergeTemplateVertical" = "縦方向";
+"imageMergeTemplateGrid" = "グリッド";
+"imageMergeTemplateLongStitch" = "長画像結合";
+"imageMergeLayout" = "レイアウト";
+"imageMergeSpacing" = "間隔";
+"imageMergeMargin" = "外側余白";
+"imageMergeCornerRadius" = "角丸";
+"imageMergeBackground" = "背景";
+"imageMergeTransparent" = "透明";
+"imageMergeSolid" = "単色";
+"imageMergeOutput" = "出力";
+"imageMergeCopy" = "コピー";
+"imageMergeSave" = "保存";
+"imageMergeContinueEditing" = "編集";
+"imageMergeClose" = "閉じる";
+"imageMergeEmptyTitle" = "結合する画像をドロップ";
+"imageMergeEmptyBody" = "ファイル追加、クリップボード追加、または画像をここにドラッグ";
+"imageMergeClipboardSourceName" = "クリップボード画像";
+
+/* Screenshot quality */
+"screenshotQualityTitle" = "スクリーンショット品質";
+"screenshotQualitySubtitle" = "アップロード、保存、コピー前に選択した品質で処理します。既定は原寸";
+"screenshotQualityUploadLabel" = "アップロード";
+"screenshotQualitySaveLabel" = "ファイルに保存";
+"screenshotQualityClipboardLabel" = "クリップボードにコピー";
+"screenshotQualityOriginal" = "原寸";
+"screenshotQualityOriginalHint" = "PNG 原寸の無劣化画質でファイルは最大";
+"screenshotQualityCompressed" = "圧縮";
+"screenshotQualityCompressedHint" = "原寸を保ち、ローカルで PNG を圧縮";
+"screenshotQualityCompressingUpload" = "圧縮してアップロード中";
+"screenshotQualityCompressingSave" = "圧縮して保存中";
+"screenshotQualityCompressingClipboard" = "圧縮してコピー中";
+"screenshotCompressionFailed" = "画像の圧縮に失敗";
+
+/* Save paths */
+"savePathTitle" = "保存先";
+"savePathSubtitle" = "スクリーンショットと録画のデフォルト保存先";
+"askSaveLocationLabel" = "保存先を確認";
+"askSaveLocationHint" = "スクリーンショット保存時にダイアログで場所を選ぶ。オフにすると保存先へ直接保存";
+"autoRevealSavedFilesLabel" = "Finder に表示";
+"autoRevealSavedFilesHint" = "保存に成功したスクリーンショットまたは録画を Finder で選択します";
+"recordingSavePathLabel" = "録画の保存先";
+"recordingSaveFormatSettingLabel" = "録画形式";
+"recordingSystemAudioLabel" = "システム音声を録音";
+"recordingSystemAudioHint" = "画面収録中にアプリとシステム音声をキャプチャします。次回の収録から反映されます";
+"recordingMicrophoneLabel" = "マイクを録音";
+"recordingMicrophoneHint" = "画面収録中に音声をキャプチャします。次回の収録から反映されます";
+"recordingMicrophoneDeniedTitle" = "マイクアクセスがオフです";
+"recordingMicrophoneDeniedMessage" = "音声を録音するにはマイクアクセスが必要です。システム設定で有効にしてください";
+"recordingMicrophoneOpenSettings" = "システム設定を開く";
+"recordingMicrophoneTooltipOn" = "マイクオン";
+"recordingMicrophoneTooltipOff" = "マイクオフ";
+"recordingSystemAudioTooltipOn" = "システム音声オン";
+"recordingSystemAudioTooltipOff" = "システム音声オフ";
+"recordingMicrophoneDeviceLabel" = "マイク入力デバイス";
+"recordingMicrophoneDeviceDefault" = "システムデフォルト";
+"recordingMicrophoneDeviceMenuHint" = "右クリックで入力デバイスを選択";
+"recordingSystemAudioChangeFailed" = "システム音声のキャプチャを変更できませんでした";
+"recordingMicrophoneStartFailed" = "マイクのキャプチャを開始できませんでした";
+"screenshotSavePathLabel" = "スクリーンショットの保存先";
+"savePathChoose" = "選択";
+"savePathReveal" = "表示";
+"chooseRecordingSavePathTitle" = "録画の保存先を選択";
+"chooseScreenshotSavePathTitle" = "スクリーンショットの保存先を選択";
+
+/* Magnifier lens panel */
+"magnifierLensPanelCoordinatesLabel" = "座標";
+"magnifierLensPanelColorValueLabel" = "色";
+"magnifierLensPanelCoordinates" = "座標: %@, %@";
+"magnifierLensPanelHex" = "HEX: %@";
+"magnifierLensPanelRgb" = "RGB: %@";
+"magnifierLensPanelRgbString" = "rgb(%d, %d, %d)";
+"magnifierLensPanelCopyHint" = "色をコピー(C)";
+"magnifierLensPanelFormatHint" = "カラー形式(F)";
+"magnifierLensPanelAspectFree" = "自由";
+"magnifierLensPanelAspectHint" = "撮影比率(R)";
+/* ファイルのアップロード */
+"fileUploadShortcutHeader" = "ファイルをアップロード";
+"finderUploadShortcutDefaultDisplay" = "未設定";
+"shortcutConflictFileUpload" = "このキーの組み合わせはファイルをアップロードするショートカットで使用されています。別の組み合わせを選んでください";
+"uploadFilesMenu" = "ファイルをアップロード";
+"finderUploadDialogTitle" = "画像ホストへアップロード";
+"finderUploadDialogHeading" = "アップロードするファイル";
+"finderUploadSummary" = "%d 個のファイルを選択 · %@";
+"finderUploadSelectAll" = "すべて選択";
+"finderUploadAction" = "%d 個のファイルをアップロード";
+"finderUploadRetryAction" = "%d 個のファイルを再試行";
+"finderUploadingProgress" = "アップロード中 %d/%d";
+"finderUploadSucceeded" = "アップロード済み";
+"finderUploadFailed" = "失敗";
+"finderUploadErrorLogTitle" = "エラーログ";
+"finderUploadUnknownSize" = "サイズ不明";
+"finderUploadReadFailed" = "ファイルを読み込めません %@";
+"finderUploadCompleted" = "%d 個のファイルをアップロードしてリンクをコピーしました";
+
+"historyNotchTriggerLabel" = "ノッチの起動方法";
+"historyNotchTriggerHover" = "ホバーで開く";
+"historyNotchTriggerClick" = "クリックで開く";
+
+/* General settings categories */
+"settingsGeneralBasic" = "基本";
+"settingsGeneralCapture" = "撮影とピン留め";
+"settingsGeneralRecording" = "録画";
+"settingsGeneralHistory" = "履歴";
+"settingsGeneralFiles" = "ファイルと出力";
+
+"historyPreviewTextSaveFailed" = "テキストを保存できませんでした、再試行してください";
+
+"windowCapturePreparing" = "スクリーンショットを準備中";
+
+/* wxShot */
+"wxSettingsWindowTitle" = "wxShot 設定";
+"wxSectionShortcut" = "スクリーンショットのショートカット";
+"wxShortcutDefaultNote" = "既定の ⌥A は WeChat のスクリーンショットと同じなので、操作感はそのままです";
+"wxSectionWeChat" = "WeChat が起動しているとき";
+"wxPolicyAuto" = "自動：WeChat にログインしたら WeChat に任せる";
+"wxPolicyAlways" = "常に wxShot を使う";
+"wxPolicyYield" = "WeChat が起動中は常に WeChat に任せる";
+"wxPolicyHint" = "常に wxShot を使う場合は、同時に二つ起動しないようどちらかのショートカットを変えてください";
+"wxWeChatStatusNotRunning" = "WeChat は起動していません";
+"wxWeChatStatusLoginScreen" = "WeChat は起動中ですがログインしていません";
+"wxWeChatStatusLoggedIn" = "WeChat にログイン済みです";
+"wxShortcutOwner" = "現在このショートカットは %@ が処理します";
+"wxOwnerWeChat" = "WeChat";
+"wxSectionGeneral" = "一般";
+"wxTelemetryToggle" = "匿名の利用状況を送信する（稼働情報のみ）";
+"wxTelemetryHint" = "ランダムなインストール ID、バージョン、OS、言語のみを最初の一か月に数回送信します。スクリーンショットや文字、ファイルは送りません";
+"wxPermissionStatusGranted" = "画面収録は許可されています";
+"wxPermissionStatusMissing" = "画面収録がまだ許可されていません";
+"wxOpenSystemSettings" = "システム設定を開く";
+"wxWelcomeTitle" = "wxShot へようこそ";
+"wxWelcomeBody" = "WeChat と同じ使い心地のスクリーンショット。ログインしていなくても使えます。バックグラウンドで静かに待機し、ひとつのショートカットだけに反応します";
+"wxStepPermission" = "1  画面収録を許可";
+"wxStepPermissionNote" = "これはすべてのスクリーンショットアプリに対する macOS の要件です。wxShot は選択した範囲だけを扱い、どこにも送信しません";
+"wxStepShortcut" = "2  どこでも %@ を押して撮影";
+"wxStepShortcutNote" = "ドラッグで範囲選択、ダブルクリックか Return でコピー、Esc で取消。設定は wxShot をもう一度開けばいつでも変更できます";
+"wxStartButton" = "使い始める";
+"wxLaterButton" = "あとで";
+"wxAboutWebsite" = "公式サイト";
+"wxAboutSource" = "ソースコード（MIT）";
+"wxStarOnGitHub" = "GitHub で wxShot にスターを付ける";
+
+/* wxShot */
+"wxConfirmDiscard" = "もう一度押すと終了します（編集内容は失われます）";
+"wxTipSettings" = "設定";
+"wxSectionFeedback" = "フィードバック";
+"wxFeedbackHint" = "欲しい機能、不具合、アイデアなど何でもお寄せください。wxShot はフィードバックをもとに改善を続けます。";
+"wxFeedbackButton" = "フィードバックを送る…";
+"wxFeedbackTitle" = "フィードバックを送る";
+"wxFeedbackInfo" = "欲しい機能や困っていることを書いてください。メールアプリが開き、本文が入力され、アプリと macOS のバージョンが付きます。";
+"wxFeedbackSend" = "送信";
+"wxFeedbackGitHub" = "GitHub Issues";
+
+/* wxShot */
+"wxTipShare" = "共有";
+"wxTipMore" = "その他";
+"wxTranslateHeader" = "翻訳";
+"wxTranslating" = "翻訳中…";
+"wxTranslateUnsupported" = "翻訳には macOS 15 以降が必要です";
+"wxTranslateFailed" = "翻訳に失敗しました。システム設定 › 一般 › 言語と地域 › 翻訳言語 で言語をダウンロードしてください";
+
+/* wxShot */
+"wxLensCopyHint" = "⌘+C で色をコピー";
+
+/* wxShot */
+"wxUpdateRequiredBody" = "このバージョンはサポート終了です。wxShot を使い続けるには最新版をダウンロードしてください。";

@@ -1,0 +1,772 @@
+/* wxShot — 繁體中文 */
+
+/* Settings */
+"settingsTitle" = "wxShot 設定";
+"showMenuBarIcon" = "顯示選單列圖示";
+"permissionsHeader" = "必要權限";
+"accessibilityPermission" = "輔助使用";
+"accessibilityDescription" = "用來在全域偵測連按兩下 ⌘ Command 鍵，以觸發截圖";
+"screenRecordingPermission" = "螢幕錄製";
+"screenRecordingDescription" = "用來擷取螢幕內容並產生截圖";
+"microphonePermission" = "麥克風";
+"microphoneDescription" = "可選；用於在錄屏時錄製你的聲音";
+"launchApp" = "啟動 App";
+"launchAtLogin" = "登入時啟動";
+"pinAcrossSpaces" = "貼圖跨桌面顯示";
+"pinAcrossSpacesHint" = "開啟後新貼圖會出現在所有桌面與全螢幕空間";
+"historyCacheToggleLabel" = "快取截圖";
+"historyCacheToggleHint" = "保存最近截圖、取色和上傳結果，方便從歷史面板快速再次複製";
+"clipboardTextCacheToggleLabel" = "快取剪貼簿文字";
+"clipboardTextCacheToggleHint" = "將複製的文字保存到歷史記錄，方便從歷史記錄快速重複使用";
+"clipboardTextHistoryLimitLabel" = "文字歷史數量";
+"historyCacheLabel" = "圖片與媒體歷史數量";
+"historyPanelDisplayModeLabel" = "歷史面板顯示方式";
+"historyPanelDisplayModeHint" = "選擇透過彈窗或瀏海查看歷史記錄";
+"historyPanelDialogMode" = "彈窗";
+"historyPanelDialogModeHint" = "透過選單或快捷鍵開啟橫向預覽面板";
+"historyPanelNotchMode" = "瀏海";
+"historyPanelNotchModeHint" = "懸停或點擊螢幕頂部瀏海展開，移出後自動收起";
+"countdownLabel" = "倒數秒數";
+"countdownHint" = "按住 ⌥ Option 後連按兩下 ⌘，或按下截圖快捷鍵，即可先倒數再截圖，按 Esc 取消";
+"countdownSecondsSuffix" = "秒";
+"windowShadowToggleLabel" = "視窗截圖陰影";
+"windowShadowToggleHint" = "擷取視窗時裁出圓角，並加上 macOS 風格的陰影";
+"windowShadowSizeLabel" = "陰影大小";
+"windowShadowSizeHint" = "數值越大，陰影越柔和、擴散越遠，視窗看起來越有懸浮感";
+
+/* Screenshot shortcut */
+"shortcutHeader" = "截圖";
+"shortcutHint" = "預設：連按兩下 ⌘。設定自訂快捷鍵後，連按兩下 ⌘ 將停用";
+"shortcutDefaultDisplay" = "連按兩下 ⌘";
+"shortcutSet" = "設定";
+"shortcutCancel" = "取消";
+"shortcutWaiting" = "請按下按鍵";
+"shortcutNeedsModifierTitle" = "快捷鍵需要修飾鍵";
+"shortcutNeedsModifier" = "需要組合鍵：⌘/⌥/⇧/⌃ + 其他按鍵（如 ⌘⇧8），或單獨按 F1–F12";
+"shortcutRestore" = "恢復預設";
+"quickPinShortcutHeader" = "快速釘圖";
+"quickPinShortcutDefaultDisplay" = "未設定";
+"quickPinShortcutClear" = "清除快速釘圖快捷鍵";
+"selectedImagePinShortcutHeader" = "釘選所選圖片";
+"selectedImagePinShortcutDefaultDisplay" = "未設定";
+"selectedImagePinShortcutClear" = "清除釘選所選圖片快捷鍵";
+"clipboardImagePinShortcutHeader" = "釘選目前或剪貼簿圖片";
+"clipboardImagePinShortcutDefaultDisplay" = "未設定";
+"clipboardImagePinShortcutClear" = "清除釘選目前或剪貼簿圖片快捷鍵";
+"clipboardTextPinShortcutHeader" = "釘選剪貼簿文字";
+"clipboardTextPinShortcutDefaultDisplay" = "未設定";
+"clipboardTextPinShortcutClear" = "清除釘選剪貼簿文字快捷鍵";
+"selectedImagePinNoImage" = "Finder 中沒有選取圖片";
+"clipboardImagePinNoImage" = "剪貼簿中沒有圖片";
+"clipboardTextPinNoText" = "剪貼簿中沒有文字";
+"pinFromFinderHint" = "已釘選 Finder 中的圖片，按 X 關閉";
+"pinFromClipboardHint" = "已釘選剪貼簿圖片，按 X 關閉";
+"pinFromClipboardTextHint" = "已釘選剪貼簿文字，雙擊可編輯";
+"pinToolbarClose" = "關閉釘圖";
+"pinToolbarCopy" = "複製釘圖";
+"pinToolbarDrag" = "拖曳釘圖";
+"pinToolbarEdit" = "編輯釘圖";
+"pinToolbarEditText" = "編輯文字";
+
+/* Image-edit shortcuts */
+"selectedImageEditShortcutHeader" = "編輯所選圖片";
+"selectedImageEditShortcutHint" = "按下後，直接編輯 Finder 中選取的單張圖片。預設未設定";
+"selectedImageEditShortcutDefaultDisplay" = "未設定";
+"clipboardImageEditShortcutHeader" = "編輯剪貼簿圖片";
+"clipboardImageEditShortcutHint" = "按下後，直接編輯目前剪貼簿中的圖片。預設未設定";
+"clipboardImageEditShortcutDefaultDisplay" = "未設定";
+"textRecognitionShortcutHeader" = "文字辨識";
+"textRecognitionShortcutDefaultDisplay" = "未設定";
+"copyImageTextShortcutHeader" = "複製圖中文字";
+"copyImageTextShortcutDefaultDisplay" = "未設定";
+"screenshotTranslationShortcutHeader" = "截圖翻譯";
+"screenshotTranslationShortcutDefaultDisplay" = "未設定";
+"recordShortcutHeader" = "錄製";
+"recordShortcutDefaultDisplay" = "未設定";
+"fullScreenScreenshotShortcutHeader" = "截全螢幕";
+"fullScreenScreenshotShortcutDefaultDisplay" = "未設定";
+"colorPickerShortcutHeader" = "取色器";
+"colorPickerShortcutDefaultDisplay" = "未設定";
+
+/* Copy-to-clipboard shortcut (editor confirm) */
+"clipboardShortcutHeader" = "複製到剪貼簿";
+"clipboardShortcutHint" = "在編輯器中按下即可確認編輯，並將截圖複製到剪貼簿。未設定時預設為連按兩下 ⌘";
+"clipboardShortcutDefaultDisplay" = "連按兩下 ⌘";
+
+/* Save-to-file shortcut (editor save) */
+"fileSaveShortcutHeader" = "儲存為檔案";
+"fileSaveShortcutHint" = "在編輯器中按下後，將截圖以 PNG 儲存到設定的截圖儲存路徑。預設為 ⌘S";
+"previousHistoryImageShortcutHeader" = "上一張歷史截圖";
+"nextHistoryImageShortcutHeader" = "下一張歷史截圖";
+"historyPanelShortcutHeader" = "歷史面板";
+"historyPanelShortcutDefaultDisplay" = "未設定";
+
+/* Shortcut conflict */
+"shortcutConflictTitle" = "快捷鍵已被使用";
+"shortcutConflictScreenshot" = "這組按鍵已用於截圖快捷鍵。請選擇其他組合";
+"shortcutConflictCountdown" = "這組按鍵已用於倒數截圖快捷鍵（截圖快捷鍵 + ⌥）。請選擇其他組合";
+"shortcutConflictQuickPin" = "這組按鍵已用於快速釘圖快捷鍵，請選擇其他組合";
+"shortcutConflictSelectedImagePin" = "這組按鍵已用於釘選所選圖片快捷鍵。請選擇其他組合";
+"shortcutConflictClipboardImagePin" = "這組按鍵已用於釘選剪貼簿圖片快捷鍵。請選擇其他組合";
+"shortcutConflictClipboardTextPin" = "這組按鍵已用於釘選剪貼簿文字快捷鍵，請選擇其他組合";
+"shortcutConflictClipboard" = "這組按鍵已用於複製到剪貼簿快捷鍵。請選擇其他組合";
+"shortcutConflictFileSave" = "這組按鍵已用於儲存為檔案快捷鍵。請選擇其他組合";
+"shortcutConflictPreviousHistoryImage" = "這組按鍵已用於上一張歷史截圖快捷鍵。請選擇其他組合";
+"shortcutConflictNextHistoryImage" = "這組按鍵已用於下一張歷史截圖快捷鍵。請選擇其他組合";
+"shortcutConflictHistoryPanel" = "這組按鍵已用於歷史面板快捷鍵。請選擇其他組合";
+"shortcutConflictSelectedImageEdit" = "這組按鍵已用於編輯所選圖片快捷鍵。請選擇其他組合";
+"shortcutConflictClipboardImageEdit" = "這組按鍵已用於編輯剪貼簿圖片快捷鍵。請選擇其他組合";
+"shortcutConflictTextRecognition" = "這組按鍵已用於文字辨識快捷鍵。請選擇其他組合";
+"shortcutConflictCopyImageText" = "這組按鍵已用於複製圖中文字快捷鍵。請選擇其他組合";
+"shortcutConflictScreenshotTranslation" = "這組按鍵已用於截圖翻譯快捷鍵。請選擇其他組合";
+"shortcutConflictRecord" = "這組按鍵已用於錄製快捷鍵。請選擇其他組合";
+"shortcutConflictFullScreenScreenshot" = "這組按鍵已用於截全螢幕快捷鍵。請選擇其他組合";
+"shortcutConflictColorPicker" = "這組按鍵已用於取色器快捷鍵。請選擇其他組合";
+
+/* Menu bar */
+"takeScreenshot" = "截圖";
+"takeFullScreenScreenshot" = "截全螢幕";
+"record" = "錄製";
+"colorPicker" = "取色器";
+"settings" = "設定";
+"quitApp" = "結束 wxShot";
+"historyMenu" = "歷史記錄";
+"historyClear" = "清除歷史記錄";
+"historyCleared" = "歷史記錄已清除";
+"historyShowInFinder" = "在 Finder 中顯示";
+"historyPanelLock" = "鎖定歷史面板";
+"historyPanelUnlock" = "解鎖歷史面板";
+"historyPanelFavorite" = "收藏";
+"historyPanelUnfavorite" = "取消收藏";
+"historyPanelItemFavorited" = "已收藏";
+"historyPanelItemUnfavorited" = "已取消收藏";
+"historyPanelMenu" = "歷史面板";
+"historyPanelDeleteAll" = "刪除全部歷史記錄";
+"historyPanelDeleteSelectedOne" = "刪除 %d 個項目";
+"historyPanelDeleteSelected" = "刪除 %d 個項目";
+"historyPanelDeletedSelectedOne" = "已刪除 %d 個項目";
+"historyPanelDeletedSelected" = "已刪除 %d 個項目";
+"historyPanelFavoriteFailed" = "無法更改收藏";
+"historyDeletedSkippingFavorites" = "已刪除 %d 個項目，跳過 %d 個收藏";
+"historyPanelFilterAll" = "全部";
+"historyPanelFilterScreenshots" = "截圖";
+"historyPanelFilterGIF" = "GIF";
+"historyPanelFilterMP4" = "MP4";
+"historyPanelFilterColors" = "顏色";
+"historyPanelFilterText" = "文字";
+"historyPanelSearchColorsAndText" = "搜尋顏色和文字";
+"historyPanelSearchColors" = "搜尋顏色";
+"historyPanelSearchText" = "搜尋文字";
+"historyPanelClearSearch" = "清除搜尋";
+"historyPanelSearchNoResults" = "沒有符合的歷史";
+"historyPreviewCopyText" = "複製文字";
+"historyPreviewTranslateText" = "翻譯文字";
+"historyPreviewConvertToQRCode" = "轉成二維碼";
+"historyPreviewQRCodeTooLong" = "文字太長，無法轉換為二維碼";
+"historyPreviewOriginalText" = "原文";
+"historyPreviewQRCodeTitle" = "文字二維碼";
+"historyPanelCopyHint" = "點選複製";
+"historyPanelCopyDragHint" = "點選複製 · 拖曳到應用";
+"historyPanelCopyMarkdownLink" = "複製 MD 連結";
+"historyPanelCopyPlainLink" = "複製純網址";
+"historyPanelEmpty" = "尚無歷史";
+"historyPanelShortcutGuide" = "快速鍵說明";
+"historyPanelShortcutGuideHide" = "返回歷史";
+"historyPanelShortcutKeyClick" = "按一下";
+"historyPanelShortcutKeyDrag" = "拖曳";
+"historyPanelShortcutKeySpace" = "空白鍵";
+"historyPanelShortcutSearch" = "搜尋或關閉搜尋";
+"historyPanelShortcutSwitchFilter" = "切換分類";
+"historyPanelShortcutToggleSelection" = "單選或取消選取";
+"historyPanelShortcutRangeSelection" = "範圍選取";
+"historyPanelShortcutSelectAll" = "全選目前結果";
+"historyPanelShortcutCancel" = "離開搜尋或清除目前狀態";
+"historyPanelShortcutCopyItem" = "複製項目";
+"historyPanelShortcutDragItem" = "拖曳圖片或影片到其他 App";
+"historyPanelShortcutOpenPreview" = "預覽游標停留的圖片或文字";
+"historyPanelShortcutBrowsePreview" = "切換上一個或下一個預覽";
+"historyPanelShortcutClosePreview" = "關閉預覽";
+"historyPanelShortcutCopyPreview" = "複製預覽內容";
+"historyPanelShortcutEditImage" = "編輯圖片";
+"historyPanelShortcutPinImage" = "釘選圖片";
+"historyPanelShortcutUploadImage" = "上傳圖片";
+"historyPanelShortcutTranslateText" = "翻譯文字";
+"historyPanelShortcutQRCode" = "產生二維碼";
+"historyPanelShortcutToggleGuide" = "顯示或隱藏快速鍵說明";
+
+/* Cursor chip */
+"dragToQuickPin" = "點選視窗或框選區域並直接釘圖";
+"dragToScreenshot" = "點選視窗或拖曳以截圖";
+"dragToScreenshotAspectFree" = "點選視窗或拖曳以截圖 · 框選自由比例（R）";
+"dragToScreenshotAspect" = "點選視窗或拖曳以截圖 · 框選 %@（R）";
+"dragToTextRecognition" = "點選視窗或框選區域辨識文字";
+"dragToCopyImageText" = "點選視窗或框選區域複製文字";
+"dragToScreenshotTranslation" = "點選視窗或框選區域翻譯內容";
+"dragToRecord" = "點選視窗或拖曳以錄製";
+"dragToRecordAspectFree" = "點選視窗或拖曳以錄製 · 框選自由比例（R）";
+"dragToRecordAspect" = "點選視窗或拖曳以錄製 · 框選 %@（R）";
+
+/* Toast */
+"copiedToClipboard" = "已複製到剪貼簿";
+"mergedLongScreenshot" = "已合併長截圖";
+"autoScrollPermissionNeeded" = "長截圖需要「輔助使用」權限，請在「系統設定 → 隱私權與安全性 → 輔助使用」中允許 wxShot";
+"cropLongScreenshotHint" = "拖曳上下邊緣裁切長截圖，按 Enter 或點一下 ✓ 確認";
+"scrollCaptureHint" = "按任意鍵結束捲動";
+"scrollCaptureManualHint" = "手動捲動頁面，按任意鍵或點一下綠色按鈕結束";
+"finderEditExitHint" = "正在編輯 Finder 圖片。按 X 結束編輯";
+"clipboardEditExitHint" = "正在編輯剪貼簿圖片。按 X 結束編輯";
+"pinEditExitHint" = "正在編輯釘圖。按 X 結束編輯";
+"fullScreenEditExitHint" = "正在編輯全螢幕截圖，按 X 結束編輯";
+"editSuspendedToast" = "已暫存編輯，下次觸發截圖時繼續";
+"editSuspendedResumeToast" = "已恢復上次未完成的編輯";
+"fullScreenScreenshotFailed" = "截全螢幕失敗";
+"openImageNoImage" = "複製圖片到剪貼簿，或選擇一個圖片檔案";
+"selectedImageEditNoImage" = "Finder 中沒有選取單張圖片";
+"clipboardImageEditNoImage" = "剪貼簿中沒有可編輯的圖片";
+"recordingSaved" = "錄製已儲存到 %@";
+"recordingCancelled" = "錄製已取消";
+"recordingExportingGIF" = "正在建立 GIF";
+"recordingFailed" = "錄製失敗：%@";
+"saveRecording" = "儲存錄製";
+"saveRecordingPrompt" = "儲存";
+"recordingFormatLabel" = "格式";
+"recordingFormatManual" = "手動選擇";
+"recordingFormatMP4" = "MP4";
+"recordingFormatGIF" = "GIF";
+"recordingFormatChoiceTitle" = "選擇錄製格式";
+"recordingFormatChoiceMessage" = "錄製會儲存到設定的錄製儲存路徑";
+"screenshotSaved" = "截圖已儲存到 %@";
+"screenshotSaveFailed" = "截圖儲存失敗：%@";
+"recordingStop" = "停止錄製";
+"recordingPause" = "暫停";
+"recordingResume" = "繼續";
+"colorCopied" = "已複製色彩 %@";
+"qrCodeCopied" = "已複製二維碼內容";
+"qrCodeNotFound" = "未識別到二維碼";
+
+/* Toolbar tooltips */
+"tipRectangle" = "矩形";
+"tipEllipse" = "橢圓";
+"tipArrow" = "箭頭";
+"tipLine" = "直線";
+"tipPen" = "畫筆";
+"tipMarker" = "螢光筆";
+"tipSpotlight" = "聚光燈";
+"tipMosaic" = "馬賽克";
+"mosaicGranularity" = "馬賽克顆粒度";
+"mosaicBlur" = "模糊";
+"mosaicBlurAmount" = "模糊程度";
+"tipEraser" = "橡皮擦";
+"tipMagnifier" = "放大鏡";
+"tipNumbered" = "編號";
+"tipText" = "文字";
+"tipQRCode" = "二維碼";
+"tipEmoji" = "表情";
+"tipMoreEmoji" = "更多表情";
+"tipMoreBeautifyPresets" = "更多美化配色";
+"tipInsertImage" = "插入圖片";
+"tipColorPicker" = "取色器";
+"tipPickedInkBottle" = "使用取色器提取顏色到墨水瓶";
+"tipUndo" = "復原";
+"tipRedo" = "重做";
+"tipMoveSelection" = "移動選取範圍";
+"tipScrollCapture" = "長截圖";
+"tipRotate" = "旋轉";
+"tipRotateLeft" = "向左旋轉 90°";
+"tipRotateRight" = "向右旋轉 90°";
+"tipBeautify" = "美化";
+"tipOCR" = "文字辨識";
+"tipScreenshotTranslate" = "截圖翻譯";
+"tipSave" = "儲存為檔案";
+"tipPin" = "釘選到螢幕";
+"tipRecord" = "錄製";
+"tipCancel" = "取消";
+"tipConfirm" = "複製到剪貼簿";
+"tipScrollCropConfirm" = "儲存並編輯";
+"copyQRCodeContent" = "複製二維碼內容";
+
+/* Beautify */
+"beautify" = "美化";
+"beautifyPresetTransparent" = "透明";
+"beautifyPresetPeachBlue" = "蜜桃藍";
+"beautifyPresetMintTeal" = "薄荷青";
+"beautifyPresetPeachPink" = "蜜桃粉";
+"beautifyPresetBluePurple" = "藍紫漸層";
+"beautifyPresetWarmOrange" = "暖橘光";
+"beautifyPresetTealPink" = "青粉漸層";
+"beautifyPresetDeepPurple" = "深紫夜色";
+"beautifyPresetNeutralGray" = "中性灰";
+"beautifyPresetWallpaper" = "桌布";
+"beautifyPresetAurora" = "極光";
+"beautifyPresetSunsetGlow" = "落日霞光";
+"beautifyPresetOceanBlue" = "海洋藍";
+"beautifyPresetLavenderMist" = "薰衣草霧";
+"beautifyPresetForestMint" = "森林薄荷";
+"beautifyPresetRoseGold" = "玫瑰金";
+"beautifyPresetMorningSky" = "晨曦天空";
+"beautifyPresetCandyPop" = "糖果色";
+"beautifyPresetCitrusGlow" = "柑橘光";
+"beautifyPresetMidnight" = "午夜藍";
+"beautifyPresetCoralBloom" = "珊瑚花";
+"beautifyPresetArcticIce" = "極地冰藍";
+"beautifyPresetSageCream" = "鼠尾草奶油";
+"beautifyPresetGraphite" = "石墨灰";
+"beautifyShadowEffect" = "陰影效果";
+"beautifyAutoToggleLabel" = "進入編輯器預設開啟美化";
+"beautifyAutoToggleHint" = "開啟編輯器時自動套用上次的美化預設、邊距與陰影";
+"beautifyDefaultPresetLabel" = "預設樣式";
+"beautifyDefaultPaddingLabel" = "預設邊距";
+"textStrokeEffect" = "描邊";
+"textCalloutEffect" = "標註";
+"textFontLabel" = "字體";
+"textFontSystemDefault" = "系統預設";
+"textFontDefaultLabel" = "預設文字字體";
+"textFontDefaultHint" = "新建文字標註使用的字體";
+"shapeFillEffect" = "填充";
+"shapeFillNone" = "線框";
+"shapeFillOpaque" = "填充";
+"shapeFillTranslucent" = "半透明填充";
+"shapeStyleStandard" = "預設樣式";
+"shapeStyleRounded" = "圓角矩形";
+"shapeStyleHandDrawn" = "手繪";
+"arrowStyleTapered" = "實心箭頭";
+"arrowStyleDoubleEnded" = "雙向箭頭";
+"arrowStyleLine" = "線條箭頭";
+"arrowStyleDotTail" = "圓點箭頭";
+"insertImageFromClipboard" = "從剪貼簿插入";
+"insertImageFromFile" = "從本機檔案插入";
+"insertImageChooseFile" = "選擇圖片";
+"insertImageNoClipboardImage" = "剪貼簿中沒有圖片";
+"scrollCaptureAutoScroll" = "自動捲動";
+"scrollCaptureManualScroll" = "手動捲動";
+
+/* Language */
+"languageHeader" = "語言";
+
+/* Settings sidebar tabs */
+"settingsTabGeneral" = "一般";
+"settingsTabShortcuts" = "快捷鍵";
+"settingsTabPermissions" = "權限";
+"settingsTabUpload" = "上傳";
+"settingsTabAbout" = "關於";
+"settingsTabTranslation" = "翻譯";
+"settingsTabToolbar" = "工具列";
+"settingsQuit" = "結束 App";
+
+"toolbarSettingsPrimaryTitle" = "主要工具列";
+"toolbarSettingsPrimaryHint" = "工具會顯示在選取範圍的上方或下方，拖曳調整位置，點擊設定快捷鍵";
+"toolbarSettingsSideTitle" = "側邊工具列";
+"toolbarSettingsSideHint" = "工具會顯示在選取範圍的左側或右側，拖曳調整位置，點擊設定快捷鍵";
+"toolbarSettingsHiddenTitle" = "隱藏工具";
+"toolbarSettingsHiddenHint" = "拖到這裡的工具不會出現在任何工具列";
+"toolbarSettingsFootnote" = "工具列會依選取範圍的位置，自動在上/下與左/右配置間切換";
+"toolbarSettingsShortcutHint" = "點按工具可錄製快捷鍵，拖動可調整位置，右鍵可清除或恢復預設";
+"toolbarSettingsShortcutRecording" = "請按下「%@」的新快捷鍵，按 Esc 取消";
+"toolbarSettingsShortcutRecord" = "錄製快捷鍵";
+"toolbarSettingsShortcutClear" = "清除快捷鍵";
+"toolbarSettingsShortcutRestore" = "恢復預設快捷鍵";
+"toolbarSettingsShortcutResetAll" = "重設編輯器快捷鍵";
+"toolbarSettingsShortcutNone" = "未設定";
+"toolbarSettingsShortcutUnavailable" = "N/A";
+"toolbarSettingsAdditionalShortcuts" = "其他編輯操作";
+"toolbarSettingsReset" = "重設為預設值";
+"toolbarSettingsCancel" = "取消";
+"toolbarSettingsApply" = "套用";
+"editorShortcutSelect" = "選取工具";
+"editorShortcutShapeFill" = "切換形狀填滿";
+"editorShortcutConflict" = "此快捷鍵已指派給「%@」";
+"editorShortcutReserved" = "此按鍵用於編輯器系統操作，無法重新指派";
+
+/* About pane */
+"aboutTagline" = "選單列截圖工具";
+"aboutLicense" = "授權條款";
+"aboutSourceCode" = "原始碼";
+"aboutStarOnGitHub" = "在 GitHub 給 wxShot 一顆星 🌟";
+"aboutFeatureRequest" = "提出功能建議";
+"aboutBugReport" = "回報問題";
+"aboutUpdateTitle" = "更新";
+"aboutErrorLog" = "錯誤記錄";
+"aboutErrorLogNoCrash" = "沒有錯誤記錄";
+"aboutErrorLogLastCrash" = "最新記錄 · %@";
+"aboutErrorLogCopy" = "複製記錄";
+"aboutErrorLogCopied" = "已複製";
+"aboutErrorLogReveal" = "在 Finder 中顯示";
+"aboutErrorLogRefresh" = "重新整理記錄";
+"aboutErrorLogClear" = "清除記錄";
+"aboutErrorLogEmptyBody" = "wxShot 尚未記錄任何錯誤。如果 App 當機、卡住或閃退，請回到這裡複製記錄，方便回報問題";
+
+/* Updates — About pane */
+"checkForUpdates" = "檢查更新";
+"updateChecking" = "正在檢查";
+"updateUpToDateStatus" = "已是最新版本";
+"updateNewVersionStatus" = "可更新至 Release v%@";
+"updateFailedStatus" = "檢查失敗";
+"updateDownloadButton" = "下載";
+"updateRetryButton" = "重試";
+"updateInstallNowButton" = "立即更新";
+"updateDownloadingStatus" = "下載中 %d%%";
+"updateInstallingStatus" = "正在安裝";
+"updateInstallFailedStatus" = "安裝失敗";
+
+/* Updates — menu bar */
+"checkForUpdatesMenu" = "檢查更新";
+"checkingForUpdatesMenu" = "正在檢查更新";
+"updateAvailableMenu" = "可更新至 Release v%@";
+"updateDownloadingMenu" = "正在下載更新… %d%%";
+"updateInstallingMenu" = "正在安裝更新";
+"updateInstallFailedMenu" = "更新安裝失敗";
+
+/* Updates — progress HUD */
+"updateCheckingHUD" = "正在檢查更新";
+"updateDownloadingHUD" = "正在下載更新 %d%%";
+"updateVerifyingHUD" = "正在驗證更新";
+"updateUnzippingHUD" = "正在解壓縮";
+"updateInstallingHUD" = "正在安裝";
+
+/* Updates — manual check result alert */
+"updateAvailableTitle" = "可更新至 Release v%@";
+"updateAvailableBody" = "wxShot 會下載並安裝最新版本，完成後自動重新啟動";
+"updateUpToDateTitle" = "已是最新版本";
+"updateUpToDateBody" = "wxShot v%@ 已是最新版本";
+"updateFailedTitle" = "檢查更新失敗";
+"updateFailedBody" = "無法連線到 GitHub。請檢查網路後再試一次";
+"updateInstallFailedTitle" = "更新失敗";
+"updateInstallFailedBody" = "下載或安裝更新時發生錯誤。你可以前往 GitHub Releases 頁面手動下載";
+"updateOpenPageButton" = "開啟 GitHub";
+"updateSkipButton" = "略過此版本";
+"updateLaterButton" = "稍後";
+"updateOKButton" = "好";
+
+/* Quit confirmation dialog */
+"quitConfirmTitle" = "結束 wxShot";
+"quitConfirmMessage" = "結束後，選單列圖示會消失，截圖快捷鍵也會停用，直到你再次啟動 wxShot";
+"quitConfirmAction" = "結束";
+"quitConfirmCancel" = "取消";
+
+/* Upload — toolbar / toast / progress */
+"tipUpload" = "上傳到圖床";
+"uploadingTitle" = "上傳中";
+"uploadCopied" = "已複製圖片網址";
+"uploadCopiedMarkdown" = "已複製 Markdown 連結";
+"uploadNoProvider" = "請先在設定中設定上傳服務";
+"uploadFailedPrefix" = "上傳失敗";
+
+/* Upload — settings tab */
+"uploadDefaultProvider" = "預設上傳服務";
+"uploadDefaultNone" = "停用";
+"uploadSetDefaultButton" = "設為預設";
+"uploadSaveButton" = "儲存";
+"uploadClearButton" = "清除";
+"uploadSavedToast" = "設定已儲存";
+"uploadCurrentDefault" = "目前預設";
+"uploadMarkdownToggleTitle" = "複製為 Markdown 連結";
+"uploadMarkdownToggleSubtitle" = "開啟後，上傳完成會複製 Markdown 圖片標籤（![](url)）；關閉則複製純網址。歷史面板中，點選雲端圖片會依此設定複製，也可用懸浮按鈕選擇 MD 或純網址";
+"filenameRuleTitle" = "檔名規則";
+"filenameRuleSubtitle" = "控制圖片上傳、圖片儲存預設檔名和錄製儲存預設檔名。副檔名會自動加入";
+"filenameRulePresetLabel" = "預設";
+"filenameRulePresetCustom" = "自訂";
+"filenameRulePresetShort" = "簡短";
+"filenameRulePresetCompact" = "超短連結";
+"filenameRulePresetUnique" = "避免重名";
+"filenameRulePresetCounter" = "每日計數";
+"filenameRulePresetRestore" = "還原預設";
+"filenameRuleImageLabel" = "圖片";
+"filenameRuleRecordingLabel" = "錄製";
+"filenameRuleVariablesLabel" = "變數";
+"filenameRuleVariableDate" = "日期";
+"filenameRuleVariableTime" = "時間";
+"filenameRuleVariableDaily" = "每日編號";
+"filenameRuleVariableRandom" = "隨機碼";
+"filenameRuleVariableSize" = "尺寸";
+"filenameRulePreview" = "%@";
+
+/* Upload — provider field labels */
+"uploadFieldBucket" = "Bucket";
+"uploadFieldBucketSpace" = "儲存空間";
+"uploadFieldRegion" = "區域";
+"uploadFieldRegionOptional" = "選填區域";
+"uploadFieldPathOptional" = "選填路徑";
+"uploadFieldCustomUrlOptional" = "選填自訂網址";
+"uploadFieldPublicDomain" = "公開網域";
+"uploadFieldEndpointArea" = "Endpoint 區域";
+"uploadFieldEndpointOptional" = "選填 Endpoint";
+"uploadFieldAccountId" = "帳號 ID";
+"uploadTestImageFailed" = "無法建立測試圖片";
+
+/* Upload — provider names */
+"providerTencentCOS" = "騰訊雲 COS";
+"providerQiniuKodo" = "七牛雲 Kodo";
+"providerAliyunOSS" = "阿里雲 OSS";
+
+/* Upload — errors */
+"uploadErrMissingConfig" = "尚未設定上傳服務";
+"uploadErrInvalidConfigPrefix" = "設定無效";
+"uploadErrNetworkPrefix" = "網路錯誤";
+"uploadErrServerPrefix" = "上傳失敗 代碼 %d";
+"uploadErrUnexpectedResponsePrefix" = "非預期的回應";
+"missingField" = "缺少 %@";
+
+/* Upload — test/validation pill */
+"uploadStatusUntested" = "尚未測試";
+"uploadStatusTesting" = "測試中";
+"uploadStatusValid" = "可用";
+"uploadStatusInvalid" = "設定無效";
+
+/* Upload — log lines */
+"uploadLogStartingTest" = "開始測試上傳";
+"uploadLogConfigSaved" = "設定已儲存";
+"uploadLogMissingFields" = "缺少必要欄位：%@";
+"uploadLogTestSucceeded" = "測試上傳成功：%@";
+"uploadLogTestFailed" = "測試上傳失敗：%@";
+"uploadLogProviderDisabled" = "上傳服務已停用";
+"uploadLogConfigCleared" = "設定已清除";
+
+/* Permissions — status label */
+"permissionGranted" = "已允許";
+"permissionNotGranted" = "未允許";
+
+/* OCR & Translation — result panel */
+"ocrTextHeader" = "辨識文字";
+"ocrRecognizing" = "辨識中";
+"ocrNoText" = "找不到文字";
+"ocrCopy" = "複製";
+"ocrCopied" = "已複製";
+"ocrRetry" = "重試";
+"ocrTranslating" = "翻譯中";
+"ocrTranslateFailedPrefix" = "失敗";
+"ocrNoProviderTitle" = "尚未設定翻譯服務";
+"ocrNoProviderHint" = "請前往「設定 → 翻譯」啟用翻譯服務";
+"ocrOpenSettings" = "開啟設定";
+"ocrLineCopied" = "已複製此行";
+"copyImageTextCopying" = "正在複製";
+"copyImageTextCopied" = "已複製圖中文字";
+"copyImageTextNoText" = "找不到文字";
+"screenshotTranslationHeader" = "翻譯";
+"screenshotTranslationLanguageButton" = "翻譯為 %@";
+"dictionaryEntryLabel" = "詞條";
+"dictionaryPhoneticLabel" = "發音";
+"dictionaryPartOfSpeechLabel" = "詞性";
+"dictionaryDefinitionLabel" = "釋義";
+"dictionaryExampleLabel" = "例句";
+"dictionaryDifficultyLabel" = "難度";
+"dictionaryNoProviderTitle" = "尚未設定支援字典模式的 AI 服務";
+"dictionaryNoProviderHint" = "請啟用 OpenAI、DeepSeek、Claude，或自訂 OpenAI 相容服務";
+
+/* Translation — settings tab */
+"translationDictionaryModeTitle" = "字典模式";
+"translationDictionaryModeSubtitle" = "截圖翻譯辨識到單一英文單字時，顯示發音、釋義、例句、翻譯與 CEFR 程度";
+"translationTargetLanguage" = "目標語言";
+"translationTargetHint" = "辨識出的文字會翻譯成此語言；若原文已是此語言，則改譯為英文";
+"translationApiKey" = "API Key";
+"translationApiKeyOptional" = "選填 API Key";
+"translationModel" = "模型";
+"translationEndpoint" = "Endpoint";
+"translationEndpointOptional" = "選填 Endpoint";
+"translationSave" = "儲存";
+"translationClear" = "清除";
+"translationConfigSaved" = "設定已儲存";
+"translationTesting" = "測試中";
+"translationTestPassed" = "測試通過";
+"translationTestFailed" = "測試失敗";
+"translationTestFailedTitle" = "已儲存，但連線測試失敗";
+"translationProviderCustom" = "自訂 OpenAI 相容";
+"translationAppleSubtitle" = "使用 Apple 裝置端模型，可能需要下載語言資料";
+"translationErrAppleUnavailable" = "Apple Translation 需要 macOS 15 或以上版本";
+"translationMoveUp" = "上移";
+"translationMoveDown" = "下移";
+
+/* Translation — target language names */
+"transLangChinese" = "中文";
+"transLangEnglish" = "英文";
+"transLangJapanese" = "日文";
+"transLangKorean" = "韓文";
+
+/* Translation — errors */
+"translationErrMissingAPIKey" = "尚未設定 API Key";
+"translationErrBadEndpoint" = "Endpoint 無效";
+"translationErrBadResponse" = "回應格式不正確";
+
+/* Image Merge */
+"imageMergeShortcutHeader" = "合併圖片";
+"imageMergeShortcutDefaultDisplay" = "未設定";
+"shortcutConflictImageMerge" = "該按鍵組合已被合併圖片快速鍵使用，請換一個";
+"mergeImages" = "合併圖片";
+"mergeEditExitHint" = "正在編輯合併圖片，按 X 結束編輯";
+"imageMergeNeedTwoImages" = "請選取至少兩張 Finder 圖片再合併";
+"imageMergeSomeImagesSkipped" = "部分圖片無法載入，已略過";
+"imageMergeNoClipboardImage" = "剪貼簿中沒有圖片";
+"imageMergeFailed" = "圖片合併失敗";
+"imageMergeSaved" = "合併圖片已儲存";
+"imageMergeWindowTitle" = "合併圖片";
+"imageMergeSources" = "圖片來源";
+"imageMergeAddFiles" = "加入檔案";
+"imageMergeAddFromClipboard" = "從剪貼簿加入";
+"imageMergeImageList" = "圖片";
+"imageMergeTemplate" = "排列方式";
+"imageMergeTemplateHorizontal" = "橫向排列";
+"imageMergeTemplateVertical" = "縱向排列";
+"imageMergeTemplateGrid" = "等寬格狀";
+"imageMergeTemplateLongStitch" = "長圖拼接";
+"imageMergeLayout" = "版面";
+"imageMergeSpacing" = "間距";
+"imageMergeMargin" = "外邊距";
+"imageMergeCornerRadius" = "圓角";
+"imageMergeBackground" = "背景";
+"imageMergeTransparent" = "透明";
+"imageMergeSolid" = "純色";
+"imageMergeOutput" = "輸出";
+"imageMergeCopy" = "複製";
+"imageMergeSave" = "儲存";
+"imageMergeContinueEditing" = "編輯";
+"imageMergeClose" = "關閉";
+"imageMergeEmptyTitle" = "拖入圖片開始合併";
+"imageMergeEmptyBody" = "加入檔案、從剪貼簿加入，或直接把圖片拖到這裡";
+"imageMergeClipboardSourceName" = "剪貼簿圖片";
+
+/* Screenshot quality */
+"screenshotQualityTitle" = "截圖品質";
+"screenshotQualitySubtitle" = "上傳、儲存或複製前依所選檔位處理截圖，預設保留原圖";
+"screenshotQualityUploadLabel" = "上傳";
+"screenshotQualitySaveLabel" = "儲存到檔案";
+"screenshotQualityClipboardLabel" = "複製到剪貼簿";
+"screenshotQualityOriginal" = "原圖";
+"screenshotQualityOriginalHint" = "PNG 原尺寸無損畫質，檔案最大";
+"screenshotQualityCompressed" = "壓縮";
+"screenshotQualityCompressedHint" = "保留原尺寸，做本地 PNG 壓縮";
+"screenshotQualityCompressingUpload" = "正在壓縮後上傳";
+"screenshotQualityCompressingSave" = "正在壓縮後儲存";
+"screenshotQualityCompressingClipboard" = "正在壓縮後複製";
+"screenshotCompressionFailed" = "圖片壓縮失敗";
+
+/* Save paths */
+"savePathTitle" = "儲存路徑";
+"savePathSubtitle" = "設定截圖和錄製的預設儲存位置";
+"askSaveLocationLabel" = "詢問儲存位置";
+"askSaveLocationHint" = "儲存截圖時彈出對話框選擇位置，關閉後直接儲存到截圖路徑";
+"autoRevealSavedFilesLabel" = "在 Finder 中顯示";
+"autoRevealSavedFilesHint" = "儲存成功後，在 Finder 中選取剛儲存的截圖或錄製";
+"recordingSavePathLabel" = "錄製儲存路徑";
+"recordingSaveFormatSettingLabel" = "錄製格式";
+"recordingSystemAudioLabel" = "錄製系統音訊";
+"recordingSystemAudioHint" = "錄屏時擷取應用和系統聲音，下次錄製生效";
+"recordingMicrophoneLabel" = "錄製麥克風";
+"recordingMicrophoneHint" = "錄屏時擷取你的聲音，下次錄製生效";
+"recordingMicrophoneDeniedTitle" = "麥克風權限已關閉";
+"recordingMicrophoneDeniedMessage" = "wxShot 需要麥克風權限才能錄製你的聲音，請在系統設定中開啟";
+"recordingMicrophoneOpenSettings" = "打開系統設定";
+"recordingMicrophoneTooltipOn" = "麥克風已開";
+"recordingMicrophoneTooltipOff" = "麥克風已關";
+"recordingSystemAudioTooltipOn" = "系統音訊已開";
+"recordingSystemAudioTooltipOff" = "系統音訊已關";
+"recordingMicrophoneDeviceLabel" = "麥克風輸入裝置";
+"recordingMicrophoneDeviceDefault" = "系統預設";
+"recordingMicrophoneDeviceMenuHint" = "右鍵選擇輸入裝置";
+"recordingSystemAudioChangeFailed" = "無法切換系統音訊擷取";
+"recordingMicrophoneStartFailed" = "無法啟動麥克風擷取";
+"screenshotSavePathLabel" = "截圖儲存路徑";
+"savePathChoose" = "選擇";
+"savePathReveal" = "顯示";
+"chooseRecordingSavePathTitle" = "選擇錄製儲存路徑";
+"chooseScreenshotSavePathTitle" = "選擇截圖儲存路徑";
+
+/* Magnifier lens panel */
+"magnifierLensPanelCoordinatesLabel" = "座標";
+"magnifierLensPanelColorValueLabel" = "色值";
+"magnifierLensPanelCoordinates" = "座標: %@, %@";
+"magnifierLensPanelHex" = "HEX: %@";
+"magnifierLensPanelRgb" = "RGB: %@";
+"magnifierLensPanelRgbString" = "rgb(%d, %d, %d)";
+"magnifierLensPanelCopyHint" = "複製色彩(C)";
+"magnifierLensPanelFormatHint" = "色值格式(F)";
+"magnifierLensPanelAspectFree" = "自由";
+"magnifierLensPanelAspectHint" = "截圖比例(R)";
+/* 檔案上傳 */
+"fileUploadShortcutHeader" = "上傳檔案";
+"finderUploadShortcutDefaultDisplay" = "未設定";
+"shortcutConflictFileUpload" = "此按鍵組合已被上傳檔案快速鍵使用，請換一個";
+"uploadFilesMenu" = "上傳檔案";
+"finderUploadDialogTitle" = "上傳至圖床";
+"finderUploadDialogHeading" = "即將上傳的檔案";
+"finderUploadSummary" = "已選擇 %d 個檔案 · %@";
+"finderUploadSelectAll" = "全選";
+"finderUploadAction" = "上傳 %d 個檔案";
+"finderUploadRetryAction" = "重試 %d 個檔案";
+"finderUploadingProgress" = "上傳中 %d/%d";
+"finderUploadSucceeded" = "上傳成功";
+"finderUploadFailed" = "上傳失敗";
+"finderUploadErrorLogTitle" = "錯誤記錄";
+"finderUploadUnknownSize" = "未知大小";
+"finderUploadReadFailed" = "無法讀取檔案 %@";
+"finderUploadCompleted" = "已上傳 %d 個檔案並複製連結";
+
+"historyNotchTriggerLabel" = "瀏海觸發方式";
+"historyNotchTriggerHover" = "滑鼠懸停開啟";
+"historyNotchTriggerClick" = "滑鼠點擊開啟";
+
+/* General settings categories */
+"settingsGeneralBasic" = "基本";
+"settingsGeneralCapture" = "截圖與貼圖";
+"settingsGeneralRecording" = "錄製";
+"settingsGeneralHistory" = "歷史記錄";
+"settingsGeneralFiles" = "檔案與輸出";
+
+"historyPreviewTextSaveFailed" = "文字儲存失敗，請重試";
+
+"windowCapturePreparing" = "正在準備截圖";
+
+/* wxShot */
+"wxSettingsWindowTitle" = "wxShot 設定";
+"wxSectionShortcut" = "截圖快速鍵";
+"wxShortcutDefaultNote" = "預設 ⌥A，與微信截圖習慣一致，無需重新適應";
+"wxSectionWeChat" = "微信開啟時";
+"wxPolicyAuto" = "自動：微信登入後交給微信，未登入時用 wxShot";
+"wxPolicyAlways" = "一律使用 wxShot 截圖";
+"wxPolicyYield" = "微信執行時一律交給微信";
+"wxPolicyHint" = "若選擇一律使用 wxShot，請將微信或 wxShot 的快速鍵改成不同的，避免一次按鍵彈出兩個截圖";
+"wxWeChatStatusNotRunning" = "微信未執行";
+"wxWeChatStatusLoginScreen" = "微信已開啟但未登入";
+"wxWeChatStatusLoggedIn" = "微信已登入";
+"wxShortcutOwner" = "目前快速鍵由 %@ 回應";
+"wxOwnerWeChat" = "微信";
+"wxSectionGeneral" = "一般";
+"wxTelemetryToggle" = "傳送匿名使用統計（僅存活資訊）";
+"wxTelemetryHint" = "僅包含隨機安裝編號、版本、系統和語言，首月只發幾次。絕不上傳截圖、文字或檔案";
+"wxPermissionStatusGranted" = "已允許螢幕錄製";
+"wxPermissionStatusMissing" = "尚未允許螢幕錄製";
+"wxOpenSystemSettings" = "打開系統設定";
+"wxWelcomeTitle" = "歡迎使用 wxShot";
+"wxWelcomeBody" = "微信同款截圖體驗，不用登入微信也能用。靜靜待在背景，只回應一個快速鍵";
+"wxStepPermission" = "1  允許螢幕錄製";
+"wxStepPermissionNote" = "這是 macOS 對所有截圖軟體的要求。wxShot 只處理你框選的區域，不會上傳任何畫面";
+"wxStepShortcut" = "2  在任何介面按 %@ 即可截圖";
+"wxStepShortcutNote" = "拖曳框選，雙擊或按 Return 複製，Esc 取消。隨時再次打開 wxShot 即可修改設定";
+"wxStartButton" = "開始使用";
+"wxLaterButton" = "稍後";
+"wxAboutWebsite" = "官網";
+"wxAboutSource" = "開源程式碼（MIT）";
+"wxStarOnGitHub" = "在 GitHub 上給 wxShot 點個 Star";
+
+/* wxShot */
+"wxConfirmDiscard" = "再按一次退出，目前標註將遺失";
+"wxTipSettings" = "設定";
+"wxSectionFeedback" = "使用者回饋";
+"wxFeedbackHint" = "想要的功能、遇到的問題、好點子都可以告訴我們，wxShot 會根據回饋持續優化。";
+"wxFeedbackButton" = "提交回饋…";
+"wxFeedbackTitle" = "提交回饋";
+"wxFeedbackInfo" = "請描述你想要的功能或遇到的問題。按下傳送會開啟郵件 App 並填好內容，同時附上軟體與系統版本。";
+"wxFeedbackSend" = "傳送";
+"wxFeedbackGitHub" = "GitHub Issues";
+
+/* wxShot */
+"wxTipShare" = "分享";
+"wxTipMore" = "更多";
+"wxTranslateHeader" = "翻譯";
+"wxTranslating" = "翻譯中…";
+"wxTranslateUnsupported" = "翻譯功能需要 macOS 15 或更新版本";
+"wxTranslateFailed" = "翻譯失敗。請在 系統設定 › 一般 › 語言與地區 › 翻譯語言 中下載對應語言";
+
+/* wxShot */
+"wxLensCopyHint" = "按 ⌘+C 複製色值";
+
+/* wxShot */
+"wxUpdateRequiredBody" = "此版本已不再支援，請下載最新版本後繼續使用 wxShot。";
