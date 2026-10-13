@@ -65,7 +65,7 @@ final class MagnifierLensPanelWindow: NSPanel {
         backgroundColor = .clear
         hasShadow = false
         ignoresMouseEvents = true
-        sharingType = .none
+        sharingType = .readOnly  // .none left the lens invisible on some Macs
         animationBehavior = .none
         collectionBehavior = [.canJoinAllSpaces, .fullScreenAuxiliary]
         contentView = lensView
