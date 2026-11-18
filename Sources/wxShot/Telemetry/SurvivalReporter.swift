@@ -52,6 +52,7 @@ final class SurvivalReporter {
             "checkpoint": due,
             "wechat": Self.describe(WeChatMonitor.shared.state),
             "wechat_policy": Defaults.weChatPolicy.rawValue,
+            "wechat_asked": WeChatChoicePrompt.answer ?? "",
             "owns_shortcut": WeChatMonitor.shared.shouldOwnShortcut(),
             "os": ProcessInfo.processInfo.operatingSystemVersionString,
             "locale": Locale.preferredLanguages.first ?? "",

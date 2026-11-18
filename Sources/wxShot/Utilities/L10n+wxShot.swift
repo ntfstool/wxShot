@@ -30,6 +30,10 @@ extension L10n {
     static func wxStepShortcut(_ shortcut: String) -> String { String(format: w("wxStepShortcut"), shortcut) }
     static var wxStepShortcutNote: String { w("wxStepShortcutNote") }
     static var wxStartButton: String { w("wxStartButton") }
+    static func wxAskOwnerTitle(_ shortcut: String) -> String { String(format: w("wxAskOwnerTitle"), shortcut) }
+    static var wxAskOwnerBody: String { w("wxAskOwnerBody") }
+    static var wxAskUseWxShot: String { w("wxAskUseWxShot") }
+    static var wxAskUseWeChat: String { w("wxAskUseWeChat") }
     static var wxLaterButton: String { w("wxLaterButton") }
     static var wxAboutWebsite: String { w("wxAboutWebsite") }
     static var wxAboutSource: String { w("wxAboutSource") }

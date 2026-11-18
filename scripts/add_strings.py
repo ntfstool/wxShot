@@ -104,6 +104,14 @@ S = {
   "en": "Scrolling too fast — slow down so every part is captured", "zh-Hans": "滚动太快了，请放慢速度，才能完整拼接", "zh-Hant": "捲動太快了，請放慢速度，才能完整拼接", "ja": "スクロールが速すぎます。ゆっくりスクロールしてください", "ko": "스크롤이 너무 빠릅니다. 천천히 스크롤하세요", "fr": "Défilement trop rapide — ralentissez pour tout capturer", "ru": "Слишком быстрая прокрутка — замедлитесь, чтобы захватить всё", "vi": "Cuộn quá nhanh — hãy chậm lại để chụp đầy đủ"},
  "wxLongShotCopied": {
   "en": "Long screenshot copied to the clipboard", "zh-Hans": "长截图已复制到剪贴板", "zh-Hant": "長截圖已複製到剪貼簿", "ja": "長いスクリーンショットをクリップボードにコピーしました", "ko": "긴 스크린샷을 클립보드에 복사했습니다", "fr": "Capture longue copiée dans le presse-papiers", "ru": "Длинный скриншот скопирован в буфер обмена", "vi": "Đã sao chép ảnh chụp dài vào bộ nhớ tạm"},
+ "wxAskOwnerTitle": {
+  "en": "Which app takes %@?", "zh-Hans": "%@ 用哪个截图？", "zh-Hant": "%@ 用哪個截圖？", "ja": "%@ はどちらで撮る？", "ko": "%@ 는 어느 앱으로?", "fr": "Qui gère %@ ?", "ru": "Кому отдать %@?", "vi": "%@ dùng app nào?"},
+ "wxAskOwnerBody": {
+  "en": "If you pick wxShot, turn off WeChat's screenshot shortcut.", "zh-Hans": "选 wxShot 后，请在微信设置里关掉截图快捷键。", "zh-Hant": "選 wxShot 後，請在微信設定裡關掉截圖快速鍵。", "ja": "wxShot を選ぶなら、WeChat のショートカットをオフに。", "ko": "wxShot 을 고르면 WeChat 단축키를 끄세요.", "fr": "Avec wxShot, désactivez le raccourci de WeChat.", "ru": "Выбрав wxShot, отключите сочетание в WeChat.", "vi": "Nếu chọn wxShot, hãy tắt phím tắt của WeChat."},
+ "wxAskUseWxShot": {
+  "en": "wxShot", "zh-Hans": "用 wxShot", "zh-Hant": "用 wxShot", "ja": "wxShot", "ko": "wxShot", "fr": "wxShot", "ru": "wxShot", "vi": "wxShot"},
+ "wxAskUseWeChat": {
+  "en": "WeChat", "zh-Hans": "用微信", "zh-Hant": "用微信", "ja": "WeChat", "ko": "WeChat", "fr": "WeChat", "ru": "WeChat", "vi": "WeChat"},
 }
 
 root = pathlib.Path(__file__).resolve().parent.parent

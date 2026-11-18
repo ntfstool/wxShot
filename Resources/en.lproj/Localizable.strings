@@ -774,3 +774,9 @@
 /* wxShot */
 "wxScrollTooFast" = "Scrolling too fast — slow down so every part is captured";
 "wxLongShotCopied" = "Long screenshot copied to the clipboard";
+
+/* wxShot */
+"wxAskOwnerTitle" = "Which app takes %@?";
+"wxAskOwnerBody" = "If you pick wxShot, turn off WeChat's screenshot shortcut.";
+"wxAskUseWxShot" = "wxShot";
+"wxAskUseWeChat" = "WeChat";

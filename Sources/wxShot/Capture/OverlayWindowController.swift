@@ -731,6 +731,9 @@ class OverlayWindowController {
                 self?.editController?.confirmFromKeyboard()
                 return nil
             }
+            if self?.confirmFromReturnKey(event) == true {
+                return nil
+            }
             if HotkeyManager.eventMatchesFileSaveHotkey(event) {
                 self?.editController?.saveFromKeyboard()
                 return nil
@@ -935,6 +938,19 @@ class OverlayWindowController {
             return preset.1
         }
         return String(format: "%.2f:1", Double(aspectRatio))
+    }
+
+    /// Return / keypad Enter confirms the selection (copy and close), like
+    /// WeChat. Skipped while a text field elsewhere (OCR / translate panel)
+    /// has focus so typing a newline there still works.
+    private func confirmFromReturnKey(_ event: NSEvent) -> Bool {
+        guard event.keyCode == 36 || event.keyCode == 76 else { return false }
+        let modifierMask: NSEvent.ModifierFlags = [.command, .option, .control, .shift]
+        guard event.modifierFlags.intersection(modifierMask).isEmpty else { return false }
+        guard let editController else { return false }
+        if event.window?.firstResponder is NSText { return false }
+        editController.confirmFromKeyboard()
+        return true
     }
 
     private func cycleSelectionAspectRatioFromKeyboard(for event: NSEvent) -> Bool {

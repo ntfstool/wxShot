@@ -50,7 +50,7 @@ final class TextRecognitionPanel: NSPanel {
     private init(image: NSImage, anchorRect: NSRect, screen: NSScreen, translate: Bool) {
         screenshot = image
         translates = translate
-        let size = NSSize(width: 780, height: 440)
+        let size = Self.panelSize(for: image.size, screen: screen)
         super.init(
             contentRect: NSRect(origin: .zero, size: size),
             styleMask: [.titled, .closable, .fullSizeContentView, .utilityWindow],
@@ -63,7 +63,7 @@ final class TextRecognitionPanel: NSPanel {
         level = .floating
         hidesOnDeactivate = false
         setFrameOrigin(Self.origin(for: size, anchorRect: anchorRect, screen: screen))
-        buildContent(size: size)
+        buildContent(size: size, stacked: Self.isWide(image.size))
         installMonitors()
     }
 
@@ -85,6 +85,21 @@ final class TextRecognitionPanel: NSPanel {
 
     // MARK: Layout
 
+    /// Wide screenshots (a web page row, a long sentence) go above the text
+    /// instead of beside it, so the text column keeps a readable width.
+    private static func isWide(_ imageSize: NSSize) -> Bool {
+        imageSize.height > 0 && imageSize.width / imageSize.height > 1.6
+    }
+
+    /// Never larger than the visible screen; issue #1 had the panel run off
+    /// the right edge on a 1920×1080 display.
+    private static func panelSize(for imageSize: NSSize, screen: NSScreen) -> NSSize {
+        let visible = screen.visibleFrame
+        let wanted = isWide(imageSize) ? NSSize(width: 820, height: 600) : NSSize(width: 780, height: 440)
+        return NSSize(width: min(wanted.width, visible.width - 16),
+                      height: min(wanted.height, visible.height - 16))
+    }
+
     private static func origin(for size: NSSize, anchorRect: NSRect, screen: NSScreen) -> NSPoint {
         let visible = screen.visibleFrame
         var x = anchorRect.midX - size.width / 2
@@ -95,7 +110,7 @@ final class TextRecognitionPanel: NSPanel {
         return NSPoint(x: x, y: y)
     }
 
-    private func buildContent(size: NSSize) {
+    private func buildContent(size: NSSize, stacked: Bool) {
         let effect = NSVisualEffectView(frame: NSRect(origin: .zero, size: size))
         effect.material = .popover
         effect.blendingMode = .behindWindow
@@ -143,6 +158,11 @@ final class TextRecognitionPanel: NSPanel {
         preview.layer?.borderColor = NSColor.separatorColor.cgColor
         preview.layer?.backgroundColor = NSColor.black.withAlphaComponent(0.04).cgColor
         preview.translatesAutoresizingMaskIntoConstraints = false
+        // The image's own pixel size must not push the panel wider or taller.
+        for orientation in [NSLayoutConstraint.Orientation.horizontal, .vertical] {
+            preview.setContentCompressionResistancePriority(.init(1), for: orientation)
+            preview.setContentHuggingPriority(.init(1), for: orientation)
+        }
 
         let divider = NSBox()
         divider.boxType = .separator
@@ -153,24 +173,42 @@ final class TextRecognitionPanel: NSPanel {
         effect.addSubview(scroll)
         effect.addSubview(statusLabel)
         effect.addSubview(copyButton)
-        NSLayoutConstraint.activate([
-            preview.leadingAnchor.constraint(equalTo: effect.leadingAnchor, constant: 14),
-            preview.topAnchor.constraint(equalTo: effect.topAnchor, constant: 40),
-            preview.bottomAnchor.constraint(equalTo: effect.bottomAnchor, constant: -14),
-            preview.widthAnchor.constraint(equalTo: effect.widthAnchor, multiplier: 0.42),
-            divider.leadingAnchor.constraint(equalTo: preview.trailingAnchor, constant: 12),
-            divider.topAnchor.constraint(equalTo: effect.topAnchor, constant: 40),
-            divider.bottomAnchor.constraint(equalTo: effect.bottomAnchor, constant: -14),
-            divider.widthAnchor.constraint(equalToConstant: 1),
-            scroll.leadingAnchor.constraint(equalTo: divider.trailingAnchor, constant: 10),
-            scroll.trailingAnchor.constraint(equalTo: effect.trailingAnchor, constant: -14),
-            scroll.topAnchor.constraint(equalTo: effect.topAnchor, constant: 40),
-            scroll.bottomAnchor.constraint(equalTo: copyButton.topAnchor, constant: -10),
+        var constraints = [
             copyButton.trailingAnchor.constraint(equalTo: effect.trailingAnchor, constant: -14),
             copyButton.bottomAnchor.constraint(equalTo: effect.bottomAnchor, constant: -14),
-            statusLabel.leadingAnchor.constraint(equalTo: divider.trailingAnchor, constant: 14),
-            statusLabel.centerYAnchor.constraint(equalTo: copyButton.centerYAnchor),
-        ])
+            scroll.trailingAnchor.constraint(equalTo: effect.trailingAnchor, constant: -14),
+            scroll.bottomAnchor.constraint(equalTo: copyButton.topAnchor, constant: -10),
+            preview.leadingAnchor.constraint(equalTo: effect.leadingAnchor, constant: 14),
+            preview.topAnchor.constraint(equalTo: effect.topAnchor, constant: 40),
+        ]
+        if stacked {
+            // Top: the screenshot; below: the text, full width.
+            constraints += [
+                preview.trailingAnchor.constraint(equalTo: effect.trailingAnchor, constant: -14),
+                preview.heightAnchor.constraint(equalTo: effect.heightAnchor, multiplier: 0.34),
+                divider.leadingAnchor.constraint(equalTo: effect.leadingAnchor, constant: 14),
+                divider.trailingAnchor.constraint(equalTo: effect.trailingAnchor, constant: -14),
+                divider.topAnchor.constraint(equalTo: preview.bottomAnchor, constant: 10),
+                divider.heightAnchor.constraint(equalToConstant: 1),
+                scroll.leadingAnchor.constraint(equalTo: effect.leadingAnchor, constant: 10),
+                scroll.topAnchor.constraint(equalTo: divider.bottomAnchor, constant: 8),
+                statusLabel.leadingAnchor.constraint(equalTo: effect.leadingAnchor, constant: 14),
+            ]
+        } else {
+            constraints += [
+                preview.bottomAnchor.constraint(equalTo: effect.bottomAnchor, constant: -14),
+                preview.widthAnchor.constraint(equalTo: effect.widthAnchor, multiplier: 0.42),
+                divider.leadingAnchor.constraint(equalTo: preview.trailingAnchor, constant: 12),
+                divider.topAnchor.constraint(equalTo: effect.topAnchor, constant: 40),
+                divider.bottomAnchor.constraint(equalTo: effect.bottomAnchor, constant: -14),
+                divider.widthAnchor.constraint(equalToConstant: 1),
+                scroll.leadingAnchor.constraint(equalTo: divider.trailingAnchor, constant: 10),
+                scroll.topAnchor.constraint(equalTo: effect.topAnchor, constant: 40),
+                statusLabel.leadingAnchor.constraint(equalTo: divider.trailingAnchor, constant: 14),
+            ]
+        }
+        constraints.append(statusLabel.centerYAnchor.constraint(equalTo: copyButton.centerYAnchor))
+        NSLayoutConstraint.activate(constraints)
     }
 
     // MARK: Behavior

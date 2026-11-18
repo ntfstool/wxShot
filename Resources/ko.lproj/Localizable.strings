@@ -774,3 +774,9 @@
 /* wxShot */
 "wxScrollTooFast" = "스크롤이 너무 빠릅니다. 천천히 스크롤하세요";
 "wxLongShotCopied" = "긴 스크린샷을 클립보드에 복사했습니다";
+
+/* wxShot */
+"wxAskOwnerTitle" = "%@ 는 어느 앱으로?";
+"wxAskOwnerBody" = "wxShot 을 고르면 WeChat 단축키를 끄세요.";
+"wxAskUseWxShot" = "wxShot";
+"wxAskUseWeChat" = "WeChat";

@@ -774,3 +774,9 @@
 /* wxShot */
 "wxScrollTooFast" = "Слишком быстрая прокрутка — замедлитесь, чтобы захватить всё";
 "wxLongShotCopied" = "Длинный скриншот скопирован в буфер обмена";
+
+/* wxShot */
+"wxAskOwnerTitle" = "Кому отдать %@?";
+"wxAskOwnerBody" = "Выбрав wxShot, отключите сочетание в WeChat.";
+"wxAskUseWxShot" = "wxShot";
+"wxAskUseWeChat" = "WeChat";

@@ -41,6 +41,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         for name in [Notification.Name.hotkeyDidChange, .weChatStateDidChange] {
             NotificationCenter.default.addObserver(forName: name, object: nil, queue: .main) { [weak self] _ in
                 self?.applyHotkeyState()
+                WeChatChoicePrompt.showIfNeeded()
             }
         }
         WeChatMonitor.shared.start()
@@ -49,6 +50,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
         #if DEBUG
         if DebugSnapshots.runIfRequested() { return }
+        if ProcessInfo.processInfo.environment["WXSHOT_DEBUG_ASK_WECHAT"] == "1" {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) { WeChatChoicePrompt.present() }
+            return
+        }
         if ProcessInfo.processInfo.environment["WXSHOT_DEBUG_CAPTURE"] == "1" {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in self?.handleTrigger() }
             return
@@ -56,6 +61,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         #endif
         if !Defaults.onboardingCompleted || !AppPermissions.screenRecordingGranted {
             OnboardingWindowController.shared.show()
+        } else {
+            WeChatChoicePrompt.showIfNeeded()
         }
     }
 

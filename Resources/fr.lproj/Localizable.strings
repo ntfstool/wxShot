@@ -774,3 +774,9 @@
 /* wxShot */
 "wxScrollTooFast" = "Défilement trop rapide — ralentissez pour tout capturer";
 "wxLongShotCopied" = "Capture longue copiée dans le presse-papiers";
+
+/* wxShot */
+"wxAskOwnerTitle" = "Qui gère %@ ?";
+"wxAskOwnerBody" = "Avec wxShot, désactivez le raccourci de WeChat.";
+"wxAskUseWxShot" = "wxShot";
+"wxAskUseWeChat" = "WeChat";

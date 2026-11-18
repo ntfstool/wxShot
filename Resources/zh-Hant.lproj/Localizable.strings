@@ -774,3 +774,9 @@
 /* wxShot */
 "wxScrollTooFast" = "捲動太快了，請放慢速度，才能完整拼接";
 "wxLongShotCopied" = "長截圖已複製到剪貼簿";
+
+/* wxShot */
+"wxAskOwnerTitle" = "%@ 用哪個截圖？";
+"wxAskOwnerBody" = "選 wxShot 後，請在微信設定裡關掉截圖快速鍵。";
+"wxAskUseWxShot" = "用 wxShot";
+"wxAskUseWeChat" = "用微信";

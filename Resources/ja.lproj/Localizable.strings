@@ -774,3 +774,9 @@
 /* wxShot */
 "wxScrollTooFast" = "スクロールが速すぎます。ゆっくりスクロールしてください";
 "wxLongShotCopied" = "長いスクリーンショットをクリップボードにコピーしました";
+
+/* wxShot */
+"wxAskOwnerTitle" = "%@ はどちらで撮る？";
+"wxAskOwnerBody" = "wxShot を選ぶなら、WeChat のショートカットをオフに。";
+"wxAskUseWxShot" = "wxShot";
+"wxAskUseWeChat" = "WeChat";

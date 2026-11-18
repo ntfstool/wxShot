@@ -774,3 +774,9 @@
 /* wxShot */
 "wxScrollTooFast" = "Cuộn quá nhanh — hãy chậm lại để chụp đầy đủ";
 "wxLongShotCopied" = "Đã sao chép ảnh chụp dài vào bộ nhớ tạm";
+
+/* wxShot */
+"wxAskOwnerTitle" = "%@ dùng app nào?";
+"wxAskOwnerBody" = "Nếu chọn wxShot, hãy tắt phím tắt của WeChat.";
+"wxAskUseWxShot" = "wxShot";
+"wxAskUseWeChat" = "WeChat";
