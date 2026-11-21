@@ -780,3 +780,8 @@
 "wxAskOwnerBody" = "Выбрав wxShot, отключите сочетание в WeChat.";
 "wxAskUseWxShot" = "wxShot";
 "wxAskUseWeChat" = "WeChat";
+
+/* wxShot */
+"wxUpdateTitle" = "Доступна версия %@";
+"wxUpdateBody" = "wxShot закроется и скачает обновление. После установки откройте его снова.";
+"wxUpdateButton" = "Обновить";

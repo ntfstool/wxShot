@@ -114,7 +114,7 @@ final class StatusBarController: NSObject {
     }
 
     @objc private func openReleasePage() {
-        NSWorkspace.shared.open(UpdateChecker.shared.latestPageURL ?? UpdateChecker.fallbackPageURL)
+        Self.downloadUpdateAndQuit()
     }
 
     @objc private func checkForUpdates() {
@@ -126,10 +126,19 @@ final class StatusBarController: NSObject {
     /// Shown after a background check. Recommended updates can be postponed or skipped; a required one (server
     /// `min_version`) only offers the download, and the app quits so an unsupported build is not used any further.
     static func presentBackgroundUpdatePrompt(version: String, required: Bool) {
+        // The check fires while the capture overlay is on screen. A modal alert then sits under the overlay and
+        // freezes it, so hold the prompt until the capture/editor is gone.
+        if isCaptureActive() {
+            if pendingUpdatePrompt == nil { SurvivalReporter.shared.count("update_prompt_deferred") }
+            pendingUpdatePrompt = (version, required)
+            return
+        }
+        pendingUpdatePrompt = nil
+        SurvivalReporter.shared.count("update_prompt_shown")
         let alert = NSAlert()
-        alert.messageText = L10n.updateAvailableTitle(version)
-        alert.informativeText = required ? L10n.wxUpdateRequiredBody : L10n.updateAvailableBody
-        alert.addButton(withTitle: L10n.updateOpenPageButton)
+        alert.messageText = L10n.wxUpdateTitle(version)
+        alert.informativeText = required ? L10n.wxUpdateRequiredBody : L10n.wxUpdateBody
+        alert.addButton(withTitle: L10n.wxUpdateButton)
         if !required {
             alert.addButton(withTitle: L10n.updateLaterButton)
             alert.addButton(withTitle: L10n.updateSkipButton)
@@ -137,24 +146,51 @@ final class StatusBarController: NSObject {
         NSApp.activate(ignoringOtherApps: true)
         let response = alert.runModal()
         if response == .alertFirstButtonReturn {
-            NSWorkspace.shared.open(UpdateChecker.shared.latestPageURL ?? UpdateChecker.fallbackPageURL)
+            downloadUpdateAndQuit()
+            return
         } else if response == .alertThirdButtonReturn {
+            SurvivalReporter.shared.count("update_skip")
             UpdateChecker.shared.skipVersion()
+        } else {
+            SurvivalReporter.shared.count("update_later")
         }
         if required { NSApp.terminate(nil) }
+    }
+
+    /// Set by AppDelegate: true while a capture overlay or the editor is on screen.
+    static var isCaptureActive: () -> Bool = { false }
+    private static var pendingUpdatePrompt: (version: String, required: Bool)?
+    static var hasPendingUpdatePrompt: Bool { pendingUpdatePrompt != nil }
+
+    /// Called by AppDelegate when a capture ends; shows an update prompt that was held back during it.
+    static func presentPendingUpdatePromptIfAny() {
+        guard pendingUpdatePrompt != nil else { return }
+        // Let the overlay finish closing (and the toast appear) first.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+            guard let pending = pendingUpdatePrompt, !isCaptureActive() else { return }
+            presentBackgroundUpdatePrompt(version: pending.version, required: pending.required)
+        }
+    }
+
+    /// wxShot has no Dock icon and usually no menu bar icon, so a running copy cannot be quit by most users and
+    /// Finder refuses to replace it ("in use"). Open the download, then quit so the new copy can be dragged in.
+    static func downloadUpdateAndQuit() {
+        SurvivalReporter.shared.count("update_download_quit")
+        NSWorkspace.shared.open(UpdateChecker.shared.latestPageURL ?? UpdateChecker.fallbackPageURL)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { NSApp.terminate(nil) }
     }
 
     static func presentManualCheckResult(_ state: UpdateState) {
         let alert = NSAlert()
         switch state {
         case .available(let version):
-            alert.messageText = L10n.updateAvailableTitle(version)
-            alert.informativeText = L10n.updateAvailableBody
-            alert.addButton(withTitle: L10n.updateOpenPageButton)
+            alert.messageText = L10n.wxUpdateTitle(version)
+            alert.informativeText = L10n.wxUpdateBody
+            alert.addButton(withTitle: L10n.wxUpdateButton)
             alert.addButton(withTitle: L10n.updateLaterButton)
             NSApp.activate(ignoringOtherApps: true)
             if alert.runModal() == .alertFirstButtonReturn {
-                NSWorkspace.shared.open(UpdateChecker.shared.latestPageURL ?? UpdateChecker.fallbackPageURL)
+                downloadUpdateAndQuit()
             }
             return
         case .upToDate:

@@ -4,7 +4,13 @@ import AppKit
 /// the app is running, and launching the app again opens Settings.
 final class AppDelegate: NSObject, NSApplicationDelegate {
     private var statusBarController: StatusBarController?
-    private var overlayController: OverlayWindowController?
+    private var overlayController: OverlayWindowController? {
+        didSet {
+            #if !MAS
+            if overlayController == nil { StatusBarController.presentPendingUpdatePromptIfAny() }
+            #endif
+        }
+    }
     private var suspendedEditDraft: OverlayWindowController.SuspendedEditDraft?
     private var pendingReopenSettingsWorkItem: DispatchWorkItem?
 
@@ -21,6 +27,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         }
         ImageEditLauncher.clearTempDir()
         #if !MAS
+        StatusBarController.isCaptureActive = { [weak self] in self?.overlayController != nil }
         UpdateChecker.shared.checkAtLaunchIfDue()
         #endif
         if AppPermissions.screenRecordingGranted {

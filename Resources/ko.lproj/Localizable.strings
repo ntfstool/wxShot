@@ -780,3 +780,8 @@
 "wxAskOwnerBody" = "wxShot 을 고르면 WeChat 단축키를 끄세요.";
 "wxAskUseWxShot" = "wxShot";
 "wxAskUseWeChat" = "WeChat";
+
+/* wxShot */
+"wxUpdateTitle" = "새 버전 %@";
+"wxUpdateBody" = "wxShot 을 종료하고 다운로드합니다. 설치 후 다시 열어 주세요.";
+"wxUpdateButton" = "업데이트";

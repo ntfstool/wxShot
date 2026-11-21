@@ -780,3 +780,8 @@
 "wxAskOwnerBody" = "Nếu chọn wxShot, hãy tắt phím tắt của WeChat.";
 "wxAskUseWxShot" = "wxShot";
 "wxAskUseWeChat" = "WeChat";
+
+/* wxShot */
+"wxUpdateTitle" = "Đã có bản %@";
+"wxUpdateBody" = "wxShot sẽ thoát và tải bản mới. Cài xong hãy mở lại.";
+"wxUpdateButton" = "Cập nhật";

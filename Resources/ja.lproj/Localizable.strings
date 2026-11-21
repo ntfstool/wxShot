@@ -780,3 +780,8 @@
 "wxAskOwnerBody" = "wxShot を選ぶなら、WeChat のショートカットをオフに。";
 "wxAskUseWxShot" = "wxShot";
 "wxAskUseWeChat" = "WeChat";
+
+/* wxShot */
+"wxUpdateTitle" = "新しいバージョン %@";
+"wxUpdateBody" = "wxShot を終了してダウンロードします。インストール後にもう一度開いてください。";
+"wxUpdateButton" = "アップデート";

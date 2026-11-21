@@ -780,3 +780,8 @@
 "wxAskOwnerBody" = "Avec wxShot, désactivez le raccourci de WeChat.";
 "wxAskUseWxShot" = "wxShot";
 "wxAskUseWeChat" = "WeChat";
+
+/* wxShot */
+"wxUpdateTitle" = "wxShot %@ est disponible";
+"wxUpdateBody" = "wxShot se ferme pendant le téléchargement. Rouvrez-le après l'installation.";
+"wxUpdateButton" = "Mettre à jour";

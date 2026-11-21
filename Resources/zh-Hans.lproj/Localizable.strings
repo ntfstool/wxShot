@@ -780,3 +780,8 @@
 "wxAskOwnerBody" = "选 wxShot 后，请在微信设置里关掉截图快捷键。";
 "wxAskUseWxShot" = "用 wxShot";
 "wxAskUseWeChat" = "用微信";
+
+/* wxShot */
+"wxUpdateTitle" = "发现新版本 %@";
+"wxUpdateBody" = "wxShot 会退出并下载新版，装好后重新打开。";
+"wxUpdateButton" = "更新";

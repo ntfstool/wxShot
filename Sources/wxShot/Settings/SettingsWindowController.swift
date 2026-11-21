@@ -8,6 +8,7 @@ final class SettingsWindowController: NSWindowController, NSWindowDelegate {
     var onMenuBarToggle: ((Bool) -> Void)?
 
     private let recorder = ShortcutRecorderView()
+    private let shortcutSettings = ShortcutSettingsView()
     private let weChatStatusLabel = NSTextField(labelWithString: "")
     private let ownerLabel = NSTextField(labelWithString: "")
     private var policyButtons: [WeChatPolicy: NSButton] = [:]
@@ -49,6 +50,7 @@ final class SettingsWindowController: NSWindowController, NSWindowDelegate {
     func showAsSettings() {
         refreshAll()
         window?.center()
+        scrollToTop()
         showWindow(nil)
         NSApp.activate(ignoringOtherApps: true)
         // The permission can change while the window is open; look again every couple of seconds.
@@ -81,6 +83,12 @@ final class SettingsWindowController: NSWindowController, NSWindowDelegate {
         stack.addArrangedSubview(sectionTitle(L10n.wxSectionShortcut))
         stack.addArrangedSubview(recorder)
         stack.addArrangedSubview(note(L10n.wxShortcutDefaultNote))
+
+        stack.addArrangedSubview(divider())
+        stack.addArrangedSubview(sectionTitle(L10n.settingsTabShortcuts))
+        stack.addArrangedSubview(shortcutSettings)
+        stack.addArrangedSubview(note(L10n.toolbarSettingsShortcutHint))
+        stack.addArrangedSubview(note(L10n.clipboardShortcutHint))
 
         stack.addArrangedSubview(divider())
         stack.addArrangedSubview(sectionTitle(L10n.wxSectionWeChat))
@@ -140,10 +148,27 @@ final class SettingsWindowController: NSWindowController, NSWindowDelegate {
         stack.addArrangedSubview(divider())
         stack.addArrangedSubview(footer())
 
-        window?.contentView = stack
-        // Let the window fit its content height.
+        // The page now outgrows most screens, so let it scroll.
         let fitting = stack.fittingSize
-        window?.setContentSize(NSSize(width: 520, height: fitting.height))
+        stack.translatesAutoresizingMaskIntoConstraints = true
+        stack.frame = NSRect(x: 0, y: 0, width: 520, height: fitting.height)
+
+        let scroll = NSScrollView()
+        scroll.hasVerticalScroller = true
+        scroll.drawsBackground = false
+        scroll.documentView = stack
+        window?.contentView = scroll
+        window?.setContentSize(NSSize(width: 520, height: min(fitting.height, 680)))
+        scrollToTop()
+    }
+
+    /// The stack is not flipped, so a fresh NSScrollView shows its bottom. Open at the top.
+    private func scrollToTop() {
+        guard let scroll = window?.contentView as? NSScrollView,
+              let document = scroll.documentView else { return }
+        let y = max(0, document.frame.height - scroll.contentView.bounds.height)
+        scroll.contentView.scroll(to: NSPoint(x: 0, y: y))
+        scroll.reflectScrolledClipView(scroll.contentView)
     }
 
     private func header() -> NSView {

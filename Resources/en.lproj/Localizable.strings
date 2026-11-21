@@ -780,3 +780,8 @@
 "wxAskOwnerBody" = "If you pick wxShot, turn off WeChat's screenshot shortcut.";
 "wxAskUseWxShot" = "wxShot";
 "wxAskUseWeChat" = "WeChat";
+
+/* wxShot */
+"wxUpdateTitle" = "wxShot %@ is available";
+"wxUpdateBody" = "wxShot quits while the update downloads. Open it again after installing.";
+"wxUpdateButton" = "Update";

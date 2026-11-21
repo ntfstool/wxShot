@@ -55,6 +55,9 @@ extension L10n {
     static var wxTranslateFailed: String { w("wxTranslateFailed") }
     static var wxLensCopyHint: String { w("wxLensCopyHint") }
     static var wxUpdateRequiredBody: String { w("wxUpdateRequiredBody") }
+    static func wxUpdateTitle(_ v: String) -> String { String(format: w("wxUpdateTitle"), v) }
+    static var wxUpdateBody: String { w("wxUpdateBody") }
+    static var wxUpdateButton: String { w("wxUpdateButton") }
     static var wxScrollTooFast: String { w("wxScrollTooFast") }
     static var wxLongShotCopied: String { w("wxLongShotCopied") }
 }

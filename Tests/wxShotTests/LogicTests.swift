@@ -28,4 +28,13 @@ final class LogicTests: XCTestCase {
         let hk = HotkeyManager.defaultHotkey
         XCTAssertEqual(HotkeyManager.modifierString(hk.modifiers) + HotkeyManager.keyString(hk.keyCode), "⌥A")
     }
+
+    /// 2026-11-21 user bug: an update found during a capture froze the overlay (modal alert hidden under it).
+    /// The prompt must wait until the capture ends. Do not remove.
+    func testUpdatePromptWaitsForCaptureToEnd() {
+        StatusBarController.isCaptureActive = { true }
+        StatusBarController.presentBackgroundUpdatePrompt(version: "9.9.9", required: false)
+        XCTAssertTrue(StatusBarController.hasPendingUpdatePrompt, "update prompt must be held while capturing")
+        StatusBarController.isCaptureActive = { false }
+    }
 }
